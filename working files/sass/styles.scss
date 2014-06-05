@@ -7,10 +7,18 @@
 }
 
 
-// Individual example styling goes here. REMOVE BEFORE FINALIZING
+// Individual example styling goes here. REMOVE ALL BELOW OR RESOLVE BEFORE FINALIZING
 .jumbotron {
 	background: url(../example-images/dresser_crop.jpg) no-repeat center center fixed;
 	overflow-y: auto;
 	background-size: cover;
 	color: #fff;
+}
+
+
+// Fix to account for Bootstrap looking for fonts in wrong folder (seems to be built into Compass)
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
