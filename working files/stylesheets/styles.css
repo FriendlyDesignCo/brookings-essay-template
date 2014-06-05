@@ -7895,3 +7895,11 @@ button.close {
 #test {
   color: #fff;
 }
+
+/* line 11, ../sass/styles.scss */
+.jumbotron {
+  background: url(../example-images/dresser_crop.jpg) no-repeat center center fixed;
+  overflow-y: auto;
+  background-size: cover;
+  color: #fff;
+}
