@@ -4,6 +4,17 @@
 
 $chapter-spacing: 10em;
 
+h2 {
+	padding-top: $chapter-spacing;
+}
+
+.addemail{
+	font-size: 9px;
+	width: 170% !important;
+	float: right;
+}
+
+
 
 // Individual example styling goes here. REMOVE ALL BELOW OR RESOLVE BEFORE FINALIZING
 .jumbotron {
@@ -14,15 +25,6 @@ $chapter-spacing: 10em;
 }
 
 
-h2 {
-	padding-top: $chapter-spacing;
-}
-
-.addemail{
-	font-size: 9px;
-	width: 170% !important;
-	float: right;
-}
 
 
 // This is a fix to account for Bootstrap looking for fonts in wrong folder (seems to be built into Compass)

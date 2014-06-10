@@ -7891,24 +7891,24 @@ button.close {
     display: none !important;
   }
 }
-/* line 9, ../sass/styles.scss */
+/* line 7, ../sass/styles.scss */
+h2 {
+  padding-top: 10em;
+}
+
+/* line 11, ../sass/styles.scss */
+.addemail {
+  font-size: 9px;
+  width: 170% !important;
+  float: right;
+}
+
+/* line 20, ../sass/styles.scss */
 .jumbotron {
   background: url(../example-images/dresser_crop.jpg) no-repeat center center fixed;
   overflow-y: auto;
   background-size: cover;
   color: #fff;
-}
-
-/* line 17, ../sass/styles.scss */
-h2 {
-  padding-top: 10em;
-}
-
-/* line 21, ../sass/styles.scss */
-.addemail {
-  font-size: 9px;
-  width: 170% !important;
-  float: right;
 }
 
 @font-face {
