@@ -2,9 +2,7 @@
 @import "variables";
 @import "bootstrap";
 
-#test {
-  color: #fff;
-}
+$chapter-spacing: 10em;
 
 
 // Individual example styling goes here. REMOVE ALL BELOW OR RESOLVE BEFORE FINALIZING
@@ -16,7 +14,18 @@
 }
 
 
-// Fix to account for Bootstrap looking for fonts in wrong folder (seems to be built into Compass)
+h2 {
+	padding-top: $chapter-spacing;
+}
+
+.addemail{
+	font-size: 9px;
+	width: 170% !important;
+	float: right;
+}
+
+
+// This is a fix to account for Bootstrap looking for fonts in wrong folder (seems to be built into Compass)
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("fonts/bootstrap/glyphicons-halflings-regular.eot");
