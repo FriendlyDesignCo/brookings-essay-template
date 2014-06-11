@@ -122,7 +122,7 @@
 <h2>The Founders' Intent</h2>
 <p>The Fourth Amendment, which obligates the U.S. government to ensure that citizens "be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures," was ratified by Congress as part of the Bill of Rights 223 years ago. Until the invention of modern communications technologies, it was fairly easy for citizens to know whether the authorities were rummaging through their property. To search a home or office, officers of the law had to physically enter. The Fourth Amendment generally prevented that from happening without a warrant and gave owners the right to challenge whether entries and confiscations were "reasonable."</p>
 <p>Beginning in the second half of the 19th century, however, technological advances made it easier for the government to "search and seize" the contents of private communications without citizens' knowledge, thus depriving them of the ability to object. Wiretapping is almost as old as the telegraph, going back at least to the Civil War. Phone tapping has been an instrument of law enforcement and counterespionage since the beginning of the 20th century. An early instance of it was useful in probing the intentions of real and potential foreign enemies. In the first months of 1917, the British intercepted, decoded, and passed to Washington the "Zimmermann telegram": a proposal from the Kaiser Wilhelm II's foreign minister to the Mexican government promising that if Mexico allied itself with Germany in the event that the United States entered World War I on the side of the Allies, Germany would reward it with the return of formerly Mexican territory in Texas, New Mexico, and Arizona. The revelation helped stoke support for Congress's declaration of war that April.</p>
-<div class="pull-right col-sm-6"><img src="http://www.brookings.edu/~/media/Research/Files/essays/bigsnoop/images/Zimmermann_Telegram2.png" alt="Zimmermann telegram" class="img-responsive">
+<div class="pull-right col-sm-6"><img src="http://www.brookings.edu/~/media/Research/Files/essays/bigsnoop/images/Zimmermann_Telegram2.png" alt="Zimmermann telegram" class="img-responsive" id="img-zimmermann">
   <blockquote>The Zimmermann Telegram<br>
     <a href="https://en.wikipedia.org/wiki/Zimmerman_telegram" target="_blank">Wikimedia Commons</a></blockquote>
 </div>
@@ -292,6 +292,17 @@
     <div style="position: absolute; bottom: 0; left: 50px; font-size: .85em">mouse over metro areas for details</div>
   </div>
   <!--END D3 Chart Example-->
+  
+	
+	<!-- BEGIN lazy load example -->
+	<h3>Lazy Load</h3>
+	<img id="lazy-load" class="bttrlazyloading"
+		data-bttrlazyloading-lg='{"src": "example-images/timbalier.jpg", "width" : 500,  "height" : 444}'
+	/>
+	<!-- END lazy load example -->
+  
+  
+  
 </div>
 
 
@@ -329,6 +340,26 @@
     <script src="javascripts/bootstrap/tab.js"></script>
     <script src="javascripts/bootstrap/transition.js"></script>
     <!-- END Compiled plugins for Bootstrap -->
+
+	<!-- Lazy Load -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/bttrlazyloading.min.css" />
+	<script src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
+	<script>
+	
+		/* 	
+			Lazy load example 
+			Syntax: http://bttrlazyloading.julienrenaux.fr
+		*/
+		$('#lazy-load').bttrlazyloading({
+			threshold: 40,
+			delay: 2000,
+			placeholder: "",
+			backgroundcolor: '#ccc',
+			animation: 'fadeIn'
+		});
+			
+	</script>
+	
 
 	<!-- Add This -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
