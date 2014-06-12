@@ -24,6 +24,39 @@ h2 {
 	color: #fff;
 }
 
+// social sharing
+.social__bd a {
+	width: 27px;
+	height: 27px;
+}
+.social__bd a span {
+	display: none;
+}
+.social-button--email {
+	background: url('../images/icons/social.svg') no-repeat 0px 0px;
+}
+.social-button--twitter {
+	background: url('../images/icons/social.svg') no-repeat -27px 0px;
+}
+.social-button--facebook {
+	background: url('../images/icons/social.svg') no-repeat -54px 0px;
+}
+.social-button--linkedin {
+	background: url('../images/icons/social.svg') no-repeat -81px 0px;
+}
+.social-button--googleplus {
+	background: url('../images/icons/social.svg') no-repeat -108px 0px;
+}
+.social-button--reddit {
+	background: url('../images/icons/social.svg') no-repeat -189px 0px;
+}
+.social-button--stumbleupon {
+	background: url('../images/icons/social.svg') no-repeat -135px 0px;
+}
+.social-button--print {
+	background: url('../images/icons/social.svg') no-repeat -162px 0px;
+}
+
 
 
 
