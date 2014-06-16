@@ -302,12 +302,10 @@
     <div style="position: absolute; bottom: 0; left: 50px; font-size: .85em">mouse over metro areas for details</div>
   </div>
   <!--END D3 Chart Example-->
-  
-	
 	<!-- BEGIN lazy load example -->
 	<h3>Lazy Load</h3>
 	<img  class="bttrlazyloading" id="lazy-load"
-		data-bttrlazyloading-lg='{"src": "example-images/timbalier.jpg", "width" : 500,  "height" : 444}'
+		data-bttrlazyloading-lg='{"src": "examples/images/timbalier.jpg", "width" : 500,  "height" : 444}'
 	/>
 	<!-- END lazy load example -->
   <!-- BEGIN Fit Text example -->
@@ -316,11 +314,6 @@
   <h5 class="fitthis">Heading Example (With VW)</h5>
   <p>Paragraph for reference. Nenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   <!-- END Fit Text example -->
-	<img id="lazy-load" class="bttrlazyloading"
-		data-bttrlazyloading-lg='{"src": "examples/images/timbalier.jpg", "width" : 500,  "height" : 444}'
-	/>
-	<!-- END lazy load example -->
-  
 	<!-- BEGIN Lettering.js example -->
 	<h3>Lettering.js</h3>
 	<p class='lettering-example'>&ldquo;Sunlight is said to be the best of disinfectants.&rdquo; (Justice Louis Brandeis)</p>
@@ -339,6 +332,52 @@
     <div id="ammap-heatmap" style="width:100%; height:400px; margin-bottom: 3em;"></div>
     <div id="ammap-bubbles" style="width:100%; height:400px; margin-bottom: 3em;"></div>
 	<!-- END AmMap example -->
+
+  <!-- BEGIN Sly Example -->
+
+  <h3>Basic Sly Scroller</h3>
+  <div class="frame" id="basic" style="overflow: hidden;">
+    <ul class="clearfix" style="-webkit-transform: translateZ(0px) translateX(0px); width: 6840px;">
+      <li>0</li><li>1</li><li>2</li><li class="active">3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+      <li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li>
+      <li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li>
+      <li>28</li><li>29</li>
+    </ul>
+  </div>
+  <ul class="pages"><li class="active">1</li><li class="">2</li><li class="">3</li><li class="">4</li><li class="">5</li><li class="">6</li></ul>
+    <div class="scrollbar">
+    <div class="handle" style="-webkit-transform: translateZ(0px) translateX(0px); width: 190px;">
+      <div class="mousearea"></div>
+    </div>
+  </div>
+  <div class="controls center">
+    <button class="btn prevPage disabled" disabled=""><i class="icon-chevron-left"></i><i class="icon-chevron-left"></i> page</button>
+    <button class="btn prev"><i class="icon-chevron-left"></i> item</button>
+    <button class="btn backward disabled" disabled=""><i class="icon-chevron-left"></i> move</button>
+
+    <div class="btn-group">
+      <button class="btn toStart">toStart</button>
+      <button class="btn toCenter">toCenter</button>
+      <button class="btn toEnd">toEnd</button>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn toStart" data-item="10"><strong>10</strong> toStart</button>
+      <button class="btn toCenter" data-item="10"><strong>10</strong> toCenter</button>
+      <button class="btn toEnd" data-item="10"><strong>10</strong> toEnd</button>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn add"><i class="icon-plus-sign"></i></button>
+      <button class="btn remove"><i class="icon-minus-sign"></i></button>
+    </div>
+
+    <button class="btn forward">move <i class="icon-chevron-right"></i></button>
+    <button class="btn next">item <i class="icon-chevron-right"></i></button>
+    <button class="btn nextPage">page <i class="icon-chevron-right"></i><i class="icon-chevron-right"></i></button>
+  </div>
+
+  <!-- END Sly Example -->
   	
   
   
@@ -372,19 +411,23 @@
   <!-- END FitText -->
 	<!-- Lazy Load -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bttrlazyloading.min.css" />
-	<script src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
+	<script type="text/javascript" src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
 	<!-- END Lazy Load -->	
 	<!-- Add This -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
   <!-- END Add This -->
+  <!-- Sly -->
+  <script type="text/javascript" src="javascripts/vendor/plugins.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/sly.min.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/sly.horizontal.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/sly_horz_example.css" />
+  <!-- END Sly -->
   <!--Code for Scrollspy (sticky header and waypoints)-->
   <script>
   $('body').scrollspy({ target: '.navbar-main' })
-  
   ///////////////////////
   //Code to offset the anchor link go-to click height 
   var offset = 80;
-
   $('.navbar li a').click(function(event) {
       event.preventDefault();
       $($(this).attr('href'))[0].scrollIntoView();
@@ -416,12 +459,9 @@
     $("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
   </script>
   <!-- END FitText Example --> 
-
-    <!-- Lazy Load example -->
-	<script>
-	/* 	Lazy load example 
-      Syntax: http://bttrlazyloading.julienrenaux.fr
-	*/
+  <!-- Lazy Load example -->
+  <script>
+  /*  Syntax: http://bttrlazyloading.julienrenaux.fr   */
 	$('#lazy-load').bttrlazyloading({
 		threshold: 20,
 		delay: 20,
@@ -431,7 +471,6 @@
 	});
 	</script>
   <!-- END Lazy Load -->	
-
   <!--Code for D3 Chart Example-->
   <script type="text/javascript">
   //Width and height
@@ -439,8 +478,6 @@
   var h = 350;
   var url;
   var jobtext = window.jobtext;
-
-
 
   //Define map projection
   var projection = d3.geo.albersUsa()
@@ -462,7 +499,6 @@
   //d3.json("/~/media/multimedia/interactives/2013/job_sprawl/usstates.json", function(json) {
   d3.json("examples/d3-chart/usstates.json", function (json) {
 
-
       svg.selectAll("path")
           .data(json.features)
           .enter()
@@ -475,20 +511,14 @@
       //  d3.csv("/~/media/multimedia/interactives/2013/job_sprawl/sprawl3.csv", function(data) {
       d3.csv("examples/d3-chart/FDI_update.csv", function (data) {
 
-
-
-
           var foreignshare = svg.selectAll("circle.foreignshare")
               .data(data)
               .enter()
-
-
 
           .append("circle")
               .sort(function (a, b) {
                   return d3.descending(parseFloat(a.foreignshare), parseFloat(b.foreignshare))
               })
-
 
           .attr("cx", function (d) {
               return projection([d.lon, d.lat])[0];
@@ -507,15 +537,11 @@
           // .style("fill", "#015376")
           .style("fill", "#015376")
 
-
           .style("opacity", 0.4)
               .attr("class", "foreignshare")
               .text(function (d) {
                   return (d.foreignshare)
               })
-
-
-
 
           .on("mouseover", function (d) {
               d3.select(this)
@@ -524,7 +550,6 @@
               var xPosition = parseFloat(d3.select(this).attr("cx")) + 50;
               var yPosition = parseFloat(d3.select(this).attr("cy"));
               var jobtext = String(d3.select(this).text());
-
 
               //Update the tooltip position and value
               d3.select("#tooltip")
@@ -537,8 +562,6 @@
                   .text(function (d) {
                       return jobtext
                   })
-
-
 
               //Show the tooltip
               d3.select("#tooltip").classed("hidden", false);
@@ -555,9 +578,6 @@
 
           })
 */
-
-
-
           .on("mouseout", function () {
               d3.select(this)
                   .style("fill", "#015376")
@@ -567,8 +587,6 @@
           });
 
       });
-
-
 
       // scale
 
@@ -580,7 +598,6 @@
           //.attr("y", 200);
           .attr("transform", "translate(490,160)")
     
-    
     d3.select("#map")
           .append("div")
     .style('position', 'absolute')
@@ -590,8 +607,6 @@
   .style("left", '540px')
     //.html('Share of Metro Area Employment in Foreign-Owned Establishments');
     .html('Share of Metro Area Employment in FOEs');
-
-
 
       var dataset = [1.5, 5, 10, 15];
 
@@ -626,19 +641,14 @@
               return (58 + (i * 30))
           });
 
-
-
     });
   </script>
   <!--END Code for D3 Chart Example-->
-
   <!-- Lettering.js example -->
   <script>
-  
 	  $(document).ready(function() {
 	  	$(".lettering-example").lettering('words');
 	  });
-  
   </script>
   <!-- END Lettering.js example -->
 	
@@ -1775,6 +1785,18 @@
 
 	<!-- END AmMap examples -->
 	
+  <!-- Sly Example -->
+  <script>
+  $('.frame').sly(options, {
+    load: function () {},
+    move: [
+        function () {},
+        function () {}
+    ]
+});
+  </script>
+  <!-- END Sly Example -->
+
 
   <!-- END JAVASCRIPT EXAMPLES --------------------------------------------------------------->	
 
