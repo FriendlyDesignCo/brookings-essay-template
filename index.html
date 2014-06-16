@@ -298,8 +298,6 @@
     <div style="position: absolute; bottom: 0; left: 50px; font-size: .85em">mouse over metro areas for details</div>
   </div>
   <!--END D3 Chart Example-->
-  
-	
 	<!-- BEGIN lazy load example -->
 	<h3>Lazy Load</h3>
 	<img  class="bttrlazyloading" id="lazy-load"
@@ -316,12 +314,55 @@
 		data-bttrlazyloading-lg='{"src": "examples/images/timbalier.jpg", "width" : 500,  "height" : 444}'
 	/>
 	<!-- END lazy load example -->
-  
 	<!-- BEGIN Lettering.js example -->
 	<h3>Lettering.js</h3>
 	<p class='lettering-example'>&ldquo;Sunlight is said to be the best of disinfectants.&rdquo; (Justice Louis Brandeis)</p>
 	<!-- END Lettering.js example -->
-  
+  <!-- BEGIN Sly Example -->
+
+  <h3>Basic Sly Scroller</h3>
+  <div class="frame" id="basic" style="overflow: hidden;">
+    <ul class="clearfix" style="-webkit-transform: translateZ(0px) translateX(0px); width: 6840px;">
+      <li>0</li><li>1</li><li>2</li><li class="active">3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+      <li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li>
+      <li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li>
+      <li>28</li><li>29</li>
+    </ul>
+  </div>
+  <ul class="pages"><li class="active">1</li><li class="">2</li><li class="">3</li><li class="">4</li><li class="">5</li><li class="">6</li></ul>
+    <div class="scrollbar">
+    <div class="handle" style="-webkit-transform: translateZ(0px) translateX(0px); width: 190px;">
+      <div class="mousearea"></div>
+    </div>
+  </div>
+  <div class="controls center">
+    <button class="btn prevPage disabled" disabled=""><i class="icon-chevron-left"></i><i class="icon-chevron-left"></i> page</button>
+    <button class="btn prev"><i class="icon-chevron-left"></i> item</button>
+    <button class="btn backward disabled" disabled=""><i class="icon-chevron-left"></i> move</button>
+
+    <div class="btn-group">
+      <button class="btn toStart">toStart</button>
+      <button class="btn toCenter">toCenter</button>
+      <button class="btn toEnd">toEnd</button>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn toStart" data-item="10"><strong>10</strong> toStart</button>
+      <button class="btn toCenter" data-item="10"><strong>10</strong> toCenter</button>
+      <button class="btn toEnd" data-item="10"><strong>10</strong> toEnd</button>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn add"><i class="icon-plus-sign"></i></button>
+      <button class="btn remove"><i class="icon-minus-sign"></i></button>
+    </div>
+
+    <button class="btn forward">move <i class="icon-chevron-right"></i></button>
+    <button class="btn next">item <i class="icon-chevron-right"></i></button>
+    <button class="btn nextPage">page <i class="icon-chevron-right"></i><i class="icon-chevron-right"></i></button>
+  </div>
+
+  <!-- END Sly Example -->
   	
   
   
@@ -355,11 +396,17 @@
   <!-- END FitText -->
 	<!-- Lazy Load -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bttrlazyloading.min.css" />
-	<script src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
+	<script type="text/javascript" src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
 	<!-- END Lazy Load -->	
 	<!-- Add This -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
   <!-- END Add This -->
+  <!-- Sly -->
+  <script type="text/javascript" src="javascripts/vendor/plugins.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/sly.min.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/sly.horizontal.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/sly_horz_example.css" />
+  <!-- END Sly -->
   <!--Code for Scrollspy (sticky header and waypoints)-->
   <script>
   $('body').scrollspy({ target: '.navbar-main' })
@@ -575,5 +622,16 @@
 	  });
   </script>
   <!-- END Lettering.js example -->
+  <!-- Sly Example -->
+  <script>
+  $('.frame').sly(options, {
+    load: function () {},
+    move: [
+        function () {},
+        function () {}
+    ]
+});
+  </script>
+  <!-- END Sly Example -->
   </body>
 </html>
