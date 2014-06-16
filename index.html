@@ -113,7 +113,7 @@
 <p>A precocious computer whiz, Snowden had worked on network security for the Central Intelligence Agency before becoming a systems administrator on contract to the National Security Agency. In both capacities, he had pledged not to divulge state secrets. He had also taken an oath to "defend the Constitution against all enemies, foreign and domestic." The Chinese government's decision to let him pause in Hong Kong while fleeing arrest, and the Kremlin's grant of asylum, complete with Russian President Vladimir Putin's endorsement of Snowden's "honor," guaranteed that he would be condemned as a traitor in the United States.</p>
 <div id="ch1video" class="pull-right col-sm-6">
   <h3>WORDS FROM THE AUTHOR</h3>
-  <div onclick="play1();" id="vidwrap1" alt="Play Video" title="Play Video"><img src="http://www.brookings.edu/~/media/Research/Files/essays/bigsnoop/images/vidstillStuart1.jpg" alt="Play Video" title="Play Video" class="img-responsive"></div>
+  <div onclick="play1();" id="vidwrap1" alt="Play Video" title="Play Video"><img src="http://www.brookings.edu/~/media/Research/Files/essays/bigsnoop/images/vidstillStuart1.jpg" alt="Play Video" title="Play Video" class="img-responsive" id=""></div>
   <blockquote>Share your opinions using hashtag #NSAView</blockquote>
 </div>
 <p>Two of them are U.S. senators: Dianne Feinstein (D-Calif.), a liberal on reproductive freedom, gay rights, and gun control but, in her capacity as chair of the Senate Select Committee on Intelligence, the NSA's most powerful congressional defender; and Ron Wyden (D-Ore.), the agency's leading critic on Capitol Hill. The other two are outside government: Joel Brenner, a former NSA inspector general who is still broadly, but not uncritically, supportive of the agency; and Jameel Jaffer, the deputy legal director of the American Civil Liberties Union (ACLU) and a leader of the movement to bar the NSA from hoovering up phone records and curb its surveillance of Internet and other electronic communications.</p>
@@ -296,12 +296,16 @@
 	
 	<!-- BEGIN lazy load example -->
 	<h3>Lazy Load</h3>
-	<img id="lazy-load" class="bttrlazyloading"
+	<img  class="bttrlazyloading" id="lazy-load"
 		data-bttrlazyloading-lg='{"src": "example-images/timbalier.jpg", "width" : 500,  "height" : 444}'
 	/>
 	<!-- END lazy load example -->
-  
-  
+  <!-- BEGIN Fit Text example -->
+  <h3>Fit Text</h3>
+  <h4 id="fittext1">Heading Example (With FitText)</h4>
+  <h5 class="fitthis">Heading Example (With VW)</h5>
+  <p>Paragraph for reference. Nenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+  <!-- END Fit Text example -->
   
 </div>
 
@@ -323,47 +327,48 @@
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- Compiled plugins for Bootstrap -->
-    <script src="javascripts/bootstrap/affix.js"></script>
-    <script src="javascripts/bootstrap/alert.js"></script>
-    <script src="javascripts/bootstrap/button.js"></script>
-    <script src="javascripts/bootstrap/carousel.js"></script>
-    <script src="javascripts/bootstrap/collapse.js"></script>
-    <script src="javascripts/bootstrap/dropdown.js"></script>
-    <script src="javascripts/bootstrap/modal.js"></script>
-    <script src="javascripts/bootstrap/tooltip.js"></script>
-    <script src="javascripts/bootstrap/popover.js"></script>
-    <script src="javascripts/bootstrap/scrollspy.js"></script>
-    <script src="javascripts/bootstrap/tab.js"></script>
-    <script src="javascripts/bootstrap/transition.js"></script>
-    <!-- END Compiled plugins for Bootstrap -->
-
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- Compiled plugins for Bootstrap -->
+  <script src="javascripts/bootstrap/affix.js"></script>
+  <script src="javascripts/bootstrap/alert.js"></script>
+  <script src="javascripts/bootstrap/button.js"></script>
+  <script src="javascripts/bootstrap/carousel.js"></script>
+  <script src="javascripts/bootstrap/collapse.js"></script>
+  <script src="javascripts/bootstrap/dropdown.js"></script>
+  <script src="javascripts/bootstrap/modal.js"></script>
+  <script src="javascripts/bootstrap/tooltip.js"></script>
+  <script src="javascripts/bootstrap/popover.js"></script>
+  <script src="javascripts/bootstrap/scrollspy.js"></script>
+  <script src="javascripts/bootstrap/tab.js"></script>
+  <script src="javascripts/bootstrap/transition.js"></script>
+  <!-- END Compiled plugins for Bootstrap -->
+  <!-- FitText -->
+  <script src="javascripts/vendor/jquery.fittext.js"></script>
+  <script type="text/javascript">
+    $("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+  </script>
+  <!-- END FitText --> 
 	<!-- Lazy Load -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bttrlazyloading.min.css" />
 	<script src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
 	<script>
-	
-		/* 	
-			Lazy load example 
-			Syntax: http://bttrlazyloading.julienrenaux.fr
-		*/
-		$('#lazy-load').bttrlazyloading({
-			threshold: 40,
-			delay: 2000,
-			placeholder: "",
-			backgroundcolor: '#ccc',
-			animation: 'fadeIn'
-		});
-			
+	/* 	Lazy load example 
+      Syntax: http://bttrlazyloading.julienrenaux.fr
+	*/
+	$('#lazy-load').bttrlazyloading({
+		threshold: 20,
+		delay: 20,
+		placeholder: "",
+		backgroundcolor: '#333',
+		animation: 'fadeIn'
+	});
 	</script>
-	
-
+  <!-- END Lazy Load -->	
 	<!-- Add This -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
-
+  <!-- END Add This -->
     <!--Code for Scrollspy (sticky header and waypoints)-->
     <script>
     $('body').scrollspy({ target: '.navbar-main' })
