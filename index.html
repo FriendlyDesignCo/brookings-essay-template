@@ -16,15 +16,21 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<!-- Support code for examples -->
     <!--Code for D3 Chart Example-->
     <script src="example-d3-chart/d3.v3.js" type="text/javascript"></script>
     <link href="example-d3-chart/chartstyles.css" rel="stylesheet">
     <!--END Code for D3 Chart Example-->
+    <!--Code for Lettering.js Example-->
+    <link href="examples/example-lettering.js/lettering.css" rel="stylesheet">
+    <!--END Code for Lettering.js Example-->
+
     <!--Code for social image sharing-->
     <script src="//load.sumome.com/" data-sumo-site-id="37b448631cfd816e36651ef3a75aaaae6e44f2d3d26da8d2150be71c40d7e9b7" async></script>
     <!--END Code for social image sharing-->
 
     <link rel="shortcut icon" href="images/brookings-favicon.ico" >
+		
   </head>
   <body data-spy="scroll" data-target=".navbar-main" data-offset="150">
 
@@ -301,6 +307,12 @@
 	/>
 	<!-- END lazy load example -->
   
+	<!-- BEGIN Lettering.js example -->
+	<h3>Lettering.js</h3>
+	<p class='lettering-example'>&ldquo;Sunlight is said to be the best of disinfectants.&rdquo; (Justice Louis Brandeis)</p>
+	<!-- END Lettering.js example -->
+  
+  	
   
   
 </div>
@@ -341,9 +353,12 @@
     <script src="javascripts/bootstrap/transition.js"></script>
     <!-- END Compiled plugins for Bootstrap -->
 
+
 	<!-- Lazy Load -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bttrlazyloading.min.css" />
 	<script src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
+	
+    <!-- Lazy Load example -->
 	<script>
 	
 		/* 	
@@ -359,10 +374,12 @@
 		});
 			
 	</script>
-	
+	<!-- END Lazy Load example --
+		>
 
 	<!-- Add This -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
+
 
     <!--Code for Scrollspy (sticky header and waypoints)-->
     <script>
@@ -579,6 +596,23 @@
       });
   </script>
   <!--END Code for D3 Chart Example-->
+  
+  
+  <!-- Lettering.js -->
+  <script src="javascripts/vendor/jquery.lettering.min.js"></script>
+  
+  <!-- Lettering.js example -->
+  <script>
+  
+	  $(document).ready(function() {
+	  	$(".lettering-example").lettering('words');
+	  });
+  
+  </script>
+  <!-- END Lettering.js example -->
+  
+  
+  
 
   </body>
 </html>
