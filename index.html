@@ -32,6 +32,9 @@
     <!--Code for Lettering.js Example-->
     <link href="examples/lettering.js/lettering.css" rel="stylesheet">
     <!--END Code for Lettering.js Example-->
+		<!-- BEGIN Cycletron -->
+    <link rel="stylesheet" href="examples/cyclotron/cyclotron.css" type="text/css">
+		<!-- END Cycletron -->
 		
     <link rel="shortcut icon" href="images/brookings-favicon.ico" >
 		
@@ -335,7 +338,7 @@
 
   <!-- BEGIN Sly Example -->
 
-  <h3>Basic Sly Scroller</h3>
+  <h3 id="sly">Basic Sly Scroller</h3>
   <div class="frame" id="basic" style="overflow: hidden;">
     <ul class="clearfix" style="-webkit-transform: translateZ(0px) translateX(0px); width: 6840px;">
       <li>0</li><li>1</li><li>2</li><li class="active">3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
@@ -379,7 +382,12 @@
 
   <!-- END Sly Example -->
   	
-  
+		
+		<!-- Panoramic Image Viewer -->
+		<!-- See http://bootsnipp.com/snippets/featured/easy-panoramic-headers -->
+		<h3>Panoramic Image Viewer</h3>
+		<div class="cycle" id="panoramic-image-viewer"></div>
+		<!-- END Panoramic Image Viewer -->
   
 </div>
 
@@ -449,6 +457,9 @@
 	<!-- AmMap -->
   <script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js" type="text/javascript"></script>
 	<!-- END AmMap -->
+	<!-- BEGIN Cycletron -->
+	<script src="javascripts/vendor/cyclotron.js" type="text/javascript"></script>
+	<!-- END Cycletron -->
   <!-- END JAVASCRIPT SUPPORT --------------------------------------------------------------->	
   
   
@@ -1796,6 +1807,13 @@
 });
   </script>
   <!-- END Sly Example -->
+	<!-- BEGIN Cycletron Example -->
+	<script>
+		$(document).ready(function($) {
+		    $('.cycle').cyclotron();
+		});	
+	</script>
+	<!-- END Cycletron Example -->
 
 
   <!-- END JAVASCRIPT EXAMPLES --------------------------------------------------------------->	
