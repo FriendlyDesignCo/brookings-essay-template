@@ -363,11 +363,9 @@
   <!--Code for Scrollspy (sticky header and waypoints)-->
   <script>
   $('body').scrollspy({ target: '.navbar-main' })
-  
   ///////////////////////
   //Code to offset the anchor link go-to click height 
   var offset = 80;
-
   $('.navbar li a').click(function(event) {
       event.preventDefault();
       $($(this).attr('href'))[0].scrollIntoView();
@@ -379,21 +377,15 @@
   <!-- Lettering.js -->
   <script src="javascripts/vendor/jquery.lettering.min.js"></script>
   <!-- END Lettering.js -->
-  
-  
-
   <!-- JAVASCRIPT EXAMPLES --------------------------------------------------------------->	
   <!-- FitText Example -->
   <script type="text/javascript">
     $("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
   </script>
   <!-- END FitText Example --> 
-
-    <!-- Lazy Load example -->
-	<script>
-	/* 	Lazy load example 
-      Syntax: http://bttrlazyloading.julienrenaux.fr
-	*/
+  <!-- Lazy Load example -->
+  <script>
+  /*  Syntax: http://bttrlazyloading.julienrenaux.fr   */
 	$('#lazy-load').bttrlazyloading({
 		threshold: 20,
 		delay: 20,
@@ -403,7 +395,6 @@
 	});
 	</script>
   <!-- END Lazy Load -->	
-
   <!--Code for D3 Chart Example-->
   <script type="text/javascript">
   //Width and height
@@ -411,8 +402,6 @@
   var h = 350;
   var url;
   var jobtext = window.jobtext;
-
-
 
   //Define map projection
   var projection = d3.geo.albersUsa()
@@ -434,7 +423,6 @@
   //d3.json("/~/media/multimedia/interactives/2013/job_sprawl/usstates.json", function(json) {
   d3.json("examples/d3-chart/usstates.json", function (json) {
 
-
       svg.selectAll("path")
           .data(json.features)
           .enter()
@@ -447,20 +435,14 @@
       //  d3.csv("/~/media/multimedia/interactives/2013/job_sprawl/sprawl3.csv", function(data) {
       d3.csv("examples/d3-chart/FDI_update.csv", function (data) {
 
-
-
-
           var foreignshare = svg.selectAll("circle.foreignshare")
               .data(data)
               .enter()
-
-
 
           .append("circle")
               .sort(function (a, b) {
                   return d3.descending(parseFloat(a.foreignshare), parseFloat(b.foreignshare))
               })
-
 
           .attr("cx", function (d) {
               return projection([d.lon, d.lat])[0];
@@ -479,15 +461,11 @@
           // .style("fill", "#015376")
           .style("fill", "#015376")
 
-
           .style("opacity", 0.4)
               .attr("class", "foreignshare")
               .text(function (d) {
                   return (d.foreignshare)
               })
-
-
-
 
           .on("mouseover", function (d) {
               d3.select(this)
@@ -496,7 +474,6 @@
               var xPosition = parseFloat(d3.select(this).attr("cx")) + 50;
               var yPosition = parseFloat(d3.select(this).attr("cy"));
               var jobtext = String(d3.select(this).text());
-
 
               //Update the tooltip position and value
               d3.select("#tooltip")
@@ -509,8 +486,6 @@
                   .text(function (d) {
                       return jobtext
                   })
-
-
 
               //Show the tooltip
               d3.select("#tooltip").classed("hidden", false);
@@ -527,9 +502,6 @@
 
           })
 */
-
-
-
           .on("mouseout", function () {
               d3.select(this)
                   .style("fill", "#015376")
@@ -539,8 +511,6 @@
           });
 
       });
-
-
 
       // scale
 
@@ -552,7 +522,6 @@
           //.attr("y", 200);
           .attr("transform", "translate(490,160)")
     
-    
     d3.select("#map")
           .append("div")
     .style('position', 'absolute')
@@ -562,8 +531,6 @@
   .style("left", '540px')
     //.html('Share of Metro Area Employment in Foreign-Owned Establishments');
     .html('Share of Metro Area Employment in FOEs');
-
-
 
       var dataset = [1.5, 5, 10, 15];
 
@@ -598,24 +565,15 @@
               return (58 + (i * 30))
           });
 
-
-
     });
   </script>
   <!--END Code for D3 Chart Example-->
-
   <!-- Lettering.js example -->
   <script>
-  
 	  $(document).ready(function() {
 	  	$(".lettering-example").lettering('words');
 	  });
-  
   </script>
   <!-- END Lettering.js example -->
-
-
-  
-
   </body>
 </html>
