@@ -1,0 +1,9 @@
+
+/* See http://bootsnipp.com/snippets/featured/easy-panoramic-headers */
+
+.cycle {
+  background-image: url('../images/panorama.jpg');
+  height: 200px;
+  cursor: move; 
+}
+
