@@ -26,6 +26,9 @@
 		<!-- Microscope for Images (Bootstrap-Magnify) -->
     <link rel="stylesheet" href="stylesheets/bootstrap-magnify.min.css" type="text/css">
 		<!-- END Microscope for Images (Bootstrap-Magnify) -->
+		<!-- Caption Hover Effect Text -->
+    <link rel="stylesheet" href="stylesheets/caption-hover.css" type="text/css">
+		<!-- END Caption Hover Effect Text -->
 		<!-- END CSS FOR PAGE ELEMENTS --------------------------------- -->
 
 		<!-- CSS FOR EXAMPLES --------------------------------- -->
@@ -420,11 +423,35 @@
 	<!-- BEGIN Microscope Example (Bootstrap-Magnify) -->	
 	<!-- See https://github.com/marcaube/bootstrap-magnify -->
 	<!-- Note: img must have a max-width specified so it fits within container -->
-  <h3 id="microscope">Microscope</h3>
-  <div class="col-md-6">
-      <img data-toggle="magnify" src="examples/images/chesapeake-map-1926.jpg" style="max-width: 100%;" alt="map of steamship lines in 1926">
-  </div>
+	<div class="row">
+	  <h3 id="microscope">Microscope</h3>
+	  <div class="col-md-6">
+	      <img data-toggle="magnify" src="examples/images/chesapeake-map-1926.jpg" style="max-width: 100%;" alt="map of steamship lines in 1926">
+	  </div>
+	</div>
 	<!-- END Microscope Example -->
+	
+	<!-- BEGIN Caption Hover Effect Text Example -->	
+	<!-- See http://bootsnipp.com/snippets/featured/caption-hover-effect-text -->
+	<div class="row">
+	  <h3 id="microscope">Caption Hover Effect Text</h3>
+	  <div class="col-md-6">
+			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+				<p style="text-align:center; margin-top:20px;">
+					<img src="http://placehold.it/500x330" class="img-responsive" alt="">
+				</p>
+					<div class="caption">
+						<div class="blur"></div>
+						<div class="caption-text">
+							<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
+							<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor.</p>
+							<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+						</div>
+				</div>
+			</div>
+	  </div>
+	</div>
+	<!-- END Caption Hover Effect Text Example -->
 	
 </div>
 
