@@ -19,6 +19,22 @@ h5.fitthis {
 	font-size: 5.75vw;
 }
 
+// Icon Font Installation
+@font-face {
+  font-family: 'icomoon regular';
+  src: url("fonts/icomoon/icomoon-eot.eot");
+  src: url("fonts/icomoon/icomoon-eot.eot?#iefix") format("embedded-opentype"), 
+  	   url("fonts/icomoon/icomoon-woff.woff") format("woff"), 
+  	   url("fonts/icomoon/icomoon-ttf.ttf") format("truetype"), 
+  	   url("fonts/icomoon/icomoon-svg.svg#regular") format("svg");
+} 
+
+.logo{
+	font-family: 'icomoon regular';
+	font-weight: normal;
+	font-size: 2em;
+}
+
 // social sharing
 .social__bd {
 	margin-top: 0.70em;
@@ -77,6 +93,6 @@ h5.fitthis {
 // This is a fix to account for Bootstrap looking for fonts in wrong folder (seems to be built into Compass)
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("fonts/bootstrap/glyphicons-halflings-regular-eot.eot");
+  src: url("fonts/bootstrap/glyphicons-halflings-regular-eot.eot?#iefix") format("embedded-opentype"), url("fonts/bootstrap/glyphicons-halflings-regular-woff.woff") format("woff"), url("fonts/bootstrap/glyphicons-halflings-regular-ttf.ttf") format("truetype"), url("fonts/bootstrap/glyphicons-halflings-regular-svg.svg#glyphicons_halflingsregular") format("svg");
 } 
