@@ -29,6 +29,10 @@
 		<!-- Caption Hover Effect Text -->
     <link rel="stylesheet" href="stylesheets/caption-hover.css" type="text/css">
 		<!-- END Caption Hover Effect Text -->
+		<!-- Owl Carousel -->
+    <link rel="stylesheet" href="stylesheets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/owl.theme.default.min.css" type="text/css">
+		<!-- END Owl Carousel -->
 		<!-- END CSS FOR PAGE ELEMENTS --------------------------------- -->
 
 		<!-- CSS FOR EXAMPLES --------------------------------- -->
@@ -391,7 +395,7 @@
   <!-- END Sly Example -->
   	
 		
-		<!-- Panoramic Image Viewer -->
+		<!-- Panoramic Image Viewer (Cyclotron) -->
 		<!-- See http://bootsnipp.com/snippets/featured/easy-panoramic-headers -->
 		<h3>Panoramic Image Viewer</h3>
 		<div class="cycle" id="panoramic-image-viewer"></div>
@@ -434,7 +438,7 @@
 	<!-- BEGIN Caption Hover Effect Text Example -->	
 	<!-- See http://bootsnipp.com/snippets/featured/caption-hover-effect-text -->
 	<div class="row">
-	  <h3 id="microscope">Caption Hover Effect Text</h3>
+	  <h3 id="caption-hover-effect-text">Caption Hover Effect Text</h3>
 	  <div class="col-md-6">
 			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
 				<p style="text-align:center; margin-top:20px;">
@@ -452,6 +456,25 @@
 	  </div>
 	</div>
 	<!-- END Caption Hover Effect Text Example -->
+
+	<!-- BEGIN Owl Carousel: Image and Video Drag Slider/Carousel -->	
+	<!-- See http://www.owlcarousel.owlgraphic.com -->
+	<div class="row">
+	  <h3 id="owl">Owl Carousel: Image and Video Drag Slider/Carousel</h3>
+		<div class="owl-carousel">
+			<div class="item" style="height: 200px; background-color: #FC5B61;">Slide 1</div>
+			<div class="item" style="height: 200px; background-color: #F86C49;">Slide 2</div>
+			<div class="item" style="height: 200px; background-color: #FAD049;">Slide 3</div>
+			<div class="item" style="height: 200px; background-color: #A3FF49;">Slide 4</div>
+			<div class="item" style="height: 200px; background-color: #51FF50;">Slide 5</div>
+			<div class="item" style="height: 200px; background-color: #51FF99;">Slide 6</div>
+			<div class="item" style="height: 200px; background-color: #51FFC5;">Slide 7</div>
+			<div class="item" style="height: 200px; background-color: #4CA9FA;">Slide 8</div>
+			<div class="item" style="height: 200px; background-color: #4856FA;">Slide 9</div>
+		</div>
+	</div>
+	g
+	<!-- END Owl Carousel -->
 	
 </div>
 
@@ -527,6 +550,9 @@
 	<!-- Microscope for Images (Bootstrap-Magnify) -->
 	<script src="javascripts/vendor/bootstrap-magnify.min.js"></script>
 	<!-- END Microscope for Images (Bootstrap-Magnify) -->
+	<!-- Owl Carousel -->
+	<script src="javascripts/vendor/owl.carousel.min.js"></script>
+	<!-- END Owl Carousel -->
   <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
   
   
@@ -1889,6 +1915,13 @@
   </script>
   <!-- END Tooltip Example -->
 
+  <!-- BEGIN Owl Carousel Example -->
+  <script>
+	$(document).ready(function(){
+	  $(".owl-carousel").owlCarousel();
+	});
+  </script>
+  <!-- END Owl Carousel Example -->
 
   <!-- END JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
 
