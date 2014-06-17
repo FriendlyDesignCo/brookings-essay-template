@@ -35,6 +35,27 @@ h5.fitthis {
 	font-size: 2em;
 }
 
+.iconfont {
+	font-family: 'icomoon regular';
+	font-weight: normal;
+}
+
+// Icon font fallback
+
+.iconfont-fallback .iconfont {
+	display: none;
+}
+
+.fontface .iconfont-fallback .iconfont {
+	display: inline;
+}
+
+.fontface .iconfont-fallback .fallback {
+	display: none;
+}
+
+
+
 // social sharing
 .social__bd {
 	margin-top: 0.70em;
@@ -71,6 +92,7 @@ h5.fitthis {
 .social-button--print {
 	background: url('../images/icons/social.svg') no-repeat -162px 0px;
 }
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
