@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-		<!-- CSS FOR PAGE ELEMENTS ----------------------------------->
+		<!-- CSS FOR PAGE ELEMENTS --------------------------------- -->
     <!--Code for social image sharing-->
     <script src="//load.sumome.com/" data-sumo-site-id="37b448631cfd816e36651ef3a75aaaae6e44f2d3d26da8d2150be71c40d7e9b7" async></script>
     <!--END Code for social image sharing-->		
@@ -26,9 +26,12 @@
 		<!-- Microscope for Images (Bootstrap-Magnify) -->
     <link rel="stylesheet" href="stylesheets/bootstrap-magnify.min.css" type="text/css">
 		<!-- END Microscope for Images (Bootstrap-Magnify) -->
-		<!-- END CSS FOR PAGE ELEMENTS ----------------------------------->
+		<!-- Caption Hover Effect Text -->
+    <link rel="stylesheet" href="stylesheets/caption-hover.css" type="text/css">
+		<!-- END Caption Hover Effect Text -->
+		<!-- END CSS FOR PAGE ELEMENTS --------------------------------- -->
 
-		<!-- CSS FOR EXAMPLES ----------------------------------->
+		<!-- CSS FOR EXAMPLES --------------------------------- -->
     <!--Code for D3 Chart Example-->
     <script src="examples/d3-chart/d3.v3.js" type="text/javascript"></script>
     <link href="examples/d3-chart/chartstyles.css" rel="stylesheet">
@@ -39,7 +42,7 @@
 		<!-- BEGIN Cycletron -->
     <link rel="stylesheet" href="examples/cyclotron/cyclotron.css" type="text/css">
 		<!-- END Cycletron -->
-		<!-- END CSS FOR EXAMPLES ----------------------------------->
+		<!-- END CSS FOR EXAMPLES --------------------------------- -->
 		
     <link rel="shortcut icon" href="images/brookings-favicon.ico" >
 		
@@ -420,11 +423,35 @@
 	<!-- BEGIN Microscope Example (Bootstrap-Magnify) -->	
 	<!-- See https://github.com/marcaube/bootstrap-magnify -->
 	<!-- Note: img must have a max-width specified so it fits within container -->
-  <h3 id="microscope">Microscope</h3>
-  <div class="col-md-6">
-      <img data-toggle="magnify" src="examples/images/chesapeake-map-1926.jpg" style="max-width: 100%;" alt="map of steamship lines in 1926">
-  </div>
+	<div class="row">
+	  <h3 id="microscope">Microscope</h3>
+	  <div class="col-md-6">
+	      <img data-toggle="magnify" src="examples/images/chesapeake-map-1926.jpg" style="max-width: 100%;" alt="map of steamship lines in 1926">
+	  </div>
+	</div>
 	<!-- END Microscope Example -->
+	
+	<!-- BEGIN Caption Hover Effect Text Example -->	
+	<!-- See http://bootsnipp.com/snippets/featured/caption-hover-effect-text -->
+	<div class="row">
+	  <h3 id="microscope">Caption Hover Effect Text</h3>
+	  <div class="col-md-6">
+			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+				<p style="text-align:center; margin-top:20px;">
+					<img src="http://placehold.it/500x330" class="img-responsive" alt="">
+				</p>
+					<div class="caption">
+						<div class="blur"></div>
+						<div class="caption-text">
+							<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
+							<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor.</p>
+							<a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+						</div>
+				</div>
+			</div>
+	  </div>
+	</div>
+	<!-- END Caption Hover Effect Text Example -->
 	
 </div>
 
@@ -432,8 +459,8 @@
 
 
 
-
-  <!-- JAVASCRIPT SUPPORT --------------------------------------------------------------->	
+  <!-- JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
+	<script id="javascript-support"></script><!-- convenience for development; remove for production -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -500,11 +527,12 @@
 	<!-- Microscope for Images (Bootstrap-Magnify) -->
 	<script src="javascripts/vendor/bootstrap-magnify.min.js"></script>
 	<!-- END Microscope for Images (Bootstrap-Magnify) -->
-  <!-- END JAVASCRIPT SUPPORT --------------------------------------------------------------->	
+  <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
   
   
 
-  <!-- JAVASCRIPT EXAMPLES --------------------------------------------------------------->	
+  <!-- JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
+	<script id="javascript-examples"></script><!-- convenience for development; remove for production -->
   <!-- FitText Example -->
   <script type="text/javascript">
     $("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
@@ -1862,7 +1890,7 @@
   <!-- END Tooltip Example -->
 
 
-  <!-- END JAVASCRIPT EXAMPLES --------------------------------------------------------------->	
+  <!-- END JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
 
   
 
