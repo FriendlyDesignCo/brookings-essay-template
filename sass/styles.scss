@@ -14,10 +14,27 @@ h2 {
 	float: right;
 }
 
-// Possible FitText Alternative
-h5.fitthis {
-	font-size: 5.75vw;
+// Drop Cap Styling
+
+// Style individual letter.
+.dropletter{
+ float: left;
+ font-size: 5em;
+ line-height: 1em;
+ margin-right: .1em;
+ margin-left: 0;
 }
+
+// Major area with drop cap start.
+.drop{
+	clear: both;
+}
+.drop:after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+
 
 // Icon Font Installation
 @font-face {
