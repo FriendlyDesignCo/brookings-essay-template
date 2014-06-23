@@ -94,6 +94,26 @@ h5.fitthis {
 }
 
 
+// video embeds
+// see http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
+
+.video-container-16by9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-16by9 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
