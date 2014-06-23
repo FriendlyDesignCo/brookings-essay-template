@@ -20,9 +20,6 @@
 		<script src="javascripts/vendor/modernizr.custom.65423.js"></script>
 
 		<!-- CSS FOR PAGE ELEMENTS --------------------------------- -->
-    <!--Code for social image sharing-->
-    <script src="//load.sumome.com/" data-sumo-site-id="37b448631cfd816e36651ef3a75aaaae6e44f2d3d26da8d2150be71c40d7e9b7" async></script>
-    <!--END Code for social image sharing-->		
 		<!-- AmMap -->
     <link rel="stylesheet" href="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.css" type="text/css">
 		<!-- END AmMap -->
@@ -146,7 +143,7 @@
 <h2 class="hed">The Founders' Intent</h2>
 <p>The Fourth Amendment, which obligates the U.S. government to ensure that citizens "be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures," was ratified by Congress as part of the Bill of Rights 223 years ago. Until the invention of modern communications technologies, it was fairly easy for citizens to know whether the authorities were rummaging through their property. To search a home or office, officers of the law had to physically enter. The Fourth Amendment generally prevented that from happening without a warrant and gave owners the right to challenge whether entries and confiscations were "reasonable."</p>
 <p>Beginning in the second half of the 19th century, however, technological advances made it easier for the government to "search and seize" the contents of private communications without citizens' knowledge, thus depriving them of the ability to object. Wiretapping is almost as old as the telegraph, going back at least to the Civil War. Phone tapping has been an instrument of law enforcement and counterespionage since the beginning of the 20th century. An early instance of it was useful in probing the intentions of real and potential foreign enemies. In the first months of 1917, the British intercepted, decoded, and passed to Washington the "Zimmermann telegram": a proposal from the Kaiser Wilhelm II's foreign minister to the Mexican government promising that if Mexico allied itself with Germany in the event that the United States entered World War I on the side of the Allies, Germany would reward it with the return of formerly Mexican territory in Texas, New Mexico, and Arizona. The revelation helped stoke support for Congress's declaration of war that April.</p>
-<div class="pull-right col-sm-6"><img src="http://www.brookings.edu/~/media/Research/Files/essays/bigsnoop/images/Zimmermann_Telegram2.png" alt="Zimmermann telegram" class="img-responsive" id="img-zimmermann">
+<div class="pull-right col-sm-6"><img src="http://www.brookings.edu/~/media/Research/Files/essays/bigsnoop/images/Zimmermann_Telegram2.png" alt="Zimmermann telegram" class="img-responsive sharable" id="img-zimmermann">
   <blockquote>The Zimmermann Telegram<br>
     <a href="https://en.wikipedia.org/wiki/Zimmerman_telegram" target="_blank">Wikimedia Commons</a></blockquote>
 </div>
@@ -607,6 +604,18 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css" />
   <script src="javascripts/vendor/lightbox.js"></script>
   <!-- END Clearing Lightbox -->
+  <!--Code for social image sharing-->
+	<script src="http://cdn.slingpic.com/js/slingpic.plugin.js"></script>
+	<script>
+		/*	To attach sharing functions to an image,
+				give that image the class 'sharable'. */
+		jQuery(window).load(function(){
+			jQuery(".sharable").slingPic({
+				theme: "subtle"
+			});
+		});
+	</script>
+  <!--END Code for social image sharing-->		
   <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
   
   
