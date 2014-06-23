@@ -125,11 +125,11 @@
     
     d3.select("#map")
           .append("div")
-    .style('position', 'absolute')
+		  .style('position', 'absolute')
           .style("width", '120px')
           .style("height", '100px')
   .style("top", '160px')
-  .style("left", '540px')
+  .style("right", '0')
     //.html('Share of Metro Area Employment in Foreign-Owned Establishments');
     .html('Share of Metro Area Employment in FOEs');
 
