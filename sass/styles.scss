@@ -31,8 +31,29 @@ h2 {
 }
 .drop:after{
 	content: " ";
+	content: " "; 
 	display: block;
 	clear: both;
+}
+
+
+// video embeds
+// see http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
+
+.video-container-16by9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-16by9 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -108,6 +129,26 @@ h2 {
 }
 .social-button--print {
 	background: url('../images/icons/social.svg') no-repeat -162px 0px;
+}
+
+
+// video embeds
+// see http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
+
+.video-container-16by9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-16by9 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
