@@ -173,7 +173,8 @@ h2 {
 
 .jumbotron {
 	background-size: cover;
-	background: #000 url(../examples/images/dresser-crop-edit.jpg) no-repeat center center fixed;
+	background-image: url(../examples/images/dresser-crop-edit.jpg);
+	//background-image: #000 url(../examples/images/dresser-crop-edit.jpg) no-repeat center center fixed;
 	overflow-y: auto;
 	color: #fff;
 	h2{
