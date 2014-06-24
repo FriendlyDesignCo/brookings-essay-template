@@ -189,6 +189,6 @@ h2 {
 } 
 
 // responsive image example
-#responsive-image-example {
+#responsive-image-example img {
 	@include img-responsive;
 }
