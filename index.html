@@ -649,18 +649,20 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css" />
   <script src="javascripts/vendor/lightbox.js"></script>
   <!-- END Clearing Lightbox -->
-  <!--Code for social image sharing-->
+  <!--Code for social image sharing via SlingPic-->
 	<script src="http://cdn.slingpic.com/js/slingpic.plugin.js"></script>
 	<script>
 		/*	To attach sharing functions to an image,
 				give that image the class 'sharable'. */
 		jQuery(window).load(function(){
 			jQuery(".sharable").slingPic({
-				theme: "subtle"
+				theme: "subtle",
+				autoShowShare: true,
+				context: true
 			});
 		});
 	</script>
-  <!--END Code for social image sharing-->		
+	<!--END Code for social image sharing-->		
   <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
   
   
