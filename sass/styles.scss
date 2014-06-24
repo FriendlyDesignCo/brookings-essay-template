@@ -172,10 +172,13 @@ h2 {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 .jumbotron {
-	background: url(../examples/images/dresser_crop.jpg) no-repeat center center fixed;
+	background: #000 url(../examples/images/dresser_crop.jpg) no-repeat center center fixed;
 	overflow-y: auto;
 	background-size: cover;
 	color: #fff;
+	h2{
+		padding-top: 30px;
+	}
 }
 
 // This is a fix to account for Bootstrap looking for fonts in wrong folder (seems to be built into Compass)
