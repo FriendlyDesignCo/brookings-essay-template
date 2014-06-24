@@ -141,7 +141,14 @@
 	<div class="row" id="responsive-image-example">  
 		<div class="col-md-12">
 			<p><a href="#responsive-image-example">link</a></p>
-			<img src="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg" alt="Great Falls of the Passaic">
+			<img 
+				srcset="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--1800w.jpg 1024w,
+				examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg 800w,
+				examples/images/nj--paterson--great-falls-of-passaic--habs--loc--640w.jpg 640w,
+				examples/images/nj--paterson--great-falls-of-passaic--habs--loc--320w.jpg 320w"
+				src="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg" 
+				sizes="100vw"
+				alt="Great Falls of the Passaic">
 		</div>
 	</div>
 	<!-- END Responsive Image Example -->
