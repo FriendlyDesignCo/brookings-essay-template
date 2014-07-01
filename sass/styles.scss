@@ -121,7 +121,13 @@ h2 {
 .social {
 	position: fixed;
 	right: 0;
+	top: 50%;
+}
+.social__bd {
+	position: relative;
+	top: -142px;
 	width: 33px;
+	height: 264px;
 }
 .social__bd a {
 	width: 33px;
