@@ -17,7 +17,7 @@
     <![endif]-->
 
 		<!-- modernizr -->
-		<script src="javascripts/vendor/modernizr.custom.65423.js"></script>
+		<script src="javascripts/vendor/modernizr.custom.js"></script>
 
 		<!-- CSS FOR PAGE ELEMENTS --------------------------------- -->
 		<!-- AmMap -->
@@ -542,6 +542,23 @@
 	</div>
 	<!-- END Video Embed Example -->
 
+	<!-- BEGIN Responsive Image Example -->
+	<h3>Responsive Image</h3>
+	<div class="row" id="responsive-image-example">  
+		<div class="col-md-12">
+			<p><a href="#responsive-image-example">link</a></p>
+			<img 
+				srcset="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--1800w.jpg 1024w,
+				examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg 800w,
+				examples/images/nj--paterson--great-falls-of-passaic--habs--loc--640w.jpg 640w,
+				examples/images/nj--paterson--great-falls-of-passaic--habs--loc--320w.jpg 320w"
+				src="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg" 
+				sizes="100vw"
+				alt="Great Falls of the Passaic">
+		</div>
+	</div>
+	<!-- END Responsive Image Example -->
+
 </div>
 
 
@@ -584,6 +601,11 @@
 					
 	</script>
 	<!-- END Auto-Generated Navigation -->
+	<!-- BEGIN Responsive Images -->
+	<!-- Using Picturefill (http://scottjehl.github.io/picturefill) -->
+	<!-- The Modernizr build *must* create the picture element -->
+	<script src="javascripts/vendor/picturefill.min.js" async></script>
+	<!-- END Responsive Images -->
   <!-- BEGIN Drop Cap Generating Code -->
   <!-- Based on code from http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/ and universalized. Style .dropletter and .dropletter_<letter> -->
   <script>
