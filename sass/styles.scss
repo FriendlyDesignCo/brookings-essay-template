@@ -23,6 +23,8 @@ h2 {
 	margin-top:-2px;
 }
 
+
+
 // Drop Cap Styling
 
 // Style individual letter.
@@ -75,10 +77,19 @@ h2 {
   	   url("fonts/icomoon/icomoon-svg.svg#regular") format("svg");
 } 
 
-.logo{
+.logo, .house{
 	font-family: 'icomoon regular';
 	font-weight: normal;
+}
+
+.logo{
 	font-size: 2em;
+	padding-left: 15px;
+	border-left: 1px solid #fff;
+}
+
+.house{
+	font-size: 1em;
 }
 
 .iconfont {
