@@ -148,6 +148,12 @@ h2 {
 	position: relative;
 	top: 3px;
 }
+/* hide social on small screens */
+@media (max-width: 480px) {
+	.social {
+		display: hidden;
+	}
+}
 
 
 
