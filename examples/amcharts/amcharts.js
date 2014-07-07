@@ -425,7 +425,7 @@
             AmCharts.ready(function () {
                 // XY Chart
                 xyChart = new AmCharts.AmXYChart();
-                xyChart.pathToImages = "../amcharts/images/";
+                xyChart.pathToImages = "javascripts/vendor/amcharts_3.9.0.free/amcharts/images/";
                 xyChart.dataProvider = xyChartData;
                 xyChart.startDuration = 1.5;
 
