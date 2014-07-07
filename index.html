@@ -585,6 +585,22 @@
 	</div>
 	<!-- END Responsive Image Example -->
 
+	<!-- BEGIN JavaScript transitions example -->
+	<h3>JavaScript Transitions</h3>
+	<div class="row">  
+		<div id="js-transitions-target" style="
+				width: 100px; 
+				height: 100px; 
+				padding: 10px;
+				background: #009ACC; 
+				margin-bottom: 100px;
+				color: #fff;
+				">
+			click me
+		</div>
+	</div>
+	<!-- END JavaScript transitions example -->
+
 </div>
 
 
@@ -736,6 +752,10 @@
 		});
 	</script>
 	<!--END Code for social image sharing-->		
+	<!-- BEGIN JavaScript transitions -->
+	<!-- uses jquery.transit (http://ricostacruz.com/jquery.transit/) -->
+	<script src="javascripts/vendor/jquery.transit.min.js"></script>
+	<!-- END JavaScript transitions -->
   <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
   
   
@@ -816,6 +836,16 @@
 	});
   </script>
   <!-- END Owl Carousel Example -->
+
+	<!-- BEGIN JavaScript transitions example -->
+	<script>
+		$('#js-transitions-target').click(function(){ 
+			$(this)
+				.transition({ x: 600 })
+				.transition({ rotate: '15deg', opacity: 0.3, delay: 500 });
+		});
+	</script>
+	<!-- END JavaScript transitions example -->
 
   <!-- END JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
 
