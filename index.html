@@ -755,6 +755,11 @@
 	<!-- BEGIN JavaScript transitions -->
 	<!-- uses jquery.transit (http://ricostacruz.com/jquery.transit/) -->
 	<script src="javascripts/vendor/jquery.transit.min.js"></script>
+	<script>
+	/* for browsers that don't support CSS3 transitions, remap to jQuery animate(). */
+	if (!$.support.transition)
+		$.fn.transition = $.fn.animate;
+	</script>
 	<!-- END JavaScript transitions -->
   <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
   
@@ -841,8 +846,8 @@
 	<script>
 		$('#js-transitions-target').click(function(){ 
 			$(this)
-				.transition({ x: 600 })
-				.transition({ rotate: '15deg', opacity: 0.3, delay: 500 });
+			.transition({ "margin-left": "600px" }, "slow" )
+			.transition({ opacity: 0.1 });
 		});
 	</script>
 	<!-- END JavaScript transitions example -->
