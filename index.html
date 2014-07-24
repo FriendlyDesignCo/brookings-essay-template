@@ -119,8 +119,6 @@
 
 
 
-
-
 <div class="jumbotron" id="intro">
   <div class="container col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <h1 id="fittext2">
@@ -695,6 +693,12 @@ New Section
 <script src="javascripts/bootstrap/tab.js"></script>
 <script src="javascripts/bootstrap/transition.js"></script>
 <!-- END Compiled plugins for Bootstrap -->
+<!-- BEGIN Background Image Full Width (For IE8+) -->
+<script src="javascripts/vendor/jquery.backgroundSize.js"></script>
+<script>
+$("#intro").css("background-size", "cover");
+</script>
+<!-- END Background Image Full Width (For IE8+) -->
 <!-- BEGIN Auto-Generated Navigation -->
 <script>
 /* see http://www.jankoatwarpspeed.com/automatically-generate-table-of-contents-using-jquery/ */
