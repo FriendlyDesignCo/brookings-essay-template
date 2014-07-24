@@ -17,7 +17,7 @@
       <![endif]-->
 
       <!-- modernizr -->
-      <script src="javascripts/vendor/modernizr.custom.js"></script>
+      <script src="javascripts/vendor/modernizr.custom.77072.js"></script>
 
       <!-- CSS FOR PAGE ELEMENTS --------------------------------- -->
       <!-- AmMap -->
@@ -386,16 +386,23 @@ New Section
     <!-- END Carousel -->
     <!--D3 Chart Example-->
     <h3>D3 Chart</h3>
-    <!--<h3>Share of Total Metro Area Employment in Foreign-Owned Establishments</h3>-->
-    <div id="map">
-      <div id="tooltip" class="hidden">
-        <!--<a href="<span id=artlink></span>" target="_blank"> link to article</a>-->
-        <div id="metroarea">Metro Area</div>
-        <div id="jobtitle">FDI Share of Total Jobs: <span id="jobs">Jobs</span></div>
-        <!-- <div id="jobs">Jobs</div>-->
-        <!--<div id="artlink">Click for metro profile (PDF)</div>-->
-      </div>
-      <div style="position: absolute; bottom: 0; left: 50px; font-size: .85em">mouse over metro areas for details</div>
+	<!-- Place D3 and AmCharts into an .svg-test--fallback div to provide a fallback for non-SVG browsers -->
+    <div class="svg-test">
+		<div class="svg-test--fallback">
+			<p>This is fallback text for non-SVG browsers.</p>
+		</div>
+		<div class="svg-test--available">
+			<div id="map">
+		      <div id="tooltip" class="hidden">
+		        <!--<a href="<span id=artlink></span>" target="_blank"> link to article</a>-->
+		        <div id="metroarea">Metro Area</div>
+		        <div id="jobtitle">FDI Share of Total Jobs: <span id="jobs">Jobs</span></div>
+		        <!-- <div id="jobs">Jobs</div>-->
+		        <!--<div id="artlink">Click for metro profile (PDF)</div>-->
+		      </div>
+		      <div style="position: absolute; bottom: 0; left: 50px; font-size: .85em">mouse over metro areas for details</div>
+			 </div>
+		</div>
     </div>
     <!--END D3 Chart Example-->
     <!-- BEGIN lazy load example -->

@@ -79,6 +79,20 @@ h2 {
 }
 
 
+// for visualizations that require SVG support 
+// (D3 and AmCharts), show fallback for non-SVG browsers
+.svg-test--available {
+	visibility: hidden;
+}
+.svg .svg-test--available {
+	visibility: visible;
+}
+.svg .svg-test--fallback {
+	display: none;
+}
+
+
+
 // Icon Font Installation
 @font-face {
   font-family: 'icomoon regular';
