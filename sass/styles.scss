@@ -73,6 +73,11 @@ h2 {
 }
 
 
+// do not scale specified images
+.no-scaling {
+	max-width: none !important;
+}
+
 
 // Icon Font Installation
 @font-face {

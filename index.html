@@ -628,7 +628,10 @@ New Section
 <h3>Responsive Image</h3>
 <div class="row" id="responsive-image-example">  
   <div class="col-md-12">
-   <p><a href="#responsive-image-example">link</a></p>
+	  
+   <p>(<a href="#responsive-image-example">link</a>)</p>
+
+   <p>The following image resizes fluidly.</p>
    <img 
    srcset="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--1800w.jpg 1024w,
    examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg 800w,
@@ -637,6 +640,22 @@ New Section
    src="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg" 
    sizes="100vw"
    alt="Great Falls of the Passaic">
+
+   <p>The following image is set up so that it
+	   does not resize fluidly.</p>
+	   
+   <div style="max-width: 95%; overflow: hidden;">
+   <img 
+   srcset="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--1800w.jpg 1024w,
+   examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg 800w,
+   examples/images/nj--paterson--great-falls-of-passaic--habs--loc--640w.jpg 640w,
+   examples/images/nj--paterson--great-falls-of-passaic--habs--loc--320w.jpg 320w"
+   src="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--800w.jpg" 
+   sizes="100vw"
+   alt="Great Falls of the Passaic"
+   class="no-scaling">
+   </div>
+
  </div>
 </div>
 <!-- END Responsive Image Example -->
