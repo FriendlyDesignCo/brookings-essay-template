@@ -407,8 +407,8 @@ New Section
     <!--END D3 Chart Example-->
     <!-- BEGIN lazy load example -->
     <h3>Lazy Load</h3>
-    <img  class="bttrlazyloading" id="lazy-load"
-    data-bttrlazyloading-lg='{"src": "examples/images/timbalier.jpg", "width" : 500,  "height" : 444}'
+    <img id="lazy-load"
+    data-original="examples/images/timbalier.jpg" width="500" height="444"
     />
     <!-- END lazy load example -->
     <!-- BEGIN Fit Text example -->
@@ -759,8 +759,7 @@ $(".drop").each(function(i) {
 <script src="javascripts/vendor/jquery.fittext.js"></script>
 <!-- END FitText -->
 <!-- Lazy Load -->
-<link rel="stylesheet" type="text/css" href="stylesheets/bttrlazyloading.min.css" />
-<script type="text/javascript" src="javascripts/vendor/jquery.bttrlazyloading.min.js"></script>
+<script type="text/javascript" src="javascripts/vendor/jquery.lazyload.min.js"></script>
 <!-- END Lazy Load -->	
 <!-- Social Sharing with Add This -->
 <!-- For options, see www.addthis.com/dashboard -->
@@ -853,13 +852,9 @@ $('body').scrollspy({ target: '.navbar-main' })
   <!-- END FitText Example --> 
   <!-- Lazy Load example -->
   <script>
-  /*  Syntax: http://bttrlazyloading.julienrenaux.fr   */
-	$('#lazy-load').bttrlazyloading({
-		threshold: 20,
-		delay: 20,
-		placeholder: "",
-		backgroundcolor: '#333',
-		animation: 'fadeIn'
+  /*  Syntax: http://www.appelsiini.net/projects/lazyload   */
+	$('#lazy-load').lazyload({
+		threshold: 20
 	});
 	</script>
   <!-- END Lazy Load -->	
