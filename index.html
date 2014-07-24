@@ -642,13 +642,15 @@ New Section
    <p>The following image is set up so that it
 	   does not resize fluidly.</p>
 	   
-   <img 
-   srcset="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--640w.jpg 640w,
-   examples/images/nj--paterson--great-falls-of-passaic--habs--loc--320w.jpg 500w"
-   src="examples/images/nj--paterson--great-falls-of-passaic--habs--loc--640w.jpg" 
-   sizes="100vw"
-   alt="Great Falls of the Passaic"
-   class="no-scaling">
+        <picture>
+        	<source 
+				media="(min-width: 640px)"
+				srcset="examples/images/graph-600w.gif 640w,
+				examples/images/graph-300w.gif 320w"
+				sizes="100vw"
+			>
+			<img src="examples/images/graph-300w.gif" class="no-scaling" alt="graph">
+		</picture>
 
  </div>
 </div>
