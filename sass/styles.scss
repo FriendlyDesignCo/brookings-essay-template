@@ -1,0 +1,269 @@
+// customize bootstrap variables here:
+@import "variables";
+@import "bootstrap";
+
+body{
+    width: 100%;
+    height: 100%;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+}
+
+.addemail{
+	font-size: 9px;
+	width: 170% !important;
+	float: right;
+}
+#email{
+	margin-top:5px;
+}
+#btnSubmit{
+	padding-top:4px;
+	padding-bottom:4px;
+	font-size: 12px;
+	margin-top:-2px;
+}
+
+
+
+// Drop Cap Styling
+
+// Style individual letter.
+.dropletter{
+ float: left;
+ font-size: 5em;
+ line-height: 1em;
+ margin-right: .1em;
+ margin-left: 0;
+}
+
+// Major area with drop cap start.
+.drop{
+	clear: both;
+}
+.drop:after{
+	content: " "; 
+	display: block;
+	clear: both;
+}
+
+
+// video embeds
+// see http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
+
+.video-container-16-by-9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-16-by-9 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+// do not scale specified images
+.no-scaling {
+	max-width: none !important;
+}
+
+
+// for visualizations that require SVG support 
+// (D3 and AmCharts), show fallback for non-SVG browsers
+.svg-test--available {
+	visibility: hidden;
+}
+.svg .svg-test--available {
+	visibility: visible;
+}
+.svg .svg-test--fallback {
+	display: none;
+}
+
+
+
+// Icon Font Installation
+@font-face {
+  font-family: 'icomoon regular';
+  src: url("icomoon/icomoon-eot.eot");
+  src: url("icomoon/icomoon-eot.eot?#iefix") format("embedded-opentype"), 
+  	   url("icomoon/icomoon-woff.woff") format("woff"), 
+  	   url("icomoon/icomoon-ttf.ttf") format("truetype"), 
+  	   url("icomoon/icomoon-svg.svg#regular") format("svg");
+} 
+
+.logo, .house{
+	font-family: 'icomoon regular';
+	font-weight: normal;
+}
+
+.logo{
+	font-size: 2em;
+	padding-left: 15px;
+	border-left: 1px solid #fff;
+}
+
+.house{
+	font-size: 1.2em;
+}
+
+.iconfont {
+	font-family: 'icomoon regular';
+	font-weight: normal;
+}
+
+// Icon font fallback
+
+.iconfont-fallback .iconfont {
+	display: none;
+}
+
+.fontface .iconfont-fallback .iconfont {
+	display: inline;
+}
+
+.fontface .iconfont-fallback .fallback {
+	display: none;
+}
+
+
+// Font Awesome icon font
+@import "../stylesheets/fonts/font-awesome/scss/font-awesome.scss";
+
+
+
+// social sharing
+.social {
+	position: fixed;
+	right: 0;
+	top: 50%;
+}
+.social__bd {
+	position: relative;
+	top: -142px;
+	width: 33px;
+	height: 264px;
+}
+.social__bd a {
+	width: 33px;
+	height: 33px;
+	padding: 10px 3px 3px 3px;
+	display: block;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+.social__bd a:hover {
+	background: #aaa;
+	color: #000;
+}
+.social__bd a i {
+	position: relative;
+	top: 3px;
+}
+/* hide social on small screens */
+@media (max-width: 480px) {
+	.social {
+		display: none;
+	}
+}
+
+
+
+// video embeds
+// see http://www.smashingmagazine.com/2014/02/27/making-embedded-content-work-in-responsive-design/
+
+.video-container-16-by-9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-16-by-9 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container-4-by-3 {
+    position: relative;
+    padding-bottom: 75%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container-4-by-3 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#intro{
+	background-size: cover;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+// Individual example styling goes here. REMOVE ALL BELOW OR RESOLVE BEFORE FINALIZING
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+.jumbotron {
+	background-image: url(../examples/images/dresser-crop-edit.jpg);
+	overflow:hidden;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-color: #748d70;
+	text-align: center;
+	h2{
+		padding-top: 30px;
+	}
+}
+
+.chapter-image {
+	width:100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	margin-top: 3em;
+}
+#chapter-image1 {
+	background-image: url(../examples/images/intro-bg.jpg);
+}
+.top-caption {
+	padding: 2em;
+	background-color: rgba(245,238,234,.8);
+}
+
+// responsive image example
+#responsive-image-example img {
+	@include img-responsive;
+}
