@@ -699,7 +699,6 @@ New Section
 
 
 <!-- JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
-<script id="javascript-support"></script><!-- convenience for development; remove for production -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -717,6 +716,13 @@ New Section
 <script src="javascripts/bootstrap/tab.js"></script>
 <script src="javascripts/bootstrap/transition.js"></script>
 <!-- END Compiled plugins for Bootstrap -->
+<!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
+
+
+
+
+<!-- CONTENT JAVASCRIPTS ------------------------------------------------------------- -->	
+
 <!-- BEGIN Background Image Full Width (For IE8+) -->
 <!-- /* See https://github.com/louisremi/jquery.backgroundSize.js */ -->
 <script src="javascripts/vendor/jquery.backgroundSize.js"></script>
@@ -724,6 +730,7 @@ New Section
 $("#intro").css({backgroundSize: "cover"});
 </script>
 <!-- END Background Image Full Width (For IE8+) -->
+
 <!-- BEGIN Auto-Generated Navigation -->
 <script>
 /* see http://www.jankoatwarpspeed.com/automatically-generate-table-of-contents-using-jquery/ */
@@ -734,11 +741,13 @@ $(".hed").each(function(i) {
 });
 </script>
 <!-- END Auto-Generated Navigation -->
+
 <!-- BEGIN Responsive Images -->
 <!-- Using Picturefill (http://scottjehl.github.io/picturefill) -->
 <!-- The Modernizr build *must* create the picture element -->
 <script src="javascripts/vendor/picturefill.min.js" async></script>
 <!-- END Responsive Images -->
+
 <!-- BEGIN Drop Cap Generating Code -->
 <!-- Based on code from http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/ and universalized. Style .dropletter and .dropletter_<letter> -->
 <script>
@@ -755,23 +764,53 @@ $(".drop").each(function(i) {
 });
 </script>
 <!-- END Drop Cap Generating Code -->
+
 <!-- FitText -->
 <script src="javascripts/vendor/jquery.fittext.js"></script>
-<!-- END FitText -->
+<!-- FitText Example -->
+<script type="text/javascript">
+	$("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '150px' });
+	$("#fittext2").fitText(0.7);
+	$("#fittext3").fitText(2);
+	$("#fittext4").fitText(3);
+	$("#fittext5").fitText(3);
+</script>
+<!-- END FitText --> 
+
 <!-- Lazy Load -->
 <script type="text/javascript" src="javascripts/vendor/jquery.lazyload.min.js"></script>
+<!-- Lazy Load example -->
+<script>
+	/*  Syntax: http://www.appelsiini.net/projects/lazyload   */
+	$('#lazy-load').lazyload({
+		threshold: 20
+	});
+</script>
 <!-- END Lazy Load -->	
+
 <!-- Social Sharing with Add This -->
 <!-- For options, see www.addthis.com/dashboard -->
 <!-- Changes to the addthis.com widget will add new toolbars to appear on the page! -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
 <!-- END Add This -->
+
 <!-- Sly -->
 <script type="text/javascript" src="javascripts/vendor/plugins.js"></script>
 <script type="text/javascript" src="javascripts/vendor/sly.min.js"></script>
 <script type="text/javascript" src="javascripts/vendor/sly.horizontal.js"></script>
 <link rel="stylesheet" type="text/css" href="stylesheets/sly_horz_example.css" />
+<!-- Sly Example -->
+<script>
+	$('.frame').sly(options, {
+	load: function () {},
+	move: [
+	    function () {},
+	    function () {}
+	]
+	});
+</script>
 <!-- END Sly -->
+
 <!--Code for Scrollspy (sticky header and waypoints)-->
 <script>
 $('body').scrollspy({ target: '.navbar-main' })
@@ -785,144 +824,123 @@ $('body').scrollspy({ target: '.navbar-main' })
   });
   ///////////////////////
   </script>
-  <!--END code for Scrollspy (sticky header and waypoints)-->
-  <!-- Lettering.js -->
-  <script src="javascripts/vendor/jquery.lettering.min.js"></script>
-  <!-- END Lettering.js -->
-  <!-- AmCharts -->
-  <script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/amcharts.js"></script>
-  <script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/serial.js"></script>
-  <script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/pie.js"></script>
-  <script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js"></script>
-  <script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/xy.js" ></script>
-  <!-- END AmCharts -->
-  <!-- AmMap -->
-  <script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js"></script>
-  <!-- END AmMap -->
-  <!-- BEGIN Cycletron -->
-  <script src="javascripts/vendor/cyclotron.js"></script>
-  <!-- END Cycletron -->
-  <!-- Microscope for Images (Bootstrap-Magnify) -->
-  <script src="javascripts/vendor/bootstrap-magnify.min.js"></script>
-  <!-- END Microscope for Images (Bootstrap-Magnify) -->
-  <!-- Owl Carousel -->
-  <script src="javascripts/vendor/owl.carousel.min.js"></script>
-  <!-- END Owl Carousel -->
-  <!-- BEGIN Clearing Lightbox -->
-  <link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css" />
-  <script src="javascripts/vendor/lightbox.js"></script>
-  <!-- END Clearing Lightbox -->
-  <!--Code for social image sharing via SlingPic-->
-  <script src="http://cdn.slingpic.com/js/slingpic.plugin.js"></script>
-  <script>
-		/*	To attach sharing functions to an image,
-				give that image the class 'sharable'. */
-		jQuery(window).load(function(){
-			jQuery(".sharable").slingPic({
-				theme: "subtle",
-				autoShowShare: true,
-				context: true
-			});
-		});
-	</script>
-	<!--END Code for social image sharing-->		
-	<!-- BEGIN JavaScript transitions -->
-	<!-- uses jquery.transit (http://ricostacruz.com/jquery.transit/) -->
-	<script src="javascripts/vendor/jquery.transit.min.js"></script>
-	<script>
-	/* for browsers that don't support CSS3 transitions, remap to jQuery animate(). */
-	if (!$.support.transition)
-		$.fn.transition = $.fn.animate;
-	</script>
-	<!-- END JavaScript transitions -->
-  <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
-  
-  
+<!--END code for Scrollspy (sticky header and waypoints)-->
 
-  <!-- JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
-	<script id="javascript-examples"></script><!-- convenience for development; remove for production -->
-  <!-- FitText Example -->
-  <script type="text/javascript">
-    $("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '150px' });
-    $("#fittext2").fitText(0.7);
-    $("#fittext3").fitText(2);
-    $("#fittext4").fitText(3);
-    $("#fittext5").fitText(3);
-  </script>
-  <!-- END FitText Example --> 
-  <!-- Lazy Load example -->
-  <script>
-  /*  Syntax: http://www.appelsiini.net/projects/lazyload   */
-	$('#lazy-load').lazyload({
-		threshold: 20
-	});
-	</script>
-  <!-- END Lazy Load -->	
-  <!--Code for D3 Chart Example-->
-	<script src="examples/d3-chart/d3-example.js"></script>
-  <!--END Code for D3 Chart Example-->
-  <!-- Lettering.js example -->
-  <script>
-	  $(document).ready(function() {
-	  	$(".lettering-example").lettering('words');
-	  });
-  </script>
-  <!-- END Lettering.js example -->
-	
-	<!-- AmCharts examples -->
-	<script src="examples/amcharts/amcharts.js"></script>
-	<!-- END AmCharts examples -->
-	
-	<!-- AmMap examples -->
-  <script src="javascripts/vendor/ammap_3.9.0.free/ammap/maps/js/usaLow.js"></script>
-	<script src="javascripts/vendor/ammap_3.9.0.free/ammap/maps/js/worldLow.js"></script>
-	<script src="examples/ammap/ammap.js"></script>
-	<!-- END AmMap examples -->
-	
-  <!-- Sly Example -->
-  <script>
-  $('.frame').sly(options, {
-    load: function () {},
-    move: [
-        function () {},
-        function () {}
-    ]
-});
-  </script>
-  <!-- END Sly Example -->
-	<!-- BEGIN Cycletron Example -->
-	<script>
-		$(document).ready(function($) {
-		    $('.cycle').cyclotron();
-		});	
-	</script>
-	<!-- END Cycletron Example -->
+<!-- Lettering.js -->
+<script src="javascripts/vendor/jquery.lettering.min.js"></script>
+<!-- Lettering.js example -->
+<script>
+  $(document).ready(function() {
+  	$(".lettering-example").lettering('words');
+  });
+</script>
+<!-- END Lettering.js -->
 
-  <!-- BEGIN Tooltip Example -->
-  <script>
-  $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-  </script>
-  <!-- END Tooltip Example -->
+<!-- AmCharts -->
+<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/amcharts.js"></script>
+<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/serial.js"></script>
+<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/pie.js"></script>
+<script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js"></script>
+<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/xy.js" ></script>
+<!-- AmCharts examples -->
+<script src="examples/amcharts/amcharts.js"></script>
+<!-- END AmCharts -->
 
-  <!-- BEGIN Owl Carousel Example -->
-  <script>
+<!-- AmMap -->
+<script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js"></script>
+<!-- AmMap examples -->
+<script src="javascripts/vendor/ammap_3.9.0.free/ammap/maps/js/usaLow.js"></script>
+<script src="javascripts/vendor/ammap_3.9.0.free/ammap/maps/js/worldLow.js"></script>
+<script src="examples/ammap/ammap.js"></script>
+<!-- END AmMap -->
+
+<!-- BEGIN Cycletron -->
+<script src="javascripts/vendor/cyclotron.js"></script>
+<!-- BEGIN Cycletron Example -->
+<script>
+	$(document).ready(function($) {
+	    $('.cycle').cyclotron();
+	});	
+</script>
+<!-- END Cycletron -->
+
+<!-- Microscope for Images (Bootstrap-Magnify) -->
+<script src="javascripts/vendor/bootstrap-magnify.min.js"></script>
+<!-- END Microscope for Images (Bootstrap-Magnify) -->
+
+<!-- Owl Carousel -->
+<script src="javascripts/vendor/owl.carousel.min.js"></script>
+<!-- BEGIN Owl Carousel Example -->
+<script>
 	$(document).ready(function(){
 	  $(".owl-carousel").owlCarousel();
 	});
-  </script>
-  <!-- END Owl Carousel Example -->
+</script>
+<!-- END Owl Carousel -->
 
-	<!-- BEGIN JavaScript transitions example -->
-	<script>
-		$('#js-transitions-target').click(function(){ 
-			$(this)
-			.transition({ "margin-left": "600px" }, "slow" )
-			.transition({ opacity: 0.1 });
+<!-- BEGIN Clearing Lightbox -->
+<link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css" />
+<script src="javascripts/vendor/lightbox.js"></script>
+<!-- END Clearing Lightbox -->
+
+<!--Code for social image sharing via SlingPic-->
+<script src="http://cdn.slingpic.com/js/slingpic.plugin.js"></script>
+<script>
+	/*	To attach sharing functions to an image,
+			give that image the class 'sharable'. */
+	jQuery(window).load(function(){
+		jQuery(".sharable").slingPic({
+			theme: "subtle",
+			autoShowShare: true,
+			context: true
 		});
-	</script>
-	<!-- END JavaScript transitions example -->
+	});
+</script>
+<!--END Code for social image sharing-->		
 
-  <!-- END JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
+<!-- BEGIN JavaScript transitions -->
+<!-- uses jquery.transit (http://ricostacruz.com/jquery.transit/) -->
+<script src="javascripts/vendor/jquery.transit.min.js"></script>
+<script>
+/* for browsers that don't support CSS3 transitions, remap to jQuery animate(). */
+if (!$.support.transition)
+	$.fn.transition = $.fn.animate;
+</script>
+<!-- BEGIN JavaScript transitions example -->
+<script>
+	$('#js-transitions-target').click(function(){ 
+		$(this)
+		.transition({ "margin-left": "600px" }, "slow" )
+		.transition({ opacity: 0.1 });
+	});
+</script>
+<!-- END JavaScript transitions -->
+
+<!-- END CONTENT JAVASCRIPTS ------------------------------------------------------------- -->	
+
+
+
+
+<!-- JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
+
+<!--Code for D3 Chart Example-->
+<script src="examples/d3-chart/d3-example.js"></script>
+<!--END Code for D3 Chart Example-->
+
+<!-- BEGIN Tooltip Example -->
+<script>
+$('[data-toggle="tooltip"]').tooltip({container: 'body'});
+</script>
+<!-- END Tooltip Example -->
+
+
+
+
+
+
+
+
+<!-- END JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
 
   
 
