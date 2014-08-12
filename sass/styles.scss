@@ -224,6 +224,12 @@ h2 {
 }
 
 
+// responsive image example
+#responsive-image-example img {
+	@include img-responsive;
+}
+
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -241,9 +247,27 @@ h2 {
 	background-repeat: no-repeat;
 	background-color: #748d70;
 	text-align: center;
-	h2{
-		padding-top: 30px;
+	margin-bottom: 0;
+	h1{
+		margin-top:0;
+		padding-top: 10%;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
+	h2{
+		padding-top: 9%;
+		margin-top: 0;
+		padding-bottom: 11%;
+	}
+}
+
+.subhead{
+	background-color: black;
+	color: #AEA057;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
 }
 
 .chapter-image {
@@ -263,7 +287,20 @@ h2 {
 	background-color: rgba(245,238,234,.8);
 }
 
-// responsive image example
-#responsive-image-example img {
-	@include img-responsive;
+@media (max-width: 992px) {
+  .jumbotron {
+  	h1{
+  		padding-top: 6%;
+  	}
+  	h2{
+  		padding-top: 5%;
+  	}
+  }
+}
+@media (max-width: 768px) {
+  .jumbotron {
+  	h2{
+  		padding-top: 3%;
+  	}
+  }
 }
