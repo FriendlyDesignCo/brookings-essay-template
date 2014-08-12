@@ -6,7 +6,7 @@
 // defaults to true if twbs-font-path function is present (no function => twbs-font-path('') parsed as string == right side)
 // in Sass 3.3 this can be improved with: function-exists(twbs-font-path)
 // $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")'))
-   $bootstrap-sass-asset-helper: false
+   $bootstrap-sass-asset-helper: false;
 //
 // Variables
 // --------------------------------------------------
@@ -81,7 +81,7 @@
 // $icon-font-path: "bootstrap/"
  //  $icon-font-path: "/"
 //* File name for all font files.
-// $icon-font-name:          "glyphicons-halflings-regular"
+$icon-font-name:          "glyphicons_halflings_regular";
 //* Element ID within SVG icon file.
 // $icon-font-svg-id:        "glyphicons_halflingsregular"
 
