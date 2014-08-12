@@ -22,7 +22,7 @@
 
   //Load in GeoJSON data
   //d3.json("/~/media/multimedia/interactives/2013/job_sprawl/usstates.json", function(json) {
-  d3.json("examples/d3-chart/usstates.json", function (json) {
+  d3.json("examples/d3_chart/usstates.json", function (json) {
 
       svg.selectAll("path")
           .data(json.features)
@@ -34,7 +34,7 @@
 
       //Load in cities data
       //  d3.csv("/~/media/multimedia/interactives/2013/job_sprawl/sprawl3.csv", function(data) {
-      d3.csv("examples/d3-chart/FDI_update.csv", function (data) {
+      d3.csv("examples/d3_chart/FDI_update.csv", function (data) {
 
           var foreignshare = svg.selectAll("circle.foreignshare")
               .data(data)
