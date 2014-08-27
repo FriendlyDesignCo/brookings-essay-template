@@ -30,6 +30,11 @@ h2 {
 }
 
 
+.big-pull-right{
+	float: right;
+	
+}
+
 
 // Drop Cap Styling
 
@@ -248,6 +253,17 @@ h2 {
 	top: 50px;
 	//display: block;
 }
+
+
+// Pull and push outside of column structure
+.col-outer-pull-right-4{
+	margin-right: -30%;
+}
+
+.no-float{
+	float: none !important;
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
