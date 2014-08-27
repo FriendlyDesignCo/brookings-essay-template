@@ -1,4 +1,21 @@
 
+
+// linearize elements for small screens
+
+@mixin linearize {
+	@media only screen and (max-width: $screen-xs-max) {
+		width: 100%;
+		max-width: 100%;
+		clear: both;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+
+		
+
 .toolbox {
 }
 
@@ -12,17 +29,30 @@
 .toolbox h6,
 .toolbox ul,
 .toolbox blockquote {
-	@include make-xs-column(6);
-	@include make-xs-column-offset(2);
+	margin-left: 16.667%;
+	max-width: 50%;
+	@include linearize;
 }
 
 .toolbox .leftelm {
-	@include make-xs-column-offset(2);
+	margin-left: 16.667%;
 	margin-bottom: 1em;
+	@include linearize;
 }
 
 .toolbox .rightelm {
-	@include make-xs-column(2);
-	@include make-xs-column-pull(4);
+	float: right;
+	margin-right: 33.333%;
 	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+.toolbox .rightelm.breakout {
+	margin-right: 16.667%;
+	@include linearize;
+}
+
+.toolbox .rightelm.rightedge {
+	margin-right: 0;
+	@include linearize;
 }
