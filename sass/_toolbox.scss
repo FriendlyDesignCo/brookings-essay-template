@@ -1,0 +1,28 @@
+
+.toolbox {
+}
+
+// set up main column
+.toolbox p,
+.toolbox h1,
+.toolbox h2,
+.toolbox h3,
+.toolbox h4,
+.toolbox h5,
+.toolbox h6,
+.toolbox ul,
+.toolbox blockquote {
+	@include make-xs-column(6);
+	@include make-xs-column-offset(2);
+}
+
+.toolbox .leftelm {
+	@include make-xs-column-offset(2);
+	margin-bottom: 1em;
+}
+
+.toolbox .rightelm {
+	@include make-xs-column(2);
+	@include make-xs-column-pull(4);
+	margin-bottom: 1em;
+}
