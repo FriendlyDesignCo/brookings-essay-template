@@ -2,7 +2,7 @@
 
 		AmCharts.ready(function() {
 		    heatMap = new AmCharts.AmMap();
-		    heatMap.pathToImages = "javascripts/vendor/ammap_3.10.2.free/ammap/images/";
+		    heatMap.pathToImages = "javascripts/vendor/ammap_3.9.0.free/ammap/images/";
 
 		    heatMap.colorSteps = 10;
 
@@ -619,7 +619,7 @@
 			 // build map
 			AmCharts.ready(function() {
 				map = new AmCharts.AmMap();
-				map.pathToImages = "javascripts/vendor/ammap_3.10.2.free/ammap/images/";
+				map.pathToImages = "javascripts/vendor/ammap_3.9.0.free/ammap/images/";
 
 				map.addTitle("Population of the World in 2011", 14);
 				map.addTitle("source: Gapminder", 11);
