@@ -240,12 +240,14 @@ h2 {
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
+// Begin Ian styling
 .jumbotron {
-	background-image: url(../examples/images/dresser-crop-edit.jpg);
+  height: 620px;
+	background-image: url(../examples/monnet/img/hero-image.jpg);
 	overflow:hidden;
 	color: #fff;
 	background-repeat: no-repeat;
-	background-color: #748d70;
+	background-color: #EFEBDF;
 	text-align: center;
 	margin-bottom: 0;
 	h1{
@@ -261,6 +263,240 @@ h2 {
 		padding-bottom: 11%;
 	}
 }
+
+
+// CHAPTER (section) visual styles & positioning
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: #EFEBDF;
+
+  overflow-x: hidden;
+
+  p {
+    font-family: "EB Garamond", "Adobe Garamond", "Adobe Garamond Pro", Garamond, serif;
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+
+// TEXT CONTAINER visual styles & positioning
+.section__textContainer {
+  position: relative;
+
+  padding-top: 3em;
+  padding-right: 12%;
+  padding-left: 6%;
+  padding-bottom: 3em;
+
+  background: #fff;
+  border-image: url(../examples/monnet/img/dashline.png) 0 15 fill stretch repeat;
+  border-width: 0px 15px 0px 0px;
+}
+
+
+// FIGURE visual styles
+.section__figure {
+
+  img {
+    margin: 0 auto;
+  }
+
+  // Visual styles
+  &.bordered {
+    margin-bottom: 2.5%;
+    padding: 2.5% 2.5% 2.5% 2.5% !important;
+
+    background: #fff;
+    border: 1px solid #CC9900;
+
+    &.pull-right {
+      margin-left: 5%;
+    }
+    &.pull-left {
+      margin-right: 5%;
+    }
+  }
+
+  // Padding
+  &.pull-right {
+    padding-left: 5%;
+  }
+  &.pull-left {
+    padding-right: 5%;
+  }
+}
+p.section__figure__caption {
+  margin: 1em 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
+  font-size: 12px;
+}
+p.section__figure__credit {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9999CC;
+  font-size: 12px;
+}
+
+
+// BLOCK QUOTE visual styles
+.section__quote {
+  padding: 1.5em 2em;
+  
+  background: #4A3734;
+  border-top: 5px solid #fbb03b;
+  color: #fff;
+  font-family: Galdeano, sans-serif;
+
+  &.pull-right {
+    margin-left: 5%;
+  }
+  &.pull-left {
+    margin-right: 5%;
+  }
+
+  blockquote {
+    padding: 0;
+    
+    border: 0;
+    font-size: 28px;
+  }
+}
+.section__quote__credit {
+  padding-left: 25%;
+  color: #fbb03b;
+
+  span {
+    display: block;
+    color: #fff;
+    font-style: italic;
+  }
+}
+
+
+// HANGING ITEM positioning/sizing
+.hang {
+  &.pull-right {
+    margin-right: -50%;
+
+    // Responsive states
+    @media screen and (max-width: 991px) { // BOOTSTRAP BREAKPOINT
+      margin-right: -25%;
+    }
+    @media screen and (max-width: 767px) { // BOOTSTRAP BREAKPOINT
+      width: 100%;
+      margin-right: 0;
+
+      float: none;
+    }
+  }
+  &.pull-left {
+    margin-left: -22%;
+
+    // Responsive states
+    @media screen and (max-width: 991px) { // BOOTSTRAP BREAKPOINT
+      margin-left: -15%;
+    }
+    @media screen and (max-width: 767px) { // BOOTSTRAP BREAKPOINT
+      width: 100%;
+      margin-left: 0;
+
+      float: none;
+    }
+  }
+}
+
+
+// FIXED ITEM positioning/sizing
+.fixed {
+  &.pull-right {
+    width: 200%;
+    max-width: 800px;
+    position: relative;
+    right: -80.5%;
+    margin-left: -75.5%;
+    margin-bottom: 2.5%;
+
+    // Responsive states
+    @media screen and (max-width: 1190px) {
+      max-width: 600px;
+      right: -82%;
+      margin-left: -77%;
+    }
+    @media screen and (max-width: 991px) { // BOOTSTRAP BREAKPOINT
+      right: -34.5%;
+      margin-left: -29.5%;
+    }
+    @media screen and (max-width: 950px) {
+      max-width: 400px;
+    }
+    @media screen and (max-width: 767px) { // BOOTSTRAP BREAKPOINT
+      width: 100%;
+      max-width: 100%;
+
+      position: static;
+      right: auto;
+      margin-bottom: 1em;
+      margin-left: auto;
+      float: none;
+    }
+  }
+
+  &.pull-left {
+    width: 200%;
+    max-width: 700px;
+    position: relative;
+    left: -30.6%;
+    margin-right: -25%;
+    margin-bottom: 2.5%;
+
+    // Responsive states
+    @media screen and (max-width: 1450px) {
+      max-width: 600px;
+    }
+    @media screen and (max-width: 1300px) {
+      max-width: 500px;
+    }
+    @media screen and (max-width: 1100px) {
+      max-width: 400px;
+    }
+    @media screen and (max-width: 991px) { // BOOTSTRAP BREAKPOINT
+      left: -22.6%;
+      margin-right: -17.6%;
+    }
+    @media screen and (max-width: 950px) {
+      
+    }
+    @media screen and (max-width: 767px) { // BOOTSTRAP BREAKPOINT
+      width: 100%;
+      max-width: 100%;
+
+      position: static;
+      left: auto;
+      margin-bottom: 1em;
+      margin-right: auto;
+      float: none;
+    }
+  }
+}
+
+
+// End Ian styling
+
+
+
+
+
+
+
+
+
+
+
+
 
 .subhead{
 	background-color: black;
