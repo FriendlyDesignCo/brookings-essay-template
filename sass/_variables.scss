@@ -33,6 +33,7 @@
 
 //* Background color for `<body>`.
 // $body-bg:               #fff
+   $body-bg:               #FC0
 //* Global text color on `<body>`.
 // $text-color:            $gray-dark
 
@@ -81,7 +82,9 @@
 // $icon-font-path: "bootstrap/"
  //  $icon-font-path: "/"
 //* File name for all font files.
-$icon-font-name:          "glyphicons_halflings_regular";
+// $icon-font-name:          "glyphicons-halflings-regular";
+// BROOKINGS: Tried to edit for SiteCore, ran into issues.
+// $icon-font-name:          "glyphicons_halflings_regular";
 //* Element ID within SVG icon file.
 // $icon-font-svg-id:        "glyphicons_halflingsregular"
 
