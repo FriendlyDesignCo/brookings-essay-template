@@ -241,15 +241,25 @@ h2 {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // Begin Ian styling
-.jumbotron {
-  height: 620px;
-	background-image: url(../examples/monnet/img/hero-image.jpg);
-	overflow:hidden;
+.jumbotron {  
+  margin-top: 50px;
+  margin-bottom: 0;
+  overflow:hidden;
+	
+  background-image: url(../examples/monnet/img/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-color: #EFEBDF;
+  background-size: 100% auto !important;
 	color: #fff;
-	background-repeat: no-repeat;
-	background-color: #EFEBDF;
 	text-align: center;
-	margin-bottom: 0;
+
+  &:after {
+    content: " ";
+    display: block;
+    padding-bottom: 38.5%;
+  }
+	
+
 	h1{
 		margin-top:0;
 		padding-top: 10%;
@@ -299,9 +309,18 @@ h2 {
 
 // FIGURE visual styles
 .section__figure {
-
+  &.max-width { // Temporary bugfix for coing imgae
+    max-width: 137px;
+  }
   img {
     margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .slingpic {
+    width: 100% !important; 
+    height: auto !important;
   }
 
   // Visual styles
