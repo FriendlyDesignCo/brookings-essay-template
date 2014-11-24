@@ -1,0 +1,134 @@
+// ==================================================
+//
+//    ARTICLE CUSTOMIZATIONS
+//
+// --------------------------------------------------
+//
+//    The following variables are specific to the
+//    this individual article template. They are
+//    applied to base template styles in styles.scss
+//
+// ==================================================
+
+
+
+
+
+// ==================================================
+//
+//    CUSTOM VARIABLES
+//
+// --------------------------------------------------
+//
+//    Change the values for the variables below to
+//    apply changes across the entire article
+//    template. These variables can be overwritten
+//    by the CUSTOM STYLES below this section.
+//
+// ==================================================
+
+
+//
+// BASE ARTICLE ELEMENTS
+//
+
+// Header Jumbotron Image
+$b-intro-jumbotron-bg-image-url: "http://placehold.it/1000x500"; // The location of the background image
+$b-intro-jumbotron-bg-type: "fluid"; // What type of background image is this? 
+                                     //    "fluid" = header height determined by the content within the header, ignoring background image ratio
+                                     //              NOTE: when using "fluid" parts of the background image will get cropped!
+                                     //    "ratio" = header height determined by the width:height ratio of the background image
+                                     //              NOTE: "ratio" requries additional work to ensure text does not overlap the content area!
+                                     //              "ratio" should most often be used with background images that have the article title,
+                                     //               author, etc. IN the image.
+$b-intro-jumbotron-bg-image-width: 1000; // Required to ensure background image container is displayed at the right height when using "ratio"
+$b-intro-jumbotron-bg-image-height: 500; // Required to ensure background image container is displayed at the right height when using "ratio"
+
+// Header Text
+$b-article-header-text-alignment: center;
+$b-article-title-color: $text-color; // Article title's color (uses Bootstrap default)
+$b-article-title-font: $font-family-sans-serif; // Article title's font familty (uses Bootstrap default)
+$b-article-title-size: $font-size-h1 + 20; // Article title's font size (uses Bootstrap default)
+$b-article-subtitle-color: $text-color; // Article subtitle's color (uses Bootstrap default)
+$b-article-subtitle-font: $font-family-sans-serif; // Article subtitle's font familty (uses Bootstrap default)
+$b-article-subtitle-size: $font-size-h2 + 5; // Article subtitle's font size (uses Bootstrap default)
+$b-article-author-color: $text-color; // Article author's color (uses Bootstrap default)
+$b-article-author-font: $font-family-sans-serif; // Article author's font familty (uses Bootstrap default)
+$b-article-author-size: $font-size-h3; // Article author's font size (uses Bootstrap default)
+$b-article-date-color: $text-color; // Article date's color (uses Bootstrap default)
+$b-article-date-font: $font-family-sans-serif; // Article date's font familty (uses Bootstrap default)
+$b-article-date-size: $font-size-base; // Article date's font size (uses Bootstrap default)
+$b-article-photo-credit-color: $text-color; // Article photo-credit's color (uses Bootstrap default)
+$b-article-photo-credit-font: $font-family-sans-serif; // Article photo-credit's font familty (uses Bootstrap default)
+$b-article-photo-credit-size: $font-size-base; // Article photo-credit's font size (uses Bootstrap default)
+$b-article-photo-credit-position: "top right"; // Where should the photo credit be positioned?
+                                                 // Options: "top right", "bottom right", "bottom left", "top left"
+
+// Content Sections
+$b-section-bg-color: $gray-lighter; // Background color surrounding section content (uses Bootstrap default)
+$b-section-content-bg-color: #fff; // Backgorund color for main text content within a section
+
+
+//
+// MEDIA CONTAINERS
+//
+
+// Applies to image and video holders.
+$b-media-container-bg-color: $gray-light;
+$b-media-container-caption-color: #000;
+$b-media-container-credit-color: #000;
+
+
+
+
+
+// ==================================================
+//
+//    CUSTOM STYLES
+//
+// --------------------------------------------------
+//
+//    Add your own custom styles below to overwrite
+//    styles from everywhere else, including:
+//      - Bootstrap variables (_variables.scss)
+//      - Custom variables (this document)
+//      - Base styles (styles.scss)
+//
+// ==================================================
+
+// Jumbotron intro image + article headlines
+#intro {
+  h1 { // Main article title
+
+  }
+  h2 { // Subtitle
+
+  }
+  h3 { // Author name
+
+  }
+  time { // Date
+
+  }
+  cite { // Image credit
+
+  }
+}
+
+// Article sections
+.section {
+  .content {
+
+  }
+}
+
+// Media Containers
+.mediaContainer {
+  &.image { // Image containers
+
+  }
+  &.video { // Video containers
+
+  }
+
+}

@@ -15,52 +15,52 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-// $gray-darker:            lighten(#000, 13.5%) // #222
-// $gray-dark:              lighten(#000, 20%)   // #333
-// $gray:                   lighten(#000, 33.5%) // #555
-// $gray-light:             lighten(#000, 60%)   // #999
-// $gray-lighter:           lighten(#000, 93.5%) // #eee
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lighter:           lighten(#000, 93.5%); // #eee
 
-// $brand-primary:         #428bca
-// $brand-success:         #5cb85c
-// $brand-info:            #5bc0de
-// $brand-warning:         #f0ad4e
-// $brand-danger:          #d9534f
+$brand-primary:         #044F8A; // Medium blue
+$brand-success:         #638F49; // Green
+$brand-info:            #666666; // Gray
+$brand-warning:         yellow;
+$brand-danger:          red;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //* Background color for `<body>`.
-// $body-bg:               #fff
+$body-bg:               #fff;
 //* Global text color on `<body>`.
-// $text-color:            $gray-dark
+$text-color:            $gray-dark;
 
 //* Global textual link color.
-// $link-color:            $brand-primary
+$link-color:            $brand-primary;
 //* Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
+$link-hover-color:      darken($link-color, 15%);
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
-// $font-family-serif:       Georgia, "Times New Roman", Times, serif
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-// $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
-// $font-family-base:        $font-family-sans-serif
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
 
-// $font-size-base:          14px
-// $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
-// $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
+$font-size-base:          14px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
-// $font-size-h1:            floor(($font-size-base * 2.6)) // ~36px
-// $font-size-h2:            floor(($font-size-base * 2.15)) // ~30px
-// $font-size-h3:            ceil(($font-size-base * 1.7)) // ~24px
-// $font-size-h4:            ceil(($font-size-base * 1.25)) // ~18px
-// $font-size-h5:            $font-size-base
-// $font-size-h6:            ceil(($font-size-base * 0.85)) // ~12px
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 
 //* Unit-less `line-height` for use in components like buttons.
 // $line-height-base:        1.428571429 // 20/14
@@ -262,27 +262,27 @@
 // Extra small screen / phone
 // Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
 // Note: Deprecated $screen-xs-min as of v3.2.0
-// $screen-xs:                  480px
-// $screen-xs-min:              $screen-xs
-// $screen-phone:               $screen-xs-min
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
 
 // Small screen / tablet
 // Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
-// $screen-sm:                  768px
-// $screen-sm-min:              $screen-sm
-// $screen-tablet:              $screen-sm-min
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
 
 // Medium screen / desktop
 // Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
-// $screen-md:                  992px
-// $screen-md-min:              $screen-md
-// $screen-desktop:             $screen-md-min
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
 
 // Large screen / wide desktop
 // Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
-// $screen-lg:                  1200px
-// $screen-lg-min:              $screen-lg
-// $screen-lg-desktop:          $screen-lg-min
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
 
 // So media queries don't overlap when required, provide a maximum
 // $screen-xs-max:              ($screen-sm-min - 1)
@@ -451,11 +451,11 @@
 //
 //##
 
-// $jumbotron-padding:              30px
-// $jumbotron-color:                inherit
-// $jumbotron-bg:                   $gray-lighter
-// $jumbotron-heading-color:        inherit
-// $jumbotron-font-size:            ceil(($font-size-base * 1.5))
+$jumbotron-padding:              0px;
+$jumbotron-color:                inherit;
+$jumbotron-bg:                   $gray-lighter;
+$jumbotron-heading-color:        inherit;
+$jumbotron-font-size:            ceil(($font-size-base * 1.5));
 
 //== Form states and alerts
 //
