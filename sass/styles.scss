@@ -431,6 +431,7 @@ p.section__figure__credit {
 
 // FIXED ITEM positioning/sizing
 .fixed {
+  clear: both;
   &.pull-right {
     width: 200%;
     max-width: 800px;
