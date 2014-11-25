@@ -44,29 +44,50 @@ $b-intro-jumbotron-bg-type: "fluid"; // What type of background image is this?
 $b-intro-jumbotron-bg-image-width: 1000; // Required to ensure background image container is displayed at the right height when using "ratio"
 $b-intro-jumbotron-bg-image-height: 500; // Required to ensure background image container is displayed at the right height when using "ratio"
 
+
 // Header Text
 $b-article-header-text-alignment: center;
+
 $b-article-title-color: $text-color; // Article title's color (uses Bootstrap default)
 $b-article-title-font: $font-family-sans-serif; // Article title's font familty (uses Bootstrap default)
 $b-article-title-size: $font-size-h1 + 20; // Article title's font size (uses Bootstrap default)
+
 $b-article-subtitle-color: $text-color; // Article subtitle's color (uses Bootstrap default)
 $b-article-subtitle-font: $font-family-sans-serif; // Article subtitle's font familty (uses Bootstrap default)
 $b-article-subtitle-size: $font-size-h2 + 5; // Article subtitle's font size (uses Bootstrap default)
+
 $b-article-author-color: $text-color; // Article author's color (uses Bootstrap default)
 $b-article-author-font: $font-family-sans-serif; // Article author's font familty (uses Bootstrap default)
 $b-article-author-size: $font-size-h3; // Article author's font size (uses Bootstrap default)
+
 $b-article-date-color: $text-color; // Article date's color (uses Bootstrap default)
 $b-article-date-font: $font-family-sans-serif; // Article date's font familty (uses Bootstrap default)
 $b-article-date-size: $font-size-base; // Article date's font size (uses Bootstrap default)
+
 $b-article-photo-credit-color: $text-color; // Article photo-credit's color (uses Bootstrap default)
 $b-article-photo-credit-font: $font-family-sans-serif; // Article photo-credit's font familty (uses Bootstrap default)
 $b-article-photo-credit-size: $font-size-base; // Article photo-credit's font size (uses Bootstrap default)
 $b-article-photo-credit-position: "top right"; // Where should the photo credit be positioned?
                                                  // Options: "top right", "bottom right", "bottom left", "top left"
 
+
 // Content Sections
 $b-section-bg-color: $gray-lighter; // Background color surrounding section content (uses Bootstrap default)
 $b-section-content-bg-color: #fff; // Backgorund color for main text content within a section
+
+
+//
+// CHAPTER IMAGES
+//
+$b-chapter-image-caption-bg-color: $gray-light;
+$b-chapter-image-caption-text-color: #000;
+$b-chapter-image-caption-font-size: $font-size-base;
+$b-chapter-image-caption-font-family: $font-family-sans-serif;
+
+$b-chapter-image-credit-text-color: #000;
+$b-chapter-image-credit-font-size: $font-size-small;
+$b-chapter-image-credit-font-family: $font-family-sans-serif;
+
 
 
 //
@@ -79,6 +100,21 @@ $b-media-container-caption-color: #000;
 $b-media-container-credit-color: #000;
 
 
+//
+// TEXT CONTAINERS
+//
+
+// Applies to pullquotes and any other non-body content text blocks.
+$b-text-container-bg-color: $gray-light;
+$b-text-container-text-color: #000; // Any type of text in containers not specifically declared below
+$b-text-container-font-size: $font-size-base; // Any type of text in containers not specifically declared below
+$b-text-container-font: $font-family-sans-serif; // Any type of text in containers not specifically declared below
+
+$b-text-container-blockquote-text-color: #000;
+$b-text-container-blockquote-font-size: $font-size-large;
+$b-text-container-blockquote-font: $font-family-sans-serif;
+
+$b-text-container-credit-color: #000;
 
 
 
@@ -122,6 +158,12 @@ $b-media-container-credit-color: #000;
   }
 }
 
+// Chapter images
+#chapter-image1 {
+  background-image: url(http://placehold.it/1000x500);
+}
+// Add more chapter image IDs here as needed.
+
 // Media Containers
 .mediaContainer {
   &.image { // Image containers
@@ -132,3 +174,16 @@ $b-media-container-credit-color: #000;
   }
 
 }
+
+// Text Containers
+.textContainer {
+
+}
+
+
+
+
+
+
+
+

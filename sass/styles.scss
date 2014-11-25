@@ -52,7 +52,6 @@ html {
 
 // Hero Image / Jumbotron
 .jumbotron {  
-  margin-top: 50px;
   margin-bottom: 0;
   padding: 0;
   overflow:hidden;
@@ -89,6 +88,9 @@ html {
     padding-bottom: 10%;
   }
   
+  &#intro {
+    margin-top: 50px;
+  }
 
   h1 {
     margin: 0;
@@ -138,6 +140,11 @@ html {
       left: 15px;
     }
   }
+  .top-caption {
+    cite {
+      position: static;
+    }
+  }
 }
 
 // CHAPTER (section) visual styles & positioning
@@ -150,7 +157,7 @@ html {
   overflow-x: hidden;
 
   p {
-    font-family: "EB Garamond", "Adobe Garamond", "Adobe Garamond Pro", Garamond, serif;
+    font-family: $font-family-serif;
     font-size: 20px;
     font-weight: 200;
   }
@@ -251,14 +258,13 @@ img.center {
 }
 
 
-// BLOCK QUOTE visual styles
-.section__quote {
+// TEXT CONTAINER visual styles
+.textContainer {
   padding: 1.5em 2em;
   
-  background: #4A3734;
-  border-top: 5px solid #fbb03b;
-  color: #fff;
-  font-family: Galdeano, sans-serif;
+  background: $b-text-container-bg-color;
+  color: $b-text-container-text-color;
+  font-family: $b-text-container-font;
 
   &.pull-right {
     margin-left: 5%;
@@ -271,7 +277,9 @@ img.center {
     padding: 0;
     
     border: 0;
-    font-size: 28px;
+    color: $b-text-container-blockquote-text-color;
+    font-size: $b-text-container-blockquote-font-size;
+    font-family: $b-text-container-blockquote-font;
   }
 }
 .section__quote__credit {
@@ -326,24 +334,19 @@ img.center {
     width: 200%;
     max-width: 800px;
     position: relative;
-    right: -80.5%;
-    margin-left: -75.5%;
+    right: -56.8%;
+    margin-left: -52%;
     margin-bottom: 2.5%;
 
     // Responsive states
     @media screen and (max-width: 1190px) {
-      max-width: 600px;
-      right: -82%;
-      margin-left: -77%;
-    }
-    @media screen and (max-width: 991px) { // BOOTSTRAP BREAKPOINT
-      right: -34.5%;
-      margin-left: -29.5%;
-    }
-    @media screen and (max-width: 950px) {
       max-width: 400px;
     }
-    @media screen and (max-width: 767px) { // BOOTSTRAP BREAKPOINT
+    @media screen and (max-width: $screen-md) { // BOOTSTRAP BREAKPOINT
+      right: -20.2%;
+      margin-left: -15%;
+    }
+    @media screen and (max-width: $screen-sm) { // BOOTSTRAP BREAKPOINT
       width: 100%;
       max-width: 100%;
 
@@ -359,8 +362,8 @@ img.center {
     width: 200%;
     max-width: 700px;
     position: relative;
-    left: -30.6%;
-    margin-right: -25%;
+    left: -26.2%;
+    margin-right: -21%;
     margin-bottom: 2.5%;
 
     // Responsive states
@@ -374,8 +377,8 @@ img.center {
       max-width: 400px;
     }
     @media screen and (max-width: 991px) { // BOOTSTRAP BREAKPOINT
-      left: -22.6%;
-      margin-right: -17.6%;
+      left: -20.1%;
+      margin-right: -16%;
     }
     @media screen and (max-width: 950px) {
       
@@ -527,8 +530,6 @@ img.center {
 }
 
 
-
-
 #intro{
 	background-size: cover;
 }
@@ -538,38 +539,6 @@ img.center {
 #responsive-image-example img {
 	@include img-responsive;
 }
-
-
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-// Individual example styling goes here. REMOVE ALL BELOW OR RESOLVE BEFORE FINALIZING
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-
-// Begin Ian styling
-
-
-
-
-
-
-// End Ian styling
-
-
-
-
-
-
-
-
-
-
-
-
 
 .subhead{
 	background-color: black;
@@ -586,14 +555,23 @@ img.center {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
-	margin-top: 3em;
-}
-#chapter-image1 {
-	background-image: url(../examples/images/intro-bg.jpg);
 }
 .top-caption {
 	padding: 2em;
-	background-color: rgba(245,238,234,.8);
+	
+  background-color: $b-chapter-image-caption-bg-color;
+  color: $b-chapter-image-caption-text-color;
+  font-size: $b-chapter-image-caption-font-size;
+  font-family: $b-chapter-image-caption-font-family;
+
+  cite {
+    display: block;
+    margin-top: 1em;
+
+    color: $b-chapter-image-credit-text-color;
+    font-size: $b-chapter-image-credit-font-size;
+    font-family: $b-chapter-image-credit-font-family;
+  }
 }
 
 @media (max-width: 992px) {
