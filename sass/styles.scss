@@ -47,6 +47,34 @@ html {
 }
 
 //
+//  NON-ARTICLE STRUCTURAL ELEMENTS
+//
+
+// Nav Bar
+.navbar {
+  background-color: $b-brookings-header-bg-color;
+  border-color: $b-brookings-header-border-color;
+
+  .logo {
+    border-color: $b-brookings-header-divider-color;
+  }
+
+  a, 
+  a:link, 
+  a:visited,
+  li > a,
+  li > a:link,
+  li > a:visited {
+    color: $b-brookings-header-link-color;
+
+    &:hover {
+      color: $b-brookings-header-link-hover-color;
+    }
+  }
+}
+
+
+//
 //  ARTICLE STRUCTURAL ELEMENTS
 //
 
@@ -166,13 +194,18 @@ html {
 
 // Drop Cap Styling
 // Style individual letter.
-.dropletter{
+.dropletter {
  float: left;
- font-size: 5em;
- line-height: 0.5;
  margin-right: .1em;
  margin-left: 0;
- margin-top: 25px;
+ display: block;
+ padding: 20px 10px 0px;
+ line-height: 1;
+
+ background-color: $b-drop-cap-bg-color;
+ color: $b-drop-cap-color;
+ font-size: $b-drop-cap-font-size;
+ font-family: $b-drop-cap-font;
 }
 // Major area with drop cap start.
 .drop{
@@ -206,6 +239,7 @@ img.pull-left {
  margin: 0.2em 2em 2em 0; 
 }
 img.center {
+  display: block;
   margin: 0 auto 2em;
 }
 
@@ -241,18 +275,21 @@ img.center {
       margin-bottom: 2em;
     }
   }
+  &.center {
+    margin-bottom: 2em;
+  }
 
   .caption {
     margin: 1em 0;
 
-    font-family: Arial, Helvetica, sans-serif;
     color: $b-media-container-caption-color;
-    font-size: 12px;
+    font-size: $b-media-container-caption-font-size;
+    font-family: $b-media-container-caption-font-family;
   }
   cite {
-    font-family: Arial, Helvetica, sans-serif;
     color: $b-media-container-credit-color;
-    font-size: 12px;
+    font-size: $b-media-container-credit-font-size;
+    font-family: $b-media-container-credit-font-family;
   }
 
 }
@@ -273,6 +310,17 @@ img.center {
     margin-right: 5%;
   }
 
+  @media screen and (max-width: $screen-sm) {
+    margin-bottom: 2em;
+    
+    &.pull-right {
+      margin-left: 0;
+    }
+    &.pull-left {
+      margin-right: 0;
+    }
+  }
+
   blockquote {
     padding: 0;
     
@@ -281,18 +329,23 @@ img.center {
     font-size: $b-text-container-blockquote-font-size;
     font-family: $b-text-container-blockquote-font;
   }
-}
-.section__quote__credit {
-  padding-left: 25%;
-  color: #fbb03b;
 
-  span {
-    display: block;
-    color: #fff;
-    font-style: italic;
+  h1,
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    margin-top: 0;
+    margin-bottom: .75em;
+  }
+
+  cite {
+    color: $b-text-container-credit-color;
+    font-size: $b-text-container-credit-font-size;
+    font-family: $b-text-container-credit-font-family;
   }
 }
-
 
 // HANGING ITEM positioning/sizing
 .hang {
@@ -397,6 +450,53 @@ img.center {
 }
 
 
+// ACCORDION visual styles
+.accordion {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2em;
+  
+  background-color: $b-accordion-bg-color;
+  color: $b-accordion-text-color;
+  font-family: $b-accordion-font-family;
+
+  &.pull-right {
+    margin-left: 5%;
+  }
+  &.pull-left {
+    margin-right: 5%;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  .hiddenContent {
+    margin-top: 1em;
+    padding-top: 1em;
+    display: none;
+
+    border-top: 1px solid #000;
+    color: $b-accordion-text-color;
+    font-family: $b-accordion-hidden-content-font-family;
+
+    p {
+      color: $b-accordion-text-color;
+      font-family: $b-accordion-hidden-content-font-family;
+    }
+  }
+}
+
+
 
 
 
@@ -464,28 +564,35 @@ img.center {
 // social sharing
 .social {
 	position: fixed;
-	right: 0;
 	top: 50%;
+
+  @if $b-share-bar-position == "left" {
+    left: 0;
+  }
+  @if $b-share-bar-position == "right" {
+    right: 0;
+  }
 }
 .social__bd {
 	position: relative;
 	top: -142px;
 	width: 33px;
 	height: 264px;
+
+  background-color: $b-share-bar-bg-color;
 }
 .social__bd a {
 	width: 33px;
 	height: 33px;
 	padding: 10px 3px 3px 3px;
 	display: block;
-	background: #333;
-	color: #fff;
+	color: $b-share-bar-link-color;
 	text-align: center;
 	font-size: 16px;
 }
 .social__bd a:hover {
-	background: #aaa;
-	color: #000;
+	background: $b-share-bar-link-hover-bg-color;
+	color: $b-share-bar-link-hover-color;
 }
 .social__bd a i {
 	position: relative;
@@ -589,5 +696,25 @@ img.center {
   	h2{
   		padding-top: 3%;
   	}
+  }
+}
+
+// Modal windows
+.modal {
+
+  .modal-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &.email-success-modal {
+    .modal-content {
+      background-color: $b-email-success-modal-bg-color;
+    }
+  }
+  &.email-fail-modal {
+    .modal-content {
+      background-color: $b-email-fail-modal-bg-color;
+    }
   }
 }
