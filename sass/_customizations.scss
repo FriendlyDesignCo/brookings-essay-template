@@ -30,10 +30,10 @@
 
 //
 // NON-ARTICLE LAYOUT ELEMENTS
-//
+//  
 
 // Brookings Header
-$b-brookings-header-bg-color: #222;
+$b-brookings-header-bg-color: black;
 $b-brookings-header-border-color: #000; // Border along the bottom of the nav bar
 $b-brookings-header-divider-color: #fff; // Border between the home button and Brookings logo
 
@@ -160,7 +160,6 @@ $b-text-container-credit-font-family: $font-family-sans-serif;
 
 $b-accordion-bg-color: $gray-lighter;
 $b-accordion-font-family: $font-family-sans-serif;
-
 $b-accordion-text-color: $gray-dark;
 $b-accordion-hidden-content-font-family: $font-family-sans-serif;
 
