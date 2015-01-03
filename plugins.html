@@ -81,6 +81,7 @@
 
             <ul class="nav navbar-nav" id="autonav">
               <li><a href="#intro">Intro</a></li>
+              <li><a href="#kitchen-sink">Kitchen Sink</a></li>
             </ul>
 
             <!-- The addthis class names are used by addthis script. social__bd and social-button are our classes. -->
@@ -118,15 +119,15 @@
 <div class="jumbotron" id="intro">
   <div class="container col-md-8 col-md-offset-2 col-sm-12">
     <h1 class="title">
-      Lorem Ipsum Dolor Sit Amet Non Et
+      Plugin Examples
     </h1>
     <h2 class="subtitle">
-      Life, Liberty, and the Pursuit of Terrorists
+      This page shows you how to use plugins
     </h2>
     <h3 class="author">
-      Stuart Taylor, Jr.
+      Example Author Name
     </h3>
-    <time datetime="2014-04-29">April 29, 2014</time>
+    <time datetime="2015-01-01">January 1, 2015</time>
   </div>
   <cite class="credit">Image credit</cite>
 </div>
@@ -134,301 +135,293 @@
 
 <!--
 //////////////////////////////////////////////////////////////////////////////
-New Section
+Each plugin below is included in its own section for mockup purposes.
+Plugins may be used anywhere within a section, multiple time per section
+if desired.
 //////////////////////////////////////////////////////////////////////////////
 -->
-<div class="section">
 
+<!-- 
+  ===============================
+  Modal Windows
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
   <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
-    <p class="drop"><span class="dropletter">T</span>his is a dropcap. Consectetur adipisicing elit. Sequi autem iure eos, nisi dolores fugit. Pariatur obcaecati sint molestias, est ratione vitae ad error excepturi voluptatibus ab nesciunt rerum delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur, nisi alias ab voluptate adipisci, quas sequi, impedit dolor earum optio voluptatibus eaque! Ratione qui, sunt laborum expedita amet odit.</p>
+  
+    <!-- Button trigger modal -->
+    <h3>Modal</h3>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">
+      Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Keep Up To Date</h4>
+          </div>
+          <div class="modal-body">
+            <p>Sign up for our updates.</p>
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
 
-    <img class="pull-right sharable" src="http://placehold.it/100x100" alt="Placeholder image" />
-
-    <p><strong>To the right is an example of a right, floating image.</strong> <a href="#">This is an in-text link.</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse amet sapiente cum libero corrupti expedita, a officiis quidem perferendis nihil placeat enim aliquid odio reprehenderit unde laborum est autem cupiditate. Illum earum animi, praesentium quam. Optio perspiciatis nulla ullam totam voluptatibus, fugit consequuntur ratione debitis repellat modi facilis at tempore autem rerum. Officiis atque quaerat adipisci deleniti quisquam repellat numquam!</p>
-
-    <img class="pull-left sharable" src="http://placehold.it/100x100" alt="Placeholder image" />
-
-    <p><strong>To the left is an example of a left, floating image.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse amet sapiente cum libero corrupti expedita, a officiis quidem perferendis nihil placeat enim aliquid odio reprehenderit unde laborum est autem cupiditate. Illum earum animi, praesentium quam. Optio perspiciatis nulla ullam totam voluptatibus, fugit consequuntur ratione debitis repellat modi facilis at tempore autem rerum. Officiis atque quaerat adipisci deleniti quisquam repellat numquam!</p>
-
-    <img class="center sharable" src="http://placehold.it/100x100" alt="Placeholder image" />
-
-    <p><strong>Above is an example of a centered image.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse amet sapiente cum libero corrupti expedita, a officiis quidem perferendis nihil placeat enim aliquid odio reprehenderit unde laborum est autem cupiditate. Illum earum animi, praesentium quam. Optio perspiciatis nulla ullam totam voluptatibus, fugit consequuntur ratione debitis repellat modi facilis at tempore autem rerum. Officiis atque quaerat adipisci deleniti quisquam repellat numquam!</p>
-
-    <div class="mediaContainer image pull-right hang col-sm-8 col-md-10">
-      <img src="http://placehold.it/300x150" alt="" class="sharable" />
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
+          </div>
+          <div class="modal-footer">
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button>-->
+          </div>
+        </div>
+      </div>
     </div>
-
-    <p><strong>To the right is an example of a right, floating, hanging image with a caption.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur animi unde nam dolore, soluta repudiandae voluptas blanditiis. Cupiditate error dicta vitae nobis ipsa, earum necessitatibus. Tempore neque pariatur in culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae fugit mollitia aperiam, ipsam sequi ex esse voluptates explicabo inventore. Similique sint id repudiandae cumque quos sequi, error facere culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi atque illo distinctio sit laboriosam perspiciatis dolor, hic porro expedita, officiis, maxime nemo amet dolorum nulla explicabo nesciunt deleniti quo nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus a consequatur facilis distinctio enim temporibus, quasi soluta, similique totam sapiente blanditiis accusantium cumque sed sit quo inventore sequi possimus, molestiae.</p>
-
-    <div class="mediaContainer image pull-left hang col-sm-8 col-md-10">
-      <img src="http://placehold.it/300x150" alt="" class="sharable" />
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating, hanging image with a caption.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur animi unde nam dolore, soluta repudiandae voluptas blanditiis. Cupiditate error dicta vitae nobis ipsa, earum necessitatibus. Tempore neque pariatur in culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae fugit mollitia aperiam, ipsam sequi ex esse voluptates explicabo inventore. Similique sint id repudiandae cumque quos sequi, error facere culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi atque illo distinctio sit laboriosam perspiciatis dolor, hic porro expedita, officiis, maxime nemo amet dolorum nulla explicabo nesciunt deleniti quo nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus a consequatur facilis distinctio enim temporibus, quasi soluta, similique totam sapiente blanditiis accusantium cumque sed sit quo inventore sequi possimus, molestiae.</p>
-
-    <div class="mediaContainer image pull-right col-sm-7 col-md-7">
-      <img src="http://placehold.it/300x150" alt="" class="sharable" />
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating image with a caption.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur animi unde nam dolore, soluta repudiandae voluptas blanditiis. Cupiditate error dicta vitae nobis ipsa, earum necessitatibus. Tempore neque pariatur in culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae fugit mollitia aperiam, ipsam sequi ex esse voluptates explicabo inventore. Similique sint id repudiandae cumque quos sequi, error facere culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi atque illo distinctio sit laboriosam perspiciatis dolor, hic porro expedita, officiis, maxime nemo amet dolorum nulla explicabo nesciunt deleniti quo nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus a consequatur facilis distinctio enim temporibus, quasi soluta, similique totam sapiente blanditiis accusantium cumque sed sit quo inventore sequi possimus, molestiae.</p>
-
-    <div class="mediaContainer image pull-left col-sm-7 col-md-7">
-      <img src="http://placehold.it/300x150" alt="" class="sharable" />
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating image with a caption.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur animi unde nam dolore, soluta repudiandae voluptas blanditiis. Cupiditate error dicta vitae nobis ipsa, earum necessitatibus. Tempore neque pariatur in culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae fugit mollitia aperiam, ipsam sequi ex esse voluptates explicabo inventore. Similique sint id repudiandae cumque quos sequi, error facere culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi atque illo distinctio sit laboriosam perspiciatis dolor, hic porro expedita, officiis, maxime nemo amet dolorum nulla explicabo nesciunt deleniti quo nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus a consequatur facilis distinctio enim temporibus, quasi soluta, similique totam sapiente blanditiis accusantium cumque sed sit quo inventore sequi possimus, molestiae.</p>
 
   </div> <!-- .content -->
 </div> <!-- .section -->
 
 
-<!--
-//////////////////////////////////////////////////////////////////////////////
-New Section
-//////////////////////////////////////////////////////////////////////////////
+<!-- 
+  ===============================
+  Carousel
+  ===============================
 -->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
 
-<div id="chapter-image1" class="chapter-image jumbotron">
-  <div class="col-md-3 top-caption">
-    <p>This is an example of an interstitial, faux-parallax chapter image.</p>
-    <cite class="credit">Image Credit AFP/Getty Images</cite>
-  </div>
-</div>
+    <!-- Carousel -->
+    <h3>Carousel</h3>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
-<div class="section">
-  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
-    
-    <div class="textContainer pull-right fixed">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officiis. Molestias pariatur rem consectetur eius vel.</blockquote>
-      <cite class="credit">- Javier Solana <span>Former foreign policy chief of the European Union</span></cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating, fixed pull quote.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde!</p>
-
-    <div class="textContainer pull-left fixed">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officiis. Molestias pariatur rem consectetur eius vel.</blockquote>
-      <cite class="credit">- Javier Solana <span>Former foreign policy chief of the European Union</span></cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating, fixed pull quote.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde!</p>
-
-    <div class="textContainer pull-right hang col-sm-6 col-md-6">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officiis. Molestias pariatur rem consectetur eius vel.</blockquote>
-      <cite class="credit">- Javier Solana <span>Former foreign policy chief of the European Union</span></cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating, hanging pull quote.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="textContainer pull-left hang col-sm-6 col-md-6">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officiis. Molestias pariatur rem consectetur eius vel.</blockquote>
-      <cite class="credit">- Javier Solana <span>Former foreign policy chief of the European Union</span></cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating, hanging pull quote.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="textContainer pull-right col-sm-6 col-md-6">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officiis. Molestias pariatur rem consectetur eius vel.</blockquote>
-      <cite class="credit">- Javier Solana <span>Former foreign policy chief of the European Union</span></cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating pull quote.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="textContainer pull-left col-sm-6 col-md-6">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officiis. Molestias pariatur rem consectetur eius vel.</blockquote>
-      <cite class="credit">- Javier Solana <span>Former foreign policy chief of the European Union</span></cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating pull quote.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-  </div> <!-- .content -->
-
-  <div class="clearfix"></div>
-</div> <!-- .section -->
-
-
-<!--
-//////////////////////////////////////////////////////////////////////////////
-New Section
-//////////////////////////////////////////////////////////////////////////////
--->
-<div class="section">
-
-  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
-    
-    <div class="mediaContainer video pull-right hang col-sm-10 col-md-10">
-      <div class="video-container-16-by-9">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/Zpt8UKslEyo" frameborder="0" allowfullscreen></iframe>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="examples/images/dresser-crop-edit.jpg" alt="dresser image">
+          <div class="carousel-caption">
+            Caption goes here 1.
+          </div>
+        </div>
+        <div class="item">
+          <img src="examples/images/dresser-crop-edit.jpg" alt="dresser image">
+          <div class="carousel-caption">
+            Caption goes here 2.
+          </div>
+        </div>
+        <div class="item">
+          <img src="examples/images/dresser-crop-edit.jpg" alt="dresser image">
+          <div class="carousel-caption">
+            Caption goes here 3.
+          </div>
+        </div>
       </div>
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
-    </div>
 
-    <p><strong>To the right is an example of a right, floating, hanging video.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a magnam earum aperiam, doloremque at quod iure molestiae tempora possimus, soluta, iste animi? Quaerat, debitis, in. Voluptate incidunt voluptates, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ratione repudiandae ipsam dicta quos facere. Soluta voluptatum autem voluptate natus aliquid laborum eaque reprehenderit quae nostrum, nam, iusto suscipit magnam?</p>
-
-    <div class="mediaContainer video pull-left hang col-sm-10 col-md-10">
-      <div class="video-container-16-by-9">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/Zpt8UKslEyo" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating, hanging video.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a magnam earum aperiam, doloremque at quod iure molestiae tempora possimus, soluta, iste animi? Quaerat, debitis, in. Voluptate incidunt voluptates, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ratione repudiandae ipsam dicta quos facere. Soluta voluptatum autem voluptate natus aliquid laborum eaque reprehenderit quae nostrum, nam, iusto suscipit magnam?</p>
-
-    <div class="mediaContainer video center col-sm-12 col-md-12">
-      <div class="video-container-16-by-9">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/Zpt8UKslEyo" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in quaerat non, impedit aliquam, nam provident beatae a quas, perferendis, numquam ut. (December 18, 2013)</p>
-      <cite class="credit">Image Credit Reuters/Yoan Valat/Pool</cite>
-    </div>
-
-    <p><strong>Above is an example of a centered video.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde!</p>
-
-    
-
-  </div> <!-- .content -->
-  <div class="clearfix"></div>
-</div> <!-- .section -->
-
-
-<!--
-//////////////////////////////////////////////////////////////////////////////
-New Section
-//////////////////////////////////////////////////////////////////////////////
--->
-<div class="section">
-  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
-    
-    <div class="textContainer pull-right fixed">
-      <h3>Lorem Ipsum Dolor Sit Amet</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam a quas ut enim iusto nesciunt autem neque alias laborum modi qui, facilis delectus consectetur! Nihil reiciendis quis suscipit aut iste.</p>
-      <cite class="credit">Text Credit</cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating, fixed text container.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde!</p>
-
-    <div class="textContainer pull-left fixed">
-      <h3>Lorem Ipsum Dolor Sit Amet</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam a quas ut enim iusto nesciunt autem neque alias laborum modi qui, facilis delectus consectetur! Nihil reiciendis quis suscipit aut iste.</p>
-      <cite class="credit">Text Credit</cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating, fixed text container.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde!</p>
-
-    <div class="textContainer pull-right hang col-sm-8 col-md-10">
-      <h3>Lorem Ipsum Dolor Sit Amet</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam a quas ut enim iusto nesciunt autem neque alias laborum modi qui, facilis delectus consectetur! Nihil reiciendis quis suscipit aut iste.</p>
-      <cite class="credit">Text Credit</cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating, hanging text container.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="textContainer pull-left hang col-sm-6 col-md-8">
-      <h3>Lorem Ipsum Dolor Sit Amet</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam a quas ut enim iusto nesciunt autem neque alias laborum modi qui, facilis delectus consectetur! Nihil reiciendis quis suscipit aut iste.</p>
-      <cite class="credit">Text Credit</cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating, hanging text container.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="textContainer pull-right col-sm-6 col-md-6">
-      <h3>Lorem Ipsum Dolor Sit Amet</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam a quas ut enim iusto nesciunt autem neque alias laborum modi qui, facilis delectus consectetur! Nihil reiciendis quis suscipit aut iste.</p>
-      <cite class="credit">Text Credit</cite>
-    </div>
-
-    <p><strong>To the right is an example of a right, floating text container.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="textContainer pull-left col-sm-6 col-md-6">
-      <h3>Lorem Ipsum Dolor Sit Amet</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam a quas ut enim iusto nesciunt autem neque alias laborum modi qui, facilis delectus consectetur! Nihil reiciendis quis suscipit aut iste.</p>
-      <cite class="credit">Text Credit</cite>
-    </div>
-
-    <p><strong>To the left is an example of a left, floating text container.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum illum quibusdam aliquam, eum deleniti earum voluptatibus inventore et ducimus, minus libero eaque! Est tempora adipisci, nesciunt sit magni obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, illo culpa mollitia! Nobis nemo minima omnis. In incidunt rem nulla? Facere natus maiores nihil ipsum est, dolores commodi voluptate! Excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero voluptatem nulla sequi dolores nihil provident, laborum vero earum, rerum quaerat unde aliquam delectus, placeat dignissimos et. Quis blanditiis, unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo recusandae, veniam maiores ullam accusamus sunt, natus animi eveniet, illum vitae mollitia nam odio suscipit atque culpa laborum aut laudantium.</p>
-
-    <div class="accordion pull-right col-sm-8 col-md-8">
-      <a class="toggle">
-        <h5>Toggle the content in the Accordion</h5>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
-      <div class="hiddenContent">
-        <p>I am the hidden accordion content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto rerum vero laudantium! Repellat, sint, aliquam porro corporis reiciendis temporibus dolore. Dolores, dicta? Quo maiores repudiandae quibusdam repellendus animi, nihil dolorum!</p>
-      </div>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div>
-
-    <p><strong>To the right is an example of an accordion element which will open and close on click.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam debitis sit, veritatis, dignissimos perferendis ratione dolorem facilis ipsum iusto similique minima, ipsam aperiam soluta, repudiandae doloribus provident numquam officiis accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cupiditate accusamus, fugiat quia, architecto corporis amet labore necessitatibus dolore laboriosam odio aspernatur quibusdam voluptas ipsum ut illo quis ad atque.</p>
-
-    <p><strong>Click the following button to view an email success modal.</strong></p>
-
-    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".email-success-modal">Open email success modal</button></p>
-
-    <div class="modal fade email-success-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          Email success message.
-        </div>
-      </div>
-    </div>
-
-    <p><strong>Click the following button to view an email failure modal.</strong></p>
-
-    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".email-fail-modal">Open email fail modal</button></p>
-
-    <div class="modal fade email-fail-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          Email failure message.
-        </div>
-      </div>
-    </div>
+    <!-- END Carousel -->
 
   </div> <!-- .content -->
-  <div class="clearfix"></div>
+</div> <!-- .section -->
+
+
+<!-- 
+  ===============================
+  D3 Charts
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+
+    <!--D3 Chart Example-->
+    <h3>D3 Chart</h3>
+    <!-- Place D3 and AmCharts into an .svg-test--fallback div to provide a fallback for non-SVG browsers -->
+    <div class="svg-test">
+    <div class="svg-test--fallback">
+      <p>This is fallback text for non-SVG browsers.</p>
+    </div>
+    <div class="svg-test--available">
+      <div id="map">
+          <div id="tooltip" class="hidden">
+            <!--<a href="<span id=artlink></span>" target="_blank"> link to article</a>-->
+            <div id="metroarea">Metro Area</div>
+            <div id="jobtitle">FDI Share of Total Jobs: <span id="jobs">Jobs</span></div>
+            <!-- <div id="jobs">Jobs</div>-->
+            <!--<div id="artlink">Click for metro profile (PDF)</div>-->
+          </div>
+          <div style="position: absolute; bottom: 0; left: 50px; font-size: .85em">mouse over metro areas for details</div>
+       </div>
+    </div>
+    </div>
+    <!--END D3 Chart Example-->
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+<!-- 
+  ===============================
+  Lazy Load
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+    
+    <!-- BEGIN lazy load example -->
+    <h3>Lazy Load</h3>
+    <p>If this image is loaded when you scroll to it, lazy loading is working.</p>
+    <img id="lazy-load" data-original="examples/images/timbalier.jpg" width="500" height="444" />
+    <!-- END lazy load example -->
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+<!-- 
+  ===============================
+  Fit Text
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+
+    <!-- BEGIN Fit Text example -->
+    <h3>Fit Text</h3>
+    <h4 id="fittext1">Heading Example (With FitText)</h4>
+    <p>Paragraph font size for reference. If the headline above fits in a single line, Fit Text is working.</p>
+    <!-- END Fit Text example -->
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+<!-- 
+  ===============================
+  Lettering.js
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+
+    <!-- BEGIN Lettering.js example -->
+    <h3>Lettering.js</h3>
+    <p class='lettering-example'>&ldquo;Sunlight is said to be the best of disinfectants.&rdquo; (Justice Louis Brandeis)</p>
+    <p>Paragraph font size for reference. If the quote above appears differently than this paragraph, Lettering.js is working.</p>
+    <!-- END Lettering.js example -->
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+<!-- 
+  ===============================
+  AmCharts
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+
+    <!-- BEGIN AmCharts example -->
+    <h3>AmCharts</h3>
+    <div id="amcharts-area-stacked" style="width:100%; height:400px; margin-bottom: 3em;"></div>
+    <div id="amcharts-column-simple" style="width:100%; height:400px; margin-bottom: 3em;"></div>
+    <div id="amcharts-pie-simple" style="width:100%; height:400px; margin-bottom: 3em;"></div>
+    <div id="amcharts-xy-simple" style="width:100%; height:400px; margin-bottom: 3em;"></div>
+    <!-- END AmCharts example -->
+
+  </div> <!-- .content -->
 </div> <!-- .section -->
 
 
 
-<div class="section">
-  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
-    <div class="textContainer pull-right hang col-sm-6 col-md-6">
-      <h3>FOR FURTHER READING</h3>
-      <ul>
-        <li><a href="#">Europe's Crisis, Europe's Future</a>
-            <em>2014, Kemal Derviş and Jacques Mistral, editors</em></li>
-        <li><a href="#">Europe’s Lost Decade</a>
-              <em>November 2013, Thomas Wright</em></li>
-        <li><a href="#">Europe in 25 Years</a>
-              <em>October 2013, Kemal Derviş</em></li>
-        <li><a href="#">Saving Europe: How National Politics Nearly Destroyed the Euro</a>
-              <em>2012, Carlo Bastasin</em></li>
-        <li><a href="#">Key Issues on European Banking Union: Trade-Offs and Some Recommendations</a>
-              <em>November 2012, Douglas J. Elliott</em></li>
-       <li> <a href="#">Center on the United States and Europe</a></li>
-       </ul>
+<!-- 
+  ===============================
+  AmMap
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+
+    <!-- BEGIN AmMap example -->
+    <h3>AmMap</h3>
+    <div id="ammap-heatmap" style="width:100%; height:400px; margin-bottom: 3em;"></div>
+    <div id="ammap-bubbles" style="width:100%; height:400px; margin-bottom: 3em;"></div>
+    <!-- END AmMap example -->
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+
+<!-- 
+  ===============================
+  Basic Sly Scroller
+  ===============================
+-->
+<div class="section" id="kitchen-sink">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
+
+    <!-- BEGIN Sly Example -->
+    <h3 id="sly">Basic Sly Scroller</h3>
+    <div class="frame" id="basic" style="overflow: hidden;">
+      <ul class="clearfix" style="-webkit-transform: translateZ(0px) translateX(0px); width: 6840px;">
+        <li>0</li><li>1</li><li>2</li><li class="active">3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+        <li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li>
+        <li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li>
+        <li>28</li><li>29</li>
+      </ul>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
-    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
-    <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
-    <div class="textContainer pull-right hang col-sm-6 col-md-6">
-      <h3>Author Biography</h3>
-      <img class="pull-left sharable" src="http://placehold.it/100x100" alt="Placeholder image">
-      <p>Strobe Talbott is president of the Brookings Institution. Talbott, whose career spans journalism, government service, and academe, is an expert on U.S. foreign policy, with specialties on Europe, Russia, South Asia and nuclear arms control. As deputy secretary of state in the Clinton administration, Talbott was deeply involved in both the conduct of U.S. policy abroad and the management of executive branch relations with Congress. He is the author of numerous books including, most recently, <a href="#">Fast Forward: Ethics and Politics in the Age of Global Warming</a>, with William Antholis.</p>
+    <ul class="pages"><li class="active">1</li><li class="">2</li><li class="">3</li><li class="">4</li><li class="">5</li><li class="">6</li></ul>
+    <div class="scrollbar">
+      <div class="handle" style="-webkit-transform: translateZ(0px) translateX(0px); width: 190px;">
+        <div class="mousearea"></div>
+      </div>
     </div>
-    <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
-    <p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.</p>
-    <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
-    <p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.</p>
-  </div><!-- .content -->
-  <div class="clearfix"></div>
-</div><!-- .section -->
+    <div class="controls center">
+      <button class="btn prevPage disabled" disabled=""><i class="icon-chevron-left"></i><i class="icon-chevron-left"></i> page</button>
+      <button class="btn prev"><i class="icon-chevron-left"></i> item</button>
+      <button class="btn backward disabled" disabled=""><i class="icon-chevron-left"></i> move</button>
+
+      <div class="btn-group">
+        <button class="btn toStart">toStart</button>
+        <button class="btn toCenter">toCenter</button>
+        <button class="btn toEnd">toEnd</button>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn toStart" data-item="10"><strong>10</strong> toStart</button>
+        <button class="btn toCenter" data-item="10"><strong>10</strong> toCenter</button>
+        <button class="btn toEnd" data-item="10"><strong>10</strong> toEnd</button>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn add"><i class="icon-plus-sign"></i></button>
+        <button class="btn remove"><i class="icon-minus-sign"></i></button>
+      </div>
+
+      <button class="btn forward">move <i class="icon-chevron-right"></i></button>
+      <button class="btn next">item <i class="icon-chevron-right"></i></button>
+      <button class="btn nextPage">page <i class="icon-chevron-right"></i><i class="icon-chevron-right"></i></button>
+    </div>
+    <!-- END Sly Example -->
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
 
 
 
@@ -533,10 +526,7 @@ $(".drop").each(function(i) {
 <script src="javascripts/vendor/jquery.fittext.js"></script>
 <!-- FitText Example -->
 <script type="text/javascript">
-	$("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '150px' });
-	$("#fittext2").fitText(0.8);
-	$("#fittext3").fitText(4);
-	$("#fittext4").fitText(3);
+	$("#fittext1").fitText(1.5);
 </script>
 <!-- END FitText --> 
 
