@@ -718,3 +718,166 @@ img.center {
     }
   }
 }
+
+// D3 Chart styles
+.svg-test {
+  .multimedia {
+    border: none;
+    background-image: none;
+    display: none;
+  }
+  #container {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #666;
+      letter-spacing: 0.1em;
+      width: 950px;
+      position: relative;
+  }
+  #container h3 {
+      color: #071E36;
+      text-transform: uppercase;
+      text-align: center;
+  }
+  #map {
+      width: 100%;
+      padding-top: 20px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #title {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      color: #015376;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      clear: both;
+      text-align: center;
+  }
+  svg {
+      /*float: left;*/
+      margin-left: auto;
+      margin-right: auto;
+      clear: both;
+    max-width: 100%;
+  }
+  /*  .years {
+
+    margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+  }
+  .year {float: left;
+  list-style:none;
+  margin: 0px,20px,0px,20px;
+  padding: 10px;
+  }
+    .year:hover {
+    color:#999;
+    text-decoration:underline;
+    }
+    
+    .year:active {fill:#666;
+    color:red;}*/
+  circle:hover {
+      fill: orange;
+      cursor: pointer;
+  }
+  #tooltip {
+      position: absolute;
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      background-color: white;
+      -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+      pointer-events: none;
+      z-index: 300;
+  }
+  #tooltip.hidden {
+      display: none;
+  }
+  #tooltip p {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+  }
+  #artlink {
+      margin-top: 1em;
+  }
+  #metroarea {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  #jobtitle {
+      font-size: .9em;
+      letter-spacing: .13em;
+  }
+  #jobs {
+      font-weight: bold;
+      margin-top: .5em;
+  }
+  #artlink {
+      font-size: .8em;
+      letter-spacing: .13em;
+      color: #c60;
+  }
+  #textbox {
+      width: 100%;
+      position: absolute;
+      top: 320px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  #select {
+      font-size: .8em;
+      text-transform: uppercase;
+      text-align: center;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      clear: both;
+  }
+  #container a:link {
+      text-decoration: none;
+  }
+   #container a:visited {
+      text-decoration: none;
+  }
+  #container  a:hover {
+      text-decoration: none;
+  }
+  #container  a:active {
+      text-decoration: none;
+  }
+   #container ul {
+      list-style: none;
+      cursor: pointer;
+  }
+}
+
+// Lettering.js example
+.lettering-example .word1 {
+  font-size: 1.45em;
+}
+
+.lettering-example .word7 {
+  font-size: 1.25em;
+}
+
+.lettering-example .word9 {
+  font-size: 1.35em;
+}
+
+// Cycolotron
+/* See http://bootsnipp.com/snippets/featured/easy-panoramic-headers */
+.cycle {
+  background-image: url('../images/panorama.jpg');
+  height: 200px;
+  cursor: move; 
+}
+

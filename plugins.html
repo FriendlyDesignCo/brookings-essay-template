@@ -1,66 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brookings Template</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brookings Template</title>
 
-  <!-- Bootstrap -->
-  <link href="stylesheets/styles.css" rel="stylesheet">
+    <!-- STYLES (Bootstrap + customizations) -->
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
+    <![endif]-->
 
-      <!-- modernizr -->
-      <script src="javascripts/vendor/modernizr.custom.77072.js"></script>
+    <!-- modernizr -->
+    <script src="javascripts/vendor/modernizr.custom.77072.js"></script>
+    
+    <!-- CSS FOR PLUGINS --------------------------------- -->
+    <link rel="stylesheet" href="pluginsCSS.css" type="text/css">
+    <link rel="shortcut icon" href="images/brookings-favicon.ico" >
 
-      <!-- CSS FOR PAGE ELEMENTS --------------------------------- -->
-      <!-- AmMap -->
-      <link rel="stylesheet" href="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.css" type="text/css">
-      <!-- END AmMap -->
-      <!-- Microscope for Images (Bootstrap-Magnify) -->
-      <link rel="stylesheet" href="stylesheets/bootstrap-magnify.min.css" type="text/css">
-      <!-- END Microscope for Images (Bootstrap-Magnify) -->
-      <!-- Caption Hover Effect Text -->
-      <link rel="stylesheet" href="stylesheets/caption-hover.css" type="text/css">
-      <!-- END Caption Hover Effect Text -->
-      <!-- Owl Carousel -->
-      <link rel="stylesheet" href="stylesheets/owl.carousel.min.css" type="text/css">
-      <link rel="stylesheet" href="stylesheets/owl.theme.default.min.css" type="text/css">
-      <!-- END Owl Carousel -->
-      <!-- END CSS FOR PAGE ELEMENTS --------------------------------- -->
-
-      <!-- CSS FOR EXAMPLES --------------------------------- -->
-      <!--Code for D3 Chart Example-->
-      <script src="examples/d3-chart/d3.v3.js" type="text/javascript"></script>
-      <link href="examples/d3-chart/chartstyles.css" rel="stylesheet">
-      <!--END Code for D3 Chart Example-->
-      <!--Code for Lettering.js Example-->
-      <link href="examples/lettering.js/lettering.css" rel="stylesheet">
-      <!--END Code for Lettering.js Example-->
-      <!-- BEGIN Cycletron -->
-      <link rel="stylesheet" href="examples/cyclotron/cyclotron.css" type="text/css">
-      <!-- END Cycletron -->
-      <!-- END CSS FOR EXAMPLES --------------------------------- -->
-
-      <link rel="shortcut icon" href="images/brookings-favicon.ico" >
-
-    </head>
+  </head>
     <body data-spy="scroll" data-target=".navbar-main" data-offset="150">
-
-
-
-
-
-
-
-
-
 
       <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-main" role="navigation">
         <div class="container-fluid">
@@ -98,9 +62,9 @@
               <li><a href="#js-transitions">JS Transitions</a></li>
             </ul>
 
-</div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
-</nav>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      </nav>
 
 
 
@@ -619,21 +583,7 @@ if desired.
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Compiled plugins for Bootstrap -->
-<script src="javascripts/bootstrap/affix.js"></script>
-<script src="javascripts/bootstrap/alert.js"></script>
-<script src="javascripts/bootstrap/button.js"></script>
-<script src="javascripts/bootstrap/carousel.js"></script>
-<script src="javascripts/bootstrap/collapse.js"></script>
-<script src="javascripts/bootstrap/dropdown.js"></script>
-<script src="javascripts/bootstrap/modal.js"></script>
-<script src="javascripts/bootstrap/tooltip.js"></script>
-<script src="javascripts/bootstrap/popover.js"></script>
-<script src="javascripts/bootstrap/scrollspy.js"></script>
-<script src="javascripts/bootstrap/tab.js"></script>
-<script src="javascripts/bootstrap/transition.js"></script>
-<!-- END Compiled plugins for Bootstrap -->
-<script src="javascripts/main.js"></script>
+<script src="pluginsJS.js"></script>
 <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- -->	
 
 
@@ -652,9 +602,8 @@ $(document).ready(function(){
 
 <!-- BEGIN Background Image Full Width (For IE8+) -->
 <!-- /* See https://github.com/louisremi/jquery.backgroundSize.js */ -->
-<script src="javascripts/vendor/jquery.backgroundSize.js"></script>
 <script>
-$("#intro").css({backgroundSize: "cover"});
+  $("#intro").css({backgroundSize: "cover"});
 </script>
 <!-- END Background Image Full Width (For IE8+) -->
 
@@ -668,12 +617,6 @@ $(".hed").each(function(i) {
 });
 </script>
 <!-- END Auto-Generated Navigation -->
-
-<!-- BEGIN Responsive Images -->
-<!-- Using Picturefill (http://scottjehl.github.io/picturefill) -->
-<!-- The Modernizr build *must* create the picture element -->
-<script src="javascripts/vendor/picturefill.min.js" async></script>
-<!-- END Responsive Images -->
 
 <!-- BEGIN Drop Cap Generating Code -->
 <!-- Based on code from http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/ and universalized. Style .dropletter and .dropletter_<letter> -->
@@ -692,16 +635,12 @@ $(".drop").each(function(i) {
 </script>
 <!-- END Drop Cap Generating Code -->
 
-<!-- FitText -->
-<script src="javascripts/vendor/jquery.fittext.js"></script>
 <!-- FitText Example -->
 <script type="text/javascript">
 	$("#fittext1").fitText(1.5);
 </script>
 <!-- END FitText --> 
 
-<!-- Lazy Load -->
-<script type="text/javascript" src="javascripts/vendor/jquery.lazyload.min.js"></script>
 <!-- Lazy Load example -->
 <script>
 	/*  Syntax: http://www.appelsiini.net/projects/lazyload   */
@@ -732,8 +671,6 @@ $('body').scrollspy({ target: '.navbar-main' })
   </script>
 <!--END code for Scrollspy (sticky header and waypoints)-->
 
-<!-- Lettering.js -->
-<script src="javascripts/vendor/jquery.lettering.min.js"></script>
 <!-- Lettering.js example -->
 <script>
   $(document).ready(function() {
@@ -742,26 +679,1142 @@ $('body').scrollspy({ target: '.navbar-main' })
 </script>
 <!-- END Lettering.js -->
 
-<!-- AmCharts -->
-<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/amcharts.js"></script>
-<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/serial.js"></script>
-<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/pie.js"></script>
-<script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js"></script>
-<script src="javascripts/vendor/amcharts_3.9.0.free/amcharts/xy.js" ></script>
 <!-- AmCharts examples -->
-<script src="examples/amcharts/amcharts.js"></script>
+<script>
+      /* Stacked Simple */
+  
+      var stackedChart;
+
+      var stackedChartData = [
+          {
+              "year": 1995,
+              "cars": 1567,
+              "motorcycles": 683,
+              "bicycles": 146
+          },
+          {
+              "year": 1996,
+              "cars": 1617,
+              "motorcycles": 691,
+              "bicycles": 138
+          },
+          {
+              "year": 1997,
+              "cars": 1630,
+              "motorcycles": 642,
+              "bicycles": 127
+          },
+          {
+              "year": 1998,
+              "cars": 1660,
+              "motorcycles": 699,
+              "bicycles": 105
+          },
+          {
+              "year": 1999,
+              "cars": 1683,
+              "motorcycles": 721,
+              "bicycles": 109
+          },
+          {
+              "year": 2000,
+              "cars": 1691,
+              "motorcycles": 737,
+              "bicycles": 112
+          },
+          {
+              "year": 2001,
+              "cars": 1298,
+              "motorcycles": 680,
+              "bicycles": 101
+          },
+          {
+              "year": 2002,
+              "cars": 1275,
+              "motorcycles": 664,
+              "bicycles": 97
+          },
+          {
+              "year": 2003,
+              "cars": 1246,
+              "motorcycles": 648,
+              "bicycles": 93
+          },
+          {
+              "year": 2004,
+              "cars": 1218,
+              "motorcycles": 637,
+              "bicycles": 101
+          },
+          {
+              "year": 2005,
+              "cars": 1213,
+              "motorcycles": 633,
+              "bicycles": 87
+          },
+          {
+              "year": 2006,
+              "cars": 1199,
+              "motorcycles": 621,
+              "bicycles": 79
+          },
+          {
+              "year": 2007,
+              "cars": 1110,
+              "motorcycles": 210,
+              "bicycles": 81
+          },
+          {
+              "year": 2008,
+              "cars": 1165,
+              "motorcycles": 232,
+              "bicycles": 75
+          },
+          {
+              "year": 2009,
+              "cars": 1145,
+              "motorcycles": 219,
+              "bicycles": 88
+          },
+          {
+              "year": 2010,
+              "cars": 1163,
+              "motorcycles": 201,
+              "bicycles": 82
+          },
+          {
+              "year": 2011,
+              "cars": 1180,
+              "motorcycles": 285,
+              "bicycles": 87
+          },
+          {
+              "year": 2012,
+              "cars": 1159,
+              "motorcycles": 277,
+              "bicycles": 71
+          }
+      ];
+
+      AmCharts.ready(function () {
+          // SERIAL CHART
+          stackedChart = new AmCharts.AmSerialChart();
+          stackedChart.pathToImages = "javascripts/vendor/amcharts_3.9.0.free/amcharts/images/";
+          stackedChart.dataProvider = stackedChartData;
+          stackedChart.marginTop = 10;
+          stackedChart.categoryField = "year";
+
+          // AXES
+          // Category
+          var categoryAxis = stackedChart.categoryAxis;
+          categoryAxis.gridAlpha = 0.07;
+          categoryAxis.axisColor = "#DADADA";
+          categoryAxis.startOnAxis = true;
+
+          // Value
+          var valueAxis = new AmCharts.ValueAxis();
+          valueAxis.stackType = "regular"; // this line makes the chart "stacked"
+          valueAxis.gridAlpha = 0.07;
+          valueAxis.title = "Traffic incidents";
+          stackedChart.addValueAxis(valueAxis);
+
+          // GUIDES are vertical (can also be horizontal) lines (or areas) marking some event.
+          // first guide
+          var guide1 = new AmCharts.Guide();
+          guide1.category = "2001";
+          guide1.lineColor = "#CC0000";
+          guide1.lineAlpha = 1;
+          guide1.dashLength = 2;
+          guide1.inside = true;
+          guide1.labelRotation = 90;
+          guide1.label = "fines for speeding increased";
+          categoryAxis.addGuide(guide1);
+
+          // second guide
+          var guide2 = new AmCharts.Guide();
+          guide2.category = "2007";
+          guide2.lineColor = "#CC0000";
+          guide2.lineAlpha = 1;
+          guide2.dashLength = 2;
+          guide2.inside = true;
+          guide2.labelRotation = 90;
+          guide2.label = "motorcycle maintenance fee introduced";
+          categoryAxis.addGuide(guide2);
+
+
+          // GRAPHS
+          // first graph
+          var graph = new AmCharts.AmGraph();
+          graph.type = "line"; // it's simple line graph
+          graph.title = "Cars";
+          graph.valueField = "cars";
+          graph.lineAlpha = 0;
+          graph.fillAlphas = 0.6; // setting fillAlphas to > 0 value makes it area graph
+          graph.balloonText = "<img src='examples/amcharts/images/car.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>[[value]]</b></span>";
+          graph.hidden = true;
+          stackedChart.addGraph(graph);
+
+          // second graph
+          graph = new AmCharts.AmGraph();
+          graph.type = "line";
+          graph.title = "Motorcycles";
+          graph.valueField = "motorcycles";
+          graph.lineAlpha = 0;
+          graph.fillAlphas = 0.6;
+          graph.balloonText = "<img src='examples/amcharts/images/motorcycle.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>[[value]]</b></span>";
+          stackedChart.addGraph(graph);
+
+          // third graph
+          graph = new AmCharts.AmGraph();
+          graph.type = "line";
+          graph.title = "Bicycles";
+          graph.valueField = "bicycles";
+          graph.lineAlpha = 0;
+          graph.fillAlphas = 0.6;
+          graph.balloonText = "<img src='examples/amcharts/images/bicycle.png' style='vertical-align:bottom; margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'><b>[[value]]</b></span>";
+          stackedChart.addGraph(graph);
+
+          // LEGEND
+          var legend = new AmCharts.AmLegend();
+          legend.position = "top";
+          legend.valueText = "[[value]]";
+          legend.valueWidth = 100;
+          legend.valueAlign = "left";
+          legend.equalWidths = false;
+          legend.periodValueText = "total: [[value.sum]]"; // this is displayed when mouse is not over the stackedChart.
+          stackedChart.addLegend(legend);
+
+          // CURSOR
+          var chartCursor = new AmCharts.ChartCursor();
+          chartCursor.cursorAlpha = 0;
+          stackedChart.addChartCursor(chartCursor);
+
+          // SCROLLBAR
+          var chartScrollbar = new AmCharts.ChartScrollbar();
+          chartScrollbar.color = "#FFFFFF";
+          stackedChart.addChartScrollbar(chartScrollbar);
+
+          // WRITE
+          stackedChart.write("amcharts-area-stacked");
+      });
+
+
+
+
+        /* Column Simple */
+        
+        var columnChart;
+
+        var columnChartData = [
+            {
+                "country": "USA",
+                "visits": 4025
+            },
+            {
+                "country": "China",
+                "visits": 1882
+            },
+            {
+                "country": "Japan",
+                "visits": 1809
+            },
+            {
+                "country": "Germany",
+                "visits": 1322
+            },
+            {
+                "country": "UK",
+                "visits": 1122
+            },
+            {
+                "country": "France",
+                "visits": 1114
+            },
+            {
+                "country": "India",
+                "visits": 984
+            },
+            {
+                "country": "Spain",
+                "visits": 711
+            },
+            {
+                "country": "Netherlands",
+                "visits": 665
+            },
+            {
+                "country": "Russia",
+                "visits": 580
+            },
+            {
+                "country": "South Korea",
+                "visits": 443
+            },
+            {
+                "country": "Canada",
+                "visits": 441
+            },
+            {
+                "country": "Brazil",
+                "visits": 395
+            },
+            {
+                "country": "Italy",
+                "visits": 386
+            },
+            {
+                "country": "Australia",
+                "visits": 384
+            },
+            {
+                "country": "Taiwan",
+                "visits": 338
+            },
+            {
+                "country": "Poland",
+                "visits": 328
+            }
+        ];
+
+
+        AmCharts.ready(function () {
+            // SERIAL CHART
+            columnChart = new AmCharts.AmSerialChart();
+            columnChart.dataProvider = columnChartData;
+            columnChart.categoryField = "country";
+            columnChart.startDuration = 1;
+
+            // AXES
+            // category
+            var categoryAxis = columnChart.categoryAxis;
+            categoryAxis.labelRotation = 90;
+            categoryAxis.gridPosition = "start";
+
+            // value
+            // in case you don't want to change default settings of value axis,
+            // you don't need to create it, as one value axis is created automatically.
+
+            // GRAPH
+            var graph = new AmCharts.AmGraph();
+            graph.valueField = "visits";
+            graph.balloonText = "[[category]]: <b>[[value]]</b>";
+            graph.type = "column";
+            graph.lineAlpha = 0;
+            graph.fillAlphas = 0.8;
+            columnChart.addGraph(graph);
+
+            // CURSOR
+            var chartCursor = new AmCharts.ChartCursor();
+            chartCursor.cursorAlpha = 0;
+            chartCursor.zoomable = false;
+            chartCursor.categoryBalloonEnabled = false;
+            columnChart.addChartCursor(chartCursor);
+
+            columnChart.creditsPosition = "top-right";
+
+            columnChart.write("amcharts-column-simple");
+        });
+
+
+
+
+
+            var pieChart;
+            var legend;
+
+            var pieChartData = [{
+                country: "Czech Republic",
+                litres: 301.90
+            }, {
+                country: "Ireland",
+                litres: 201.10
+            }, {
+                country: "Germany",
+                litres: 165.80
+            }, {
+                country: "Australia",
+                litres: 139.90
+            }, {
+                country: "Austria",
+                litres: 128.30
+            }, {
+                country: "UK",
+                litres: 99.00
+            }, {
+                country: "Belgium",
+                litres: 60.00
+            }];
+
+            AmCharts.ready(function () {
+                // PIE CHART
+                pieChart = new AmCharts.AmPieChart();
+                pieChart.dataProvider = pieChartData;
+                pieChart.titleField = "country";
+                pieChart.valueField = "litres";
+                pieChart.outlineColor = "#FFFFFF";
+                pieChart.outlineAlpha = 0.8;
+                pieChart.outlineThickness = 2;
+
+                // WRITE
+                pieChart.write("amcharts-pie-simple");
+            });
+
+
+
+
+
+
+            var xyChart;
+
+            var xyChartData = [
+                {
+                    "x": 10,
+                    "y": 14,
+                    "value": 59
+                },
+                {
+                    "x": 5,
+                    "y": 3,
+                    "value": 50
+                },
+                {
+                    "x": -10,
+                    "y": -3,
+                    "value": 19
+                },
+                {
+                    "x": -6,
+                    "y": 5,
+                    "value": 65
+                },
+                {
+                    "x": 15,
+                    "y": -4,
+                    "value": 92
+                },
+                {
+                    "x": 13,
+                    "y": 1,
+                    "value": 8
+                },
+                {
+                    "x": 1,
+                    "y": 6,
+                    "value": 35
+                }
+            ];
+
+            AmCharts.ready(function () {
+                // XY Chart
+                xyChart = new AmCharts.AmXYChart();
+                xyChart.pathToImages = "javascripts/vendor/amcharts_3.9.0.free/amcharts/images/";
+                xyChart.dataProvider = xyChartData;
+                xyChart.startDuration = 1.5;
+
+                // AXES
+                // X
+                var xAxis = new AmCharts.ValueAxis();
+                xAxis.title = "X Axis";
+                xAxis.position = "bottom";
+                xAxis.autoGridCount = true;
+                xyChart.addValueAxis(xAxis);
+
+                // Y
+                var yAxis = new AmCharts.ValueAxis();
+                yAxis.title = "Y Axis";
+                yAxis.position = "left";
+                yAxis.autoGridCount = true;
+                xyChart.addValueAxis(yAxis);
+
+                // GRAPH
+                var graph = new AmCharts.AmGraph();
+                graph.valueField = "value"; // valueField responsible for the size of a bullet
+                graph.xField = "x";
+                graph.yField = "y";
+                graph.lineAlpha = 0;
+                graph.bullet = "bubble";
+                graph.balloonText = "x:<b>[[x]]</b> y:<b>[[y]]</b><br>value:<b>[[value]]</b>"
+                xyChart.addGraph(graph);
+
+                // WRITE                                
+                xyChart.write("amcharts-xy-simple");
+            });
+</script>
 <!-- END AmCharts -->
 
-<!-- AmMap -->
-<script src="javascripts/vendor/ammap_3.9.0.free/ammap/ammap.js"></script>
 <!-- AmMap examples -->
 <script src="javascripts/vendor/ammap_3.9.0.free/ammap/maps/js/usaLow.js"></script>
 <script src="javascripts/vendor/ammap_3.9.0.free/ammap/maps/js/worldLow.js"></script>
-<script src="examples/ammap/ammap.js"></script>
+<script>
+      var heatMap;
+
+    AmCharts.ready(function() {
+        heatMap = new AmCharts.AmMap();
+        heatMap.pathToImages = "javascripts/vendor/ammap_3.9.0.free/ammap/images/";
+
+        heatMap.colorSteps = 10;
+
+        var heatMapDataProvider = {
+            mapVar: AmCharts.maps.usaLow,
+
+            areas: [
+                {
+                id: "US-AL",
+                value: 4447100},
+            {
+                id: "US-AK",
+                value: 626932},
+            {
+                id: "US-AZ",
+                value: 5130632},
+            {
+                id: "US-AR",
+                value: 2673400},
+            {
+                id: "US-CA",
+                value: 33871648},
+            {
+                id: "US-CO",
+                value: 4301261},
+            {
+                id: "US-CT",
+                value: 3405565},
+            {
+                id: "US-DE",
+                value: 783600},
+            {
+                id: "US-FL",
+                value: 15982378},
+            {
+                id: "US-GA",
+                value: 8186453},
+            {
+                id: "US-HI",
+                value: 1211537},
+            {
+                id: "US-ID",
+                value: 1293953},
+            {
+                id: "US-IL",
+                value: 12419293},
+            {
+                id: "US-IN",
+                value: 6080485},
+            {
+                id: "US-IA",
+                value: 2926324},
+            {
+                id: "US-KS",
+                value: 2688418},
+            {
+                id: "US-KY",
+                value: 4041769},
+            {
+                id: "US-LA",
+                value: 4468976},
+            {
+                id: "US-ME",
+                value: 1274923},
+            {
+                id: "US-MD",
+                value: 5296486},
+            {
+                id: "US-MA",
+                value: 6349097},
+            {
+                id: "US-MI",
+                value: 9938444},
+            {
+                id: "US-MN",
+                value: 4919479},
+            {
+                id: "US-MS",
+                value: 2844658},
+            {
+                id: "US-MO",
+                value: 5595211},
+            {
+                id: "US-MT",
+                value: 902195},
+            {
+                id: "US-NE",
+                value: 1711263},
+            {
+                id: "US-NV",
+                value: 1998257},
+            {
+                id: "US-NH",
+                value: 1235786},
+            {
+                id: "US-NJ",
+                value: 8414350},
+            {
+                id: "US-NM",
+                value: 1819046},
+            {
+                id: "US-NY",
+                value: 18976457},
+            {
+                id: "US-NC",
+                value: 8049313},
+            {
+                id: "US-ND",
+                value: 642200},
+            {
+                id: "US-OH",
+                value: 11353140},
+            {
+                id: "US-OK",
+                value: 3450654},
+            {
+                id: "US-OR",
+                value: 3421399},
+            {
+                id: "US-PA",
+                value: 12281054},
+            {
+                id: "US-RI",
+                value: 1048319},
+            {
+                id: "US-SC",
+                value: 4012012},
+            {
+                id: "US-SD",
+                value: 754844},
+            {
+                id: "US-TN",
+                value: 5689283},
+            {
+                id: "US-TX",
+                value: 20851820},
+            {
+                id: "US-UT",
+                value: 2233169},
+            {
+                id: "US-VT",
+                value: 608827},
+            {
+                id: "US-VA",
+                value: 7078515},
+            {
+                id: "US-WA",
+                value: 5894121},
+            {
+                id: "US-WV",
+                value: 1808344},
+            {
+                id: "US-WI",
+                value: 5363675},
+            {
+                id: "US-WY",
+                value: 493782}]
+        };
+
+        heatMap.areasSettings = {
+            autoZoom: true
+        };
+        heatMap.dataProvider = heatMapDataProvider;
+
+        var valueLegend = new AmCharts.ValueLegend();
+        valueLegend.right = 10;
+        valueLegend.minValue = "little";
+        valueLegend.maxValue = "a lot!";
+        heatMap.valueLegend = valueLegend;
+
+        heatMap.write("ammap-heatmap");
+    });
+
+          /*
+            although ammap has methos like getAreaCenterLatitude and getAreaCenterLongitude,
+            they are not suitable in quite a lot of cases as the center of some countries
+            is even outside the country itself (like US, because of Alaska and Hawaii)
+            That's why wehave the coordinates stored here
+          */
+
+      var latlong = {};
+      latlong["AD"] = {"latitude":42.5, "longitude":1.5};
+      latlong["AE"] = {"latitude":24, "longitude":54};
+      latlong["AF"] = {"latitude":33, "longitude":65};
+      latlong["AG"] = {"latitude":17.05, "longitude":-61.8};
+      latlong["AI"] = {"latitude":18.25, "longitude":-63.1667};
+      latlong["AL"] = {"latitude":41, "longitude":20};
+      latlong["AM"] = {"latitude":40, "longitude":45};
+      latlong["AN"] = {"latitude":12.25, "longitude":-68.75};
+      latlong["AO"] = {"latitude":-12.5, "longitude":18.5};
+      latlong["AP"] = {"latitude":35, "longitude":105};
+      latlong["AQ"] = {"latitude":-90, "longitude":0};
+      latlong["AR"] = {"latitude":-34, "longitude":-64};
+      latlong["AS"] = {"latitude":-14.3333, "longitude":-170};
+      latlong["AT"] = {"latitude":47.3333, "longitude":13.3333};
+      latlong["AU"] = {"latitude":-27, "longitude":133};
+      latlong["AW"] = {"latitude":12.5, "longitude":-69.9667};
+      latlong["AZ"] = {"latitude":40.5, "longitude":47.5};
+      latlong["BA"] = {"latitude":44, "longitude":18};
+      latlong["BB"] = {"latitude":13.1667, "longitude":-59.5333};
+      latlong["BD"] = {"latitude":24, "longitude":90};
+      latlong["BE"] = {"latitude":50.8333, "longitude":4};
+      latlong["BF"] = {"latitude":13, "longitude":-2};
+      latlong["BG"] = {"latitude":43, "longitude":25};
+      latlong["BH"] = {"latitude":26, "longitude":50.55};
+      latlong["BI"] = {"latitude":-3.5, "longitude":30};
+      latlong["BJ"] = {"latitude":9.5, "longitude":2.25};
+      latlong["BM"] = {"latitude":32.3333, "longitude":-64.75};
+      latlong["BN"] = {"latitude":4.5, "longitude":114.6667};
+      latlong["BO"] = {"latitude":-17, "longitude":-65};
+      latlong["BR"] = {"latitude":-10, "longitude":-55};
+      latlong["BS"] = {"latitude":24.25, "longitude":-76};
+      latlong["BT"] = {"latitude":27.5, "longitude":90.5};
+      latlong["BV"] = {"latitude":-54.4333, "longitude":3.4};
+      latlong["BW"] = {"latitude":-22, "longitude":24};
+      latlong["BY"] = {"latitude":53, "longitude":28};
+      latlong["BZ"] = {"latitude":17.25, "longitude":-88.75};
+      latlong["CA"] = {"latitude":54, "longitude":-100};
+      latlong["CC"] = {"latitude":-12.5, "longitude":96.8333};
+      latlong["CD"] = {"latitude":0, "longitude":25};
+      latlong["CF"] = {"latitude":7, "longitude":21};
+      latlong["CG"] = {"latitude":-1, "longitude":15};
+      latlong["CH"] = {"latitude":47, "longitude":8};
+      latlong["CI"] = {"latitude":8, "longitude":-5};
+      latlong["CK"] = {"latitude":-21.2333, "longitude":-159.7667};
+      latlong["CL"] = {"latitude":-30, "longitude":-71};
+      latlong["CM"] = {"latitude":6, "longitude":12};
+      latlong["CN"] = {"latitude":35, "longitude":105};
+      latlong["CO"] = {"latitude":4, "longitude":-72};
+      latlong["CR"] = {"latitude":10, "longitude":-84};
+      latlong["CU"] = {"latitude":21.5, "longitude":-80};
+      latlong["CV"] = {"latitude":16, "longitude":-24};
+      latlong["CX"] = {"latitude":-10.5, "longitude":105.6667};
+      latlong["CY"] = {"latitude":35, "longitude":33};
+      latlong["CZ"] = {"latitude":49.75, "longitude":15.5};
+      latlong["DE"] = {"latitude":51, "longitude":9};
+      latlong["DJ"] = {"latitude":11.5, "longitude":43};
+      latlong["DK"] = {"latitude":56, "longitude":10};
+      latlong["DM"] = {"latitude":15.4167, "longitude":-61.3333};
+      latlong["DO"] = {"latitude":19, "longitude":-70.6667};
+      latlong["DZ"] = {"latitude":28, "longitude":3};
+      latlong["EC"] = {"latitude":-2, "longitude":-77.5};
+      latlong["EE"] = {"latitude":59, "longitude":26};
+      latlong["EG"] = {"latitude":27, "longitude":30};
+      latlong["EH"] = {"latitude":24.5, "longitude":-13};
+      latlong["ER"] = {"latitude":15, "longitude":39};
+      latlong["ES"] = {"latitude":40, "longitude":-4};
+      latlong["ET"] = {"latitude":8, "longitude":38};
+      latlong["EU"] = {"latitude":47, "longitude":8};
+      latlong["FI"] = {"latitude":62, "longitude":26};
+      latlong["FJ"] = {"latitude":-18, "longitude":175};
+      latlong["FK"] = {"latitude":-51.75, "longitude":-59};
+      latlong["FM"] = {"latitude":6.9167, "longitude":158.25};
+      latlong["FO"] = {"latitude":62, "longitude":-7};
+      latlong["FR"] = {"latitude":46, "longitude":2};
+      latlong["GA"] = {"latitude":-1, "longitude":11.75};
+      latlong["GB"] = {"latitude":54, "longitude":-2};
+      latlong["GD"] = {"latitude":12.1167, "longitude":-61.6667};
+      latlong["GE"] = {"latitude":42, "longitude":43.5};
+      latlong["GF"] = {"latitude":4, "longitude":-53};
+      latlong["GH"] = {"latitude":8, "longitude":-2};
+      latlong["GI"] = {"latitude":36.1833, "longitude":-5.3667};
+      latlong["GL"] = {"latitude":72, "longitude":-40};
+      latlong["GM"] = {"latitude":13.4667, "longitude":-16.5667};
+      latlong["GN"] = {"latitude":11, "longitude":-10};
+      latlong["GP"] = {"latitude":16.25, "longitude":-61.5833};
+      latlong["GQ"] = {"latitude":2, "longitude":10};
+      latlong["GR"] = {"latitude":39, "longitude":22};
+      latlong["GS"] = {"latitude":-54.5, "longitude":-37};
+      latlong["GT"] = {"latitude":15.5, "longitude":-90.25};
+      latlong["GU"] = {"latitude":13.4667, "longitude":144.7833};
+      latlong["GW"] = {"latitude":12, "longitude":-15};
+      latlong["GY"] = {"latitude":5, "longitude":-59};
+      latlong["HK"] = {"latitude":22.25, "longitude":114.1667};
+      latlong["HM"] = {"latitude":-53.1, "longitude":72.5167};
+      latlong["HN"] = {"latitude":15, "longitude":-86.5};
+      latlong["HR"] = {"latitude":45.1667, "longitude":15.5};
+      latlong["HT"] = {"latitude":19, "longitude":-72.4167};
+      latlong["HU"] = {"latitude":47, "longitude":20};
+      latlong["ID"] = {"latitude":-5, "longitude":120};
+      latlong["IE"] = {"latitude":53, "longitude":-8};
+      latlong["IL"] = {"latitude":31.5, "longitude":34.75};
+      latlong["IN"] = {"latitude":20, "longitude":77};
+      latlong["IO"] = {"latitude":-6, "longitude":71.5};
+      latlong["IQ"] = {"latitude":33, "longitude":44};
+      latlong["IR"] = {"latitude":32, "longitude":53};
+      latlong["IS"] = {"latitude":65, "longitude":-18};
+      latlong["IT"] = {"latitude":42.8333, "longitude":12.8333};
+      latlong["JM"] = {"latitude":18.25, "longitude":-77.5};
+      latlong["JO"] = {"latitude":31, "longitude":36};
+      latlong["JP"] = {"latitude":36, "longitude":138};
+      latlong["KE"] = {"latitude":1, "longitude":38};
+      latlong["KG"] = {"latitude":41, "longitude":75};
+      latlong["KH"] = {"latitude":13, "longitude":105};
+      latlong["KI"] = {"latitude":1.4167, "longitude":173};
+      latlong["KM"] = {"latitude":-12.1667, "longitude":44.25};
+      latlong["KN"] = {"latitude":17.3333, "longitude":-62.75};
+      latlong["KP"] = {"latitude":40, "longitude":127};
+      latlong["KR"] = {"latitude":37, "longitude":127.5};
+      latlong["KW"] = {"latitude":29.3375, "longitude":47.6581};
+      latlong["KY"] = {"latitude":19.5, "longitude":-80.5};
+      latlong["KZ"] = {"latitude":48, "longitude":68};
+      latlong["LA"] = {"latitude":18, "longitude":105};
+      latlong["LB"] = {"latitude":33.8333, "longitude":35.8333};
+      latlong["LC"] = {"latitude":13.8833, "longitude":-61.1333};
+      latlong["LI"] = {"latitude":47.1667, "longitude":9.5333};
+      latlong["LK"] = {"latitude":7, "longitude":81};
+      latlong["LR"] = {"latitude":6.5, "longitude":-9.5};
+      latlong["LS"] = {"latitude":-29.5, "longitude":28.5};
+      latlong["LT"] = {"latitude":55, "longitude":24};
+      latlong["LU"] = {"latitude":49.75, "longitude":6};
+      latlong["LV"] = {"latitude":57, "longitude":25};
+      latlong["LY"] = {"latitude":25, "longitude":17};
+      latlong["MA"] = {"latitude":32, "longitude":-5};
+      latlong["MC"] = {"latitude":43.7333, "longitude":7.4};
+      latlong["MD"] = {"latitude":47, "longitude":29};
+      latlong["ME"] = {"latitude":42.5, "longitude":19.4};
+      latlong["MG"] = {"latitude":-20, "longitude":47};
+      latlong["MH"] = {"latitude":9, "longitude":168};
+      latlong["MK"] = {"latitude":41.8333, "longitude":22};
+      latlong["ML"] = {"latitude":17, "longitude":-4};
+      latlong["MM"] = {"latitude":22, "longitude":98};
+      latlong["MN"] = {"latitude":46, "longitude":105};
+      latlong["MO"] = {"latitude":22.1667, "longitude":113.55};
+      latlong["MP"] = {"latitude":15.2, "longitude":145.75};
+      latlong["MQ"] = {"latitude":14.6667, "longitude":-61};
+      latlong["MR"] = {"latitude":20, "longitude":-12};
+      latlong["MS"] = {"latitude":16.75, "longitude":-62.2};
+      latlong["MT"] = {"latitude":35.8333, "longitude":14.5833};
+      latlong["MU"] = {"latitude":-20.2833, "longitude":57.55};
+      latlong["MV"] = {"latitude":3.25, "longitude":73};
+      latlong["MW"] = {"latitude":-13.5, "longitude":34};
+      latlong["MX"] = {"latitude":23, "longitude":-102};
+      latlong["MY"] = {"latitude":2.5, "longitude":112.5};
+      latlong["MZ"] = {"latitude":-18.25, "longitude":35};
+      latlong["NA"] = {"latitude":-22, "longitude":17};
+      latlong["NC"] = {"latitude":-21.5, "longitude":165.5};
+      latlong["NE"] = {"latitude":16, "longitude":8};
+      latlong["NF"] = {"latitude":-29.0333, "longitude":167.95};
+      latlong["NG"] = {"latitude":10, "longitude":8};
+      latlong["NI"] = {"latitude":13, "longitude":-85};
+      latlong["NL"] = {"latitude":52.5, "longitude":5.75};
+      latlong["NO"] = {"latitude":62, "longitude":10};
+      latlong["NP"] = {"latitude":28, "longitude":84};
+      latlong["NR"] = {"latitude":-0.5333, "longitude":166.9167};
+      latlong["NU"] = {"latitude":-19.0333, "longitude":-169.8667};
+      latlong["NZ"] = {"latitude":-41, "longitude":174};
+      latlong["OM"] = {"latitude":21, "longitude":57};
+      latlong["PA"] = {"latitude":9, "longitude":-80};
+      latlong["PE"] = {"latitude":-10, "longitude":-76};
+      latlong["PF"] = {"latitude":-15, "longitude":-140};
+      latlong["PG"] = {"latitude":-6, "longitude":147};
+      latlong["PH"] = {"latitude":13, "longitude":122};
+      latlong["PK"] = {"latitude":30, "longitude":70};
+      latlong["PL"] = {"latitude":52, "longitude":20};
+      latlong["PM"] = {"latitude":46.8333, "longitude":-56.3333};
+      latlong["PR"] = {"latitude":18.25, "longitude":-66.5};
+      latlong["PS"] = {"latitude":32, "longitude":35.25};
+      latlong["PT"] = {"latitude":39.5, "longitude":-8};
+      latlong["PW"] = {"latitude":7.5, "longitude":134.5};
+      latlong["PY"] = {"latitude":-23, "longitude":-58};
+      latlong["QA"] = {"latitude":25.5, "longitude":51.25};
+      latlong["RE"] = {"latitude":-21.1, "longitude":55.6};
+      latlong["RO"] = {"latitude":46, "longitude":25};
+      latlong["RS"] = {"latitude":44, "longitude":21};
+      latlong["RU"] = {"latitude":60, "longitude":100};
+      latlong["RW"] = {"latitude":-2, "longitude":30};
+      latlong["SA"] = {"latitude":25, "longitude":45};
+      latlong["SB"] = {"latitude":-8, "longitude":159};
+      latlong["SC"] = {"latitude":-4.5833, "longitude":55.6667};
+      latlong["SD"] = {"latitude":15, "longitude":30};
+      latlong["SE"] = {"latitude":62, "longitude":15};
+      latlong["SG"] = {"latitude":1.3667, "longitude":103.8};
+      latlong["SH"] = {"latitude":-15.9333, "longitude":-5.7};
+      latlong["SI"] = {"latitude":46, "longitude":15};
+      latlong["SJ"] = {"latitude":78, "longitude":20};
+      latlong["SK"] = {"latitude":48.6667, "longitude":19.5};
+      latlong["SL"] = {"latitude":8.5, "longitude":-11.5};
+      latlong["SM"] = {"latitude":43.7667, "longitude":12.4167};
+      latlong["SN"] = {"latitude":14, "longitude":-14};
+      latlong["SO"] = {"latitude":10, "longitude":49};
+      latlong["SR"] = {"latitude":4, "longitude":-56};
+      latlong["ST"] = {"latitude":1, "longitude":7};
+      latlong["SV"] = {"latitude":13.8333, "longitude":-88.9167};
+      latlong["SY"] = {"latitude":35, "longitude":38};
+      latlong["SZ"] = {"latitude":-26.5, "longitude":31.5};
+      latlong["TC"] = {"latitude":21.75, "longitude":-71.5833};
+      latlong["TD"] = {"latitude":15, "longitude":19};
+      latlong["TF"] = {"latitude":-43, "longitude":67};
+      latlong["TG"] = {"latitude":8, "longitude":1.1667};
+      latlong["TH"] = {"latitude":15, "longitude":100};
+      latlong["TJ"] = {"latitude":39, "longitude":71};
+      latlong["TK"] = {"latitude":-9, "longitude":-172};
+      latlong["TM"] = {"latitude":40, "longitude":60};
+      latlong["TN"] = {"latitude":34, "longitude":9};
+      latlong["TO"] = {"latitude":-20, "longitude":-175};
+      latlong["TR"] = {"latitude":39, "longitude":35};
+      latlong["TT"] = {"latitude":11, "longitude":-61};
+      latlong["TV"] = {"latitude":-8, "longitude":178};
+      latlong["TW"] = {"latitude":23.5, "longitude":121};
+      latlong["TZ"] = {"latitude":-6, "longitude":35};
+      latlong["UA"] = {"latitude":49, "longitude":32};
+      latlong["UG"] = {"latitude":1, "longitude":32};
+      latlong["UM"] = {"latitude":19.2833, "longitude":166.6};
+      latlong["US"] = {"latitude":38, "longitude":-97};
+      latlong["UY"] = {"latitude":-33, "longitude":-56};
+      latlong["UZ"] = {"latitude":41, "longitude":64};
+      latlong["VA"] = {"latitude":41.9, "longitude":12.45};
+      latlong["VC"] = {"latitude":13.25, "longitude":-61.2};
+      latlong["VE"] = {"latitude":8, "longitude":-66};
+      latlong["VG"] = {"latitude":18.5, "longitude":-64.5};
+      latlong["VI"] = {"latitude":18.3333, "longitude":-64.8333};
+      latlong["VN"] = {"latitude":16, "longitude":106};
+      latlong["VU"] = {"latitude":-16, "longitude":167};
+      latlong["WF"] = {"latitude":-13.3, "longitude":-176.2};
+      latlong["WS"] = {"latitude":-13.5833, "longitude":-172.3333};
+      latlong["YE"] = {"latitude":15, "longitude":48};
+      latlong["YT"] = {"latitude":-12.8333, "longitude":45.1667};
+      latlong["ZA"] = {"latitude":-29, "longitude":24};
+      latlong["ZM"] = {"latitude":-15, "longitude":30};
+      latlong["ZW"] = {"latitude":-20, "longitude":30};
+
+    var mapData = [
+      {"code":"AF" , "name":"Afghanistan", "value":32358260, "color":"#eea638"},
+      {"code":"AL" , "name":"Albania", "value":3215988, "color":"#d8854f"},
+      {"code":"DZ" , "name":"Algeria", "value":35980193, "color":"#de4c4f"},
+      {"code":"AO" , "name":"Angola", "value":19618432, "color":"#de4c4f"},
+      {"code":"AR" , "name":"Argentina", "value":40764561, "color":"#86a965"},
+      {"code":"AM" , "name":"Armenia", "value":3100236, "color":"#d8854f"},
+      {"code":"AU" , "name":"Australia", "value":22605732, "color":"#8aabb0"},
+      {"code":"AT" , "name":"Austria", "value":8413429, "color":"#d8854f"},
+      {"code":"AZ" , "name":"Azerbaijan", "value":9306023, "color":"#d8854f"},
+      {"code":"BH" , "name":"Bahrain", "value":1323535, "color":"#eea638"},
+      {"code":"BD" , "name":"Bangladesh", "value":150493658, "color":"#eea638"},
+      {"code":"BY" , "name":"Belarus", "value":9559441, "color":"#d8854f"},
+      {"code":"BE" , "name":"Belgium", "value":10754056, "color":"#d8854f"},
+      {"code":"BJ" , "name":"Benin", "value":9099922, "color":"#de4c4f"},
+      {"code":"BT" , "name":"Bhutan", "value":738267, "color":"#eea638"},
+      {"code":"BO" , "name":"Bolivia", "value":10088108, "color":"#86a965"},
+      {"code":"BA" , "name":"Bosnia and Herzegovina", "value":3752228, "color":"#d8854f"},
+      {"code":"BW" , "name":"Botswana", "value":2030738, "color":"#de4c4f"},
+      {"code":"BR" , "name":"Brazil", "value":196655014, "color":"#86a965"},
+      {"code":"BN" , "name":"Brunei", "value":405938, "color":"#eea638"},
+      {"code":"BG" , "name":"Bulgaria", "value":7446135, "color":"#d8854f"},
+      {"code":"BF" , "name":"Burkina Faso", "value":16967845, "color":"#de4c4f"},
+      {"code":"BI" , "name":"Burundi", "value":8575172, "color":"#de4c4f"},
+      {"code":"KH" , "name":"Cambodia", "value":14305183, "color":"#eea638"},
+      {"code":"CM" , "name":"Cameroon", "value":20030362, "color":"#de4c4f"},
+      {"code":"CA" , "name":"Canada", "value":34349561, "color":"#a7a737"},
+      {"code":"CV" , "name":"Cape Verde", "value":500585, "color":"#de4c4f"},
+      {"code":"CF" , "name":"Central African Rep.", "value":4486837, "color":"#de4c4f"},
+      {"code":"TD" , "name":"Chad", "value":11525496, "color":"#de4c4f"},
+      {"code":"CL" , "name":"Chile", "value":17269525, "color":"#86a965"},
+      {"code":"CN" , "name":"China", "value":1347565324, "color":"#eea638"},
+      {"code":"CO" , "name":"Colombia", "value":46927125, "color":"#86a965"},
+      {"code":"KM" , "name":"Comoros", "value":753943, "color":"#de4c4f"},
+      {"code":"CD" , "name":"Congo, Dem. Rep.", "value":67757577, "color":"#de4c4f"},
+      {"code":"CG" , "name":"Congo, Rep.", "value":4139748, "color":"#de4c4f"},
+      {"code":"CR" , "name":"Costa Rica", "value":4726575, "color":"#a7a737"},
+      {"code":"CI" , "name":"Cote d'Ivoire", "value":20152894, "color":"#de4c4f"},
+      {"code":"HR" , "name":"Croatia", "value":4395560, "color":"#d8854f"},
+      {"code":"CU" , "name":"Cuba", "value":11253665, "color":"#a7a737"},
+      {"code":"CY" , "name":"Cyprus", "value":1116564, "color":"#d8854f"},
+      {"code":"CZ" , "name":"Czech Rep.", "value":10534293, "color":"#d8854f"},
+      {"code":"DK" , "name":"Denmark", "value":5572594, "color":"#d8854f"},
+      {"code":"DJ" , "name":"Djibouti", "value":905564, "color":"#de4c4f"},
+      {"code":"DO" , "name":"Dominican Rep.", "value":10056181, "color":"#a7a737"},
+      {"code":"EC" , "name":"Ecuador", "value":14666055, "color":"#86a965"},
+      {"code":"EG" , "name":"Egypt", "value":82536770, "color":"#de4c4f"},
+      {"code":"SV" , "name":"El Salvador", "value":6227491, "color":"#a7a737"},
+      {"code":"GQ" , "name":"Equatorial Guinea", "value":720213, "color":"#de4c4f"},
+      {"code":"ER" , "name":"Eritrea", "value":5415280, "color":"#de4c4f"},
+      {"code":"EE" , "name":"Estonia", "value":1340537, "color":"#d8854f"},
+      {"code":"ET" , "name":"Ethiopia", "value":84734262, "color":"#de4c4f"},
+      {"code":"FJ" , "name":"Fiji", "value":868406, "color":"#8aabb0"},
+      {"code":"FI" , "name":"Finland", "value":5384770, "color":"#d8854f"},
+      {"code":"FR" , "name":"France", "value":63125894, "color":"#d8854f"},
+      {"code":"GA" , "name":"Gabon", "value":1534262, "color":"#de4c4f"},
+      {"code":"GM" , "name":"Gambia", "value":1776103, "color":"#de4c4f"},
+      {"code":"GE" , "name":"Georgia", "value":4329026, "color":"#d8854f"},
+      {"code":"DE" , "name":"Germany", "value":82162512, "color":"#d8854f"},
+      {"code":"GH" , "name":"Ghana", "value":24965816, "color":"#de4c4f"},
+      {"code":"GR" , "name":"Greece", "value":11390031, "color":"#d8854f"},
+      {"code":"GT" , "name":"Guatemala", "value":14757316, "color":"#a7a737"},
+      {"code":"GN" , "name":"Guinea", "value":10221808, "color":"#de4c4f"},
+      {"code":"GW" , "name":"Guinea-Bissau", "value":1547061, "color":"#de4c4f"},
+      {"code":"GY" , "name":"Guyana", "value":756040, "color":"#86a965"},
+      {"code":"HT" , "name":"Haiti", "value":10123787, "color":"#a7a737"},
+      {"code":"HN" , "name":"Honduras", "value":7754687, "color":"#a7a737"},
+      {"code":"HK" , "name":"Hong Kong, China", "value":7122187, "color":"#eea638"},
+      {"code":"HU" , "name":"Hungary", "value":9966116, "color":"#d8854f"},
+      {"code":"IS" , "name":"Iceland", "value":324366, "color":"#d8854f"},
+      {"code":"IN" , "name":"India", "value":1241491960, "color":"#eea638"},
+      {"code":"ID" , "name":"Indonesia", "value":242325638, "color":"#eea638"},
+      {"code":"IR" , "name":"Iran", "value":74798599, "color":"#eea638"},
+      {"code":"IQ" , "name":"Iraq", "value":32664942, "color":"#eea638"},
+      {"code":"IE" , "name":"Ireland", "value":4525802, "color":"#d8854f"},
+      {"code":"IL" , "name":"Israel", "value":7562194, "color":"#eea638"},
+      {"code":"IT" , "name":"Italy", "value":60788694, "color":"#d8854f"},
+      {"code":"JM" , "name":"Jamaica", "value":2751273, "color":"#a7a737"},
+      {"code":"JP" , "name":"Japan", "value":126497241, "color":"#eea638"},
+      {"code":"JO" , "name":"Jordan", "value":6330169, "color":"#eea638"},
+      {"code":"KZ" , "name":"Kazakhstan", "value":16206750, "color":"#eea638"},
+      {"code":"KE" , "name":"Kenya", "value":41609728, "color":"#de4c4f"},
+      {"code":"KR" , "name":"Korea, Dem. Rep.", "value":24451285, "color":"#eea638"},
+      {"code":"KP" , "name":"Korea, Rep.", "value":48391343, "color":"#eea638"},
+      {"code":"KW" , "name":"Kuwait", "value":2818042, "color":"#eea638"},
+      {"code":"KG" , "name":"Kyrgyzstan", "value":5392580, "color":"#eea638"},
+      {"code":"LA" , "name":"Laos", "value":6288037, "color":"#eea638"},
+      {"code":"LV" , "name":"Latvia", "value":2243142, "color":"#d8854f"},
+      {"code":"LB" , "name":"Lebanon", "value":4259405, "color":"#eea638"},
+      {"code":"LS" , "name":"Lesotho", "value":2193843, "color":"#de4c4f"},
+      {"code":"LR" , "name":"Liberia", "value":4128572, "color":"#de4c4f"},
+      {"code":"LY" , "name":"Libya", "value":6422772, "color":"#de4c4f"},
+      {"code":"LT" , "name":"Lithuania", "value":3307481, "color":"#d8854f"},
+      {"code":"LU" , "name":"Luxembourg", "value":515941, "color":"#d8854f"},
+      {"code":"MK" , "name":"Macedonia, FYR", "value":2063893, "color":"#d8854f"},
+      {"code":"MG" , "name":"Madagascar", "value":21315135, "color":"#de4c4f"},
+      {"code":"MW" , "name":"Malawi", "value":15380888, "color":"#de4c4f"},
+      {"code":"MY" , "name":"Malaysia", "value":28859154, "color":"#eea638"},
+      {"code":"ML" , "name":"Mali", "value":15839538, "color":"#de4c4f"},
+      {"code":"MR" , "name":"Mauritania", "value":3541540, "color":"#de4c4f"},
+      {"code":"MU" , "name":"Mauritius", "value":1306593, "color":"#de4c4f"},
+      {"code":"MX" , "name":"Mexico", "value":114793341, "color":"#a7a737"},
+      {"code":"MD" , "name":"Moldova", "value":3544864, "color":"#d8854f"},
+      {"code":"MN" , "name":"Mongolia", "value":2800114, "color":"#eea638"},
+      {"code":"ME" , "name":"Montenegro", "value":632261, "color":"#d8854f"},
+      {"code":"MA" , "name":"Morocco", "value":32272974, "color":"#de4c4f"},
+      {"code":"MZ" , "name":"Mozambique", "value":23929708, "color":"#de4c4f"},
+      {"code":"MM" , "name":"Myanmar", "value":48336763, "color":"#eea638"},
+      {"code":"NA" , "name":"Namibia", "value":2324004, "color":"#de4c4f"},
+      {"code":"NP" , "name":"Nepal", "value":30485798, "color":"#eea638"},
+      {"code":"NL" , "name":"Netherlands", "value":16664746, "color":"#d8854f"},
+      {"code":"NZ" , "name":"New Zealand", "value":4414509, "color":"#8aabb0"},
+      {"code":"NI" , "name":"Nicaragua", "value":5869859, "color":"#a7a737"},
+      {"code":"NE" , "name":"Niger", "value":16068994, "color":"#de4c4f"},
+      {"code":"NG" , "name":"Nigeria", "value":162470737, "color":"#de4c4f"},
+      {"code":"NO" , "name":"Norway", "value":4924848, "color":"#d8854f"},
+      {"code":"OM" , "name":"Oman", "value":2846145, "color":"#eea638"},
+      {"code":"PK" , "name":"Pakistan", "value":176745364, "color":"#eea638"},
+      {"code":"PA" , "name":"Panama", "value":3571185, "color":"#a7a737"},
+      {"code":"PG" , "name":"Papua New Guinea", "value":7013829, "color":"#8aabb0"},
+      {"code":"PY" , "name":"Paraguay", "value":6568290, "color":"#86a965"},
+      {"code":"PE" , "name":"Peru", "value":29399817, "color":"#86a965"},
+      {"code":"PH" , "name":"Philippines", "value":94852030, "color":"#eea638"},
+      {"code":"PL" , "name":"Poland", "value":38298949, "color":"#d8854f"},
+      {"code":"PT" , "name":"Portugal", "value":10689663, "color":"#d8854f"},
+      {"code":"PR" , "name":"Puerto Rico", "value":3745526, "color":"#a7a737"},
+      {"code":"QA" , "name":"Qatar", "value":1870041, "color":"#eea638"},
+      {"code":"RO" , "name":"Romania", "value":21436495, "color":"#d8854f"},
+      {"code":"RU" , "name":"Russia", "value":142835555, "color":"#d8854f"},
+      {"code":"RW" , "name":"Rwanda", "value":10942950, "color":"#de4c4f"},
+      {"code":"SA" , "name":"Saudi Arabia", "value":28082541, "color":"#eea638"},
+      {"code":"SN" , "name":"Senegal", "value":12767556, "color":"#de4c4f"},
+      {"code":"RS" , "name":"Serbia", "value":9853969, "color":"#d8854f"},
+      {"code":"SL" , "name":"Sierra Leone", "value":5997486, "color":"#de4c4f"},
+      {"code":"SG" , "name":"Singapore", "value":5187933, "color":"#eea638"},
+      {"code":"SK" , "name":"Slovak Republic", "value":5471502, "color":"#d8854f"},
+      {"code":"SI" , "name":"Slovenia", "value":2035012, "color":"#d8854f"},
+      {"code":"SB" , "name":"Solomon Islands", "value":552267, "color":"#8aabb0"},
+      {"code":"SO" , "name":"Somalia", "value":9556873, "color":"#de4c4f"},
+      {"code":"ZA" , "name":"South Africa", "value":50459978, "color":"#de4c4f"},
+      {"code":"ES" , "name":"Spain", "value":46454895, "color":"#d8854f"},
+      {"code":"LK" , "name":"Sri Lanka", "value":21045394, "color":"#eea638"},
+      {"code":"SD" , "name":"Sudan", "value":34735288, "color":"#de4c4f"},
+      {"code":"SR" , "name":"Suriname", "value":529419, "color":"#86a965"},
+      {"code":"SZ" , "name":"Swaziland", "value":1203330, "color":"#de4c4f"},
+      {"code":"SE" , "name":"Sweden", "value":9440747, "color":"#d8854f"},
+      {"code":"CH" , "name":"Switzerland", "value":7701690, "color":"#d8854f"},
+      {"code":"SY" , "name":"Syria", "value":20766037, "color":"#eea638"},
+      {"code":"TW" , "name":"Taiwan", "value":23072000, "color":"#eea638"},
+      {"code":"TJ" , "name":"Tajikistan", "value":6976958, "color":"#eea638"},
+      {"code":"TZ" , "name":"Tanzania", "value":46218486, "color":"#de4c4f"},
+      {"code":"TH" , "name":"Thailand", "value":69518555, "color":"#eea638"},
+      {"code":"TG" , "name":"Togo", "value":6154813, "color":"#de4c4f"},
+      {"code":"TT" , "name":"Trinidad and Tobago", "value":1346350, "color":"#a7a737"},
+      {"code":"TN" , "name":"Tunisia", "value":10594057, "color":"#de4c4f"},
+      {"code":"TR" , "name":"Turkey", "value":73639596, "color":"#d8854f"},
+      {"code":"TM" , "name":"Turkmenistan", "value":5105301, "color":"#eea638"},
+      {"code":"UG" , "name":"Uganda", "value":34509205, "color":"#de4c4f"},
+      {"code":"UA" , "name":"Ukraine", "value":45190180, "color":"#d8854f"},
+      {"code":"AE" , "name":"United Arab Emirates", "value":7890924, "color":"#eea638"},
+      {"code":"GB" , "name":"United Kingdom", "value":62417431, "color":"#d8854f"},
+      {"code":"US" , "name":"United States", "value":313085380, "color":"#a7a737"},
+      {"code":"UY" , "name":"Uruguay", "value":3380008, "color":"#86a965"},
+      {"code":"UZ" , "name":"Uzbekistan", "value":27760267, "color":"#eea638"},
+      {"code":"VE" , "name":"Venezuela", "value":29436891, "color":"#86a965"},
+      {"code":"PS" , "name":"West Bank and Gaza", "value":4152369, "color":"#eea638"},
+      {"code":"VN" , "name":"Vietnam", "value":88791996, "color":"#eea638"},
+      {"code":"YE" , "name":"Yemen, Rep.", "value":24799880, "color":"#eea638"},
+      {"code":"ZM" , "name":"Zambia", "value":13474959, "color":"#de4c4f"},
+      {"code":"ZW" , "name":"Zimbabwe", "value":12754378, "color":"#de4c4f"}];
+
+
+      var map;
+      var minBulletSize = 3;
+      var maxBulletSize = 70;
+      var min = Infinity;
+      var max = -Infinity;
+
+      // AmCharts.theme = AmCharts.themes.black;
+
+       // get min and max values
+      for (var i = 0; i < mapData.length; i++) {
+        var value = mapData[i].value;
+        if (value < min) {
+          min = value;
+        }
+        if (value > max) {
+          max = value;
+        }
+      }
+
+       // build map
+      AmCharts.ready(function() {
+        map = new AmCharts.AmMap();
+        map.pathToImages = "javascripts/vendor/ammap_3.9.0.free/ammap/images/";
+
+        map.addTitle("Population of the World in 2011", 14);
+        map.addTitle("source: Gapminder", 11);
+        map.areasSettings = {
+          unlistedAreasColor: "#FFFFFF",
+          unlistedAreasAlpha: 0.1
+        };
+        map.imagesSettings = {
+          balloonText: "<span style='font-size:14px;'><b>[[title]]</b>: [[value]]</span>",
+          alpha:0.6
+        }
+
+        var dataProvider = {
+          mapVar: AmCharts.maps.worldLow,
+          images: []
+        }
+
+        // create circle for each country
+        for (var i = 0; i < mapData.length; i++) {
+          var dataItem = mapData[i];
+          var value = dataItem.value;
+          // calculate size of a bubble
+          var size = (value - min) / (max - min) * (maxBulletSize - minBulletSize) + minBulletSize;
+          if (size < minBulletSize) {
+            size = minBulletSize;
+          }
+          var id = dataItem.code;
+
+          dataProvider.images.push({
+            type: "circle",
+            width: size,
+            height: size,
+            color: dataItem.color,
+            longitude: latlong[id].longitude,
+            latitude: latlong[id].latitude,
+            title: dataItem.name,
+            value: value
+          });
+        }
+
+        map.dataProvider = dataProvider;
+
+        map.write("ammap-bubbles");
+      });
+</script>
 <!-- END AmMap -->
 
-<!-- BEGIN Cycletron -->
-<script src="javascripts/vendor/cyclotron.js"></script>
 <!-- BEGIN Cycletron Example -->
 <script>
 	$(document).ready(function($) {
@@ -770,12 +1823,6 @@ $('body').scrollspy({ target: '.navbar-main' })
 </script>
 <!-- END Cycletron -->
 
-<!-- Microscope for Images (Bootstrap-Magnify) -->
-<script src="javascripts/vendor/bootstrap-magnify.min.js"></script>
-<!-- END Microscope for Images (Bootstrap-Magnify) -->
-
-<!-- Owl Carousel -->
-<script src="javascripts/vendor/owl.carousel.min.js"></script>
 <!-- BEGIN Owl Carousel Example -->
 <script>
 	$(document).ready(function(){
@@ -783,11 +1830,6 @@ $('body').scrollspy({ target: '.navbar-main' })
 	});
 </script>
 <!-- END Owl Carousel -->
-
-<!-- BEGIN Clearing Lightbox -->
-<link rel="stylesheet" type="text/css" href="stylesheets/lightbox.css" />
-<script src="javascripts/vendor/lightbox.js"></script>
-<!-- END Clearing Lightbox -->
 
 <!--Code for social image sharing via SlingPic-->
 <script src="http://cdn.slingpic.com/js/slingpic.plugin.js"></script>
@@ -805,8 +1847,6 @@ $('body').scrollspy({ target: '.navbar-main' })
 <!--END Code for social image sharing-->		
 
 <!-- BEGIN JavaScript transitions -->
-<!-- uses jquery.transit (http://ricostacruz.com/jquery.transit/) -->
-<script src="javascripts/vendor/jquery.transit.min.js"></script>
 <script>
 /* for browsers that don't support CSS3 transitions, remap to jQuery animate(). */
 if (!$.support.transition)
@@ -830,7 +1870,178 @@ if (!$.support.transition)
 <!-- JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
 
 <!--Code for D3 Chart Example-->
-<script src="examples/d3-chart/d3-example.js"></script>
+<script>
+    //Width and height
+  var w = 600;
+  var h = 350;
+  var url;
+  var jobtext = window.jobtext;
+
+  //Define map projection
+  var projection = d3.geo.albersUsa()
+      .translate([w / 2, (h / 2)])
+      .scale([690]);
+
+  //Define path generator
+  var path = d3.geo.path()
+      .projection(projection);
+
+  //Create SVG element
+  var svg = d3.select("#map")
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h);
+
+
+  //Load in GeoJSON data
+  //d3.json("/~/media/multimedia/interactives/2013/job_sprawl/usstates.json", function(json) {
+  d3.json("examples/d3-chart/usstates.json", function (json) {
+
+      svg.selectAll("path")
+          .data(json.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("fill", "#eee")
+          .style("stroke", "#ccc");
+
+      //Load in cities data
+      //  d3.csv("/~/media/multimedia/interactives/2013/job_sprawl/sprawl3.csv", function(data) {
+      d3.csv("examples/d3-chart/FDI_update.csv", function (data) {
+
+          var foreignshare = svg.selectAll("circle.foreignshare")
+              .data(data)
+              .enter()
+
+          .append("circle")
+              .sort(function (a, b) {
+                  return d3.descending(parseFloat(a.foreignshare), parseFloat(b.foreignshare))
+              })
+
+          .attr("cx", function (d) {
+              return projection([d.lon, d.lat])[0];
+          })
+              .attr("cy", function (d) {
+                  return projection([d.lon, d.lat])[1];
+              })
+              .attr("r", function (d) {
+                  //return parseInt(Math.sqrt(parseFloat(d.foreignshare)/Math.PI) * 2.5);
+                  //return parseInt(Math.sqrt(parseFloat(d.foreignshare)/Math.PI) * 6);
+                  return parseInt(d.foreignshare);
+              })
+              .attr("id", function (d) {
+                  return d.MetroArea
+              })
+          // .style("fill", "#015376")
+          .style("fill", "#015376")
+
+          .style("opacity", 0.4)
+              .attr("class", "foreignshare")
+              .text(function (d) {
+                  return (d.foreignshare)
+              })
+
+          .on("mouseover", function (d) {
+              d3.select(this)
+                  .style("fill", "#c60")
+              //Get this bar's x/y values, then augment for the tooltip
+              var xPosition = parseFloat(d3.select(this).attr("cx")) + 50;
+              var yPosition = parseFloat(d3.select(this).attr("cy"));
+              var jobtext = String(d3.select(this).text());
+
+              //Update the tooltip position and value
+              d3.select("#tooltip")
+
+              .style("left", xPosition + "px")
+                  .style("top", yPosition + "px")
+                  .select("#metroarea")
+                  .text(d.MetroArea);
+              d3.select("#jobs")
+                  .text(function (d) {
+                      return jobtext
+                  })
+
+              //Show the tooltip
+              d3.select("#tooltip").classed("hidden", false);
+          })
+    
+    
+    //from prior version where dots linked to PDFs
+
+       /*   .on("click", function (d) {
+              var url2 = d.artlink;
+              //window.location.href = url2;
+              window.open(url2);
+
+
+          })
+*/
+          .on("mouseout", function () {
+              d3.select(this)
+                  .style("fill", "#015376")
+             //Hide the tooltip
+              d3.select("#tooltip").classed("hidden", true);
+
+          });
+
+      });
+
+      // scale
+
+      var keyholder = d3.select("svg")
+          .append("g")
+          .attr("width", 100)
+          .attr("height", 100)
+          //.attr("x",400)
+          //.attr("y", 200);
+          .attr("transform", "translate(490,160)")
+    
+    d3.select("#map")
+          .append("div")
+      .style('position', 'absolute')
+          .style("width", '120px')
+          .style("height", '100px')
+  .style("top", '160px')
+  .style("right", '0')
+    //.html('Share of Metro Area Employment in Foreign-Owned Establishments');
+    .html('Share of Metro Area Employment in FOEs');
+
+      var dataset = [1.5, 5, 10, 15];
+
+      var key = d3.scale.threshold()
+          .domain(0, 50)
+          .range(5);
+
+      var circles = keyholder.selectAll("circle")
+          .data(dataset)
+          .enter()
+          .append("circle");
+
+      circles.attr("cx", 50)
+          .attr("cy", function (d, i) {
+              return (50 + (i * 30))
+          })
+          .attr("r", function (d) {
+              return d
+          })
+          .style("fill", "#015376")
+          .style("opacity", 0.4);
+
+      keyholder.selectAll("text")
+          .data(dataset)
+          .enter()
+          .append("text")
+          .text(function (d) {
+              return d + "%";
+          })
+          .attr("x", 70)
+          .attr("y", function (d, i) {
+              return (58 + (i * 30))
+          });
+
+    });
+
+</script>
 <!--END Code for D3 Chart Example-->
 
 <!-- BEGIN Tooltip Example -->
@@ -838,13 +2049,6 @@ if (!$.support.transition)
 $('[data-toggle="tooltip"]').tooltip({container: 'body'});
 </script>
 <!-- END Tooltip Example -->
-
-
-
-
-
-
-
 
 <!-- END JAVASCRIPT EXAMPLES ------------------------------------------------------------- -->	
 
