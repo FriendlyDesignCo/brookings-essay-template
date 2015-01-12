@@ -117,7 +117,7 @@
 
 <div class="jumbotron" id="intro">
   <div class="container col-md-8 col-md-offset-2 col-sm-12">
-    <h1 class="title">
+    <h1 class="title" id="fittextTitle">
       Lorem Ipsum Dolor Sit Amet Non Et
     </h1>
     <h2 class="subtitle">
@@ -533,10 +533,7 @@ $(".drop").each(function(i) {
 <script src="javascripts/vendor/jquery.fittext.js"></script>
 <!-- FitText Example -->
 <script type="text/javascript">
-	$("#fittext1").fitText(1.1, { minFontSize: '50px', maxFontSize: '150px' });
-	$("#fittext2").fitText(0.8);
-	$("#fittext3").fitText(4);
-	$("#fittext4").fitText(3);
+  $("#fittextTitle").fitText(0.75 { minFontSize: '50px', maxFontSize: '150px' });
 </script>
 <!-- END FitText --> 
 
@@ -697,7 +694,12 @@ $('[data-toggle="tooltip"]').tooltip({container: 'body'});
 <!-- END Tooltip Example -->
 
 
-
+<!-- FitText Example -->
+<script type="text/javascript">
+  $("#fittext1").fitText(1.5);
+  $("#fittextTitle").fitText(0.75);
+</script>
+<!-- END FitText --> 
 
 
 
