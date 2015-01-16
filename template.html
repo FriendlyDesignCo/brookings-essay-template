@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brookings Template</title>
+
+    <!-- STYLES (Bootstrap + customizations) -->
+    <link href="stylesheets/styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- modernizr -->
+    <script src="javascripts/vendor/modernizr.custom.77072.js"></script>
+
+    <!-- AmMap -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ammaps/3.10.0/ammap.css" type="text/css"> -->
+    <!-- END AmMap -->
+    
+    <!-- CSS FOR PLUGINS --------------------------------- -->
+    <link rel="stylesheet" href="pluginsCSS.css" type="text/css">
+    <link rel="shortcut icon" href="http://www.brookings.edu/favicon.ico" >
+  </head>
+    <body data-spy="scroll" data-target=".navbar-main" data-offset="150">
+
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-main" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand iconfont-fallback" href="#"><span class="house iconfont">&#57352;</span><span class="fallback"><img src="images/icons/navbar-fallback-home.gif" alt="Home"></span></a>
+            <a class="navbar-brand iconfont-fallback" href="#"><span class="logo iconfont">&#57345;</span><span class="fallback"><img src="images/icons/navbar-fallback-brookings-essay.gif" alt="The Brookings Essay"></span></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" id="autonav">
+              <li><a href="#intro">Intro</a></li>
+            </ul>
+
+            <!-- Hubspot Code -->
+            <form id="Form2" class="navbar-form navbar-right visible-lg" action="https://forms.hubspot.com/uploads/form/v2/241939/8600bc4b-0fbd-4cea-8744-108321e5f848" method="post" target="hiddenframe" onsubmit="return validate()" style="" role="email">
+              <div id="newsletterform1" class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter email address for more from Brookings" size="40" onkeypress="return runScript(event)" style=""/>
+                <button type="submit" value="Submit" id="btnSubmit" class="btn btn-default">Submit</button>
+                <iframe id="hiddenframe" name="hiddenframe" style="display:none"></iframe>
+              </div>
+            </form>
+            <!-- End Hubspot Code -->
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+
+
+<div class="jumbotron" id="intro">
+  <div class="container col-md-8 col-md-offset-2 col-sm-12">
+    <h1 class="title" id="fittextTitle">
+      Starter Template
+    </h1>
+    <h2 class="subtitle">
+      Placeholder Subtitle
+    </h2>
+    <h3 class="author">
+      Placeholder author name
+    </h3>
+    <time datetime="2015-01-16">January 16, 2015</time>
+  </div>
+  <cite class="credit">Image credit</cite>
+</div>
+
+
+<!--
+//////////////////////////////////////////////////////////////////////////////
+New Section
+//////////////////////////////////////////////////////////////////////////////
+-->
+<div class="section">
+
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
+    
+    <p>This document is a starter template you can use to start developing a new article. It will allow you to develop markup and styles locally on your own machine before uploading to Sitecore. Please note the following:</p>
+    
+    <p><strong>If you wish to add plugins,</strong> find the appropriate markup and inline Javascript in <a href="plugins.html">plugins.html</a> and insert it into this page. Note that all inline Javascript <strong>must</strong> be placed at the bottom of the document below the call to pluginsJS.js or it will not function!</p>
+
+    <p><strong>For example markup</strong> for hanging blockquotes, media containers and more, please find the appropriate markup in <a href="layout.html">layout.html</a>.</p>
+
+    <p>Note that you should only make stylistic changes in <strong>sass/_customizations.scss</strong> and <strong>sass/_variables.scss</strong>, even if you're trying to override existing plugin styles. If you make changes to anything in the stylesheets directory, they will not work once uploaded.</p>
+
+    <p>For directions on how to use Bootstrap's column structure or other Bootstrap functions, please see the documentation on the <a href="http://getbootstrap.com/">Bootstrap site</a>.</p>
+
+    <p>All Javascript is being pulled from Sitecore and may not function properly without being uploaded.</p>
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+<!--
+//////////////////////////////////////////////////////////////////////////////
+New Section
+//////////////////////////////////////////////////////////////////////////////
+-->
+<div class="section">
+
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
+    
+    <h1>Steps for publishing this article:</h1>
+
+    <ol>
+      <li><strong>Upload your compiled CSS document to Sitecore.</strong> You do <strong>not</strong> need to upload any other CSS or SCSS. It can be found here:
+        <ul>
+          <li>stylesheets/styles.css</li>
+        </ul>
+      </li>
+      <li>Near the top of this document, <strong>change the URL for styles.css to the URL of the file you just uploaded to Sitecore</strong>.</li>
+      <li>Near the top of this document, <strong>change the pluginsCSS.css URL to the following:</strong>
+        <ul>
+          <li>/~/media/Research/Files/essays/friendly_essay/pluginsCSS.css</li>
+        </ul>
+      </strong>
+      <li>Near the bottom of this document under "JAVASCRIPT SUPPORT", <strong>change the pluginsJS.js URL to the following:</strong>
+        <ul>
+          <li>/~/media/Research/Files/essays/friendly_essay/pluginsJS.js</li>
+        </ul>
+      </li>
+      <li><strong>Upload the HTML into a new article in Sitecore.</strong></li>
+    </ol>
+
+  </div> <!-- .content -->
+</div> <!-- .section -->
+
+
+<!--
+//////////////////////////////////////////////////////////////////////////////
+New Section
+//////////////////////////////////////////////////////////////////////////////
+-->
+
+<div id="chapter-image1" class="chapter-image jumbotron">
+  <div class="col-md-3 top-caption">
+    <p>This is an example of an interstitial, faux-parallax chapter image.</p>
+    <cite class="credit">Image Credit AFP/Getty Images</cite>
+  </div>
+</div>
+
+
+<!--
+//////////////////////////////////////////////////////////////////////////////
+New Section
+//////////////////////////////////////////////////////////////////////////////
+-->
+<div class="section">
+  <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
+    <div class="textContainer pull-right hang col-sm-6 col-md-6">
+      <h3>FOR FURTHER READING</h3>
+      <ul>
+        <li><a href="#">Europe's Crisis, Europe's Future</a>
+            <em>2014, Kemal Derviş and Jacques Mistral, editors</em></li>
+        <li><a href="#">Europe’s Lost Decade</a>
+              <em>November 2013, Thomas Wright</em></li>
+        <li><a href="#">Europe in 25 Years</a>
+              <em>October 2013, Kemal Derviş</em></li>
+        <li><a href="#">Saving Europe: How National Politics Nearly Destroyed the Euro</a>
+              <em>2012, Carlo Bastasin</em></li>
+        <li><a href="#">Key Issues on European Banking Union: Trade-Offs and Some Recommendations</a>
+              <em>November 2012, Douglas J. Elliott</em></li>
+       <li> <a href="#">Center on the United States and Europe</a></li>
+       </ul>
+    </div>
+    <p>This block shows examples of how Further Reading and Author Biography sections might be used. All content is placeholder.</p>
+    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+    <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+    <div class="textContainer pull-right hang col-sm-6 col-md-6">
+      <h3>Author Biography</h3>
+      <img class="pull-left sharable" src="http://placehold.it/100x100" alt="Placeholder image">
+      <p>Strobe Talbott is president of the Brookings Institution. Talbott, whose career spans journalism, government service, and academe, is an expert on U.S. foreign policy, with specialties on Europe, Russia, South Asia and nuclear arms control. As deputy secretary of state in the Clinton administration, Talbott was deeply involved in both the conduct of U.S. policy abroad and the management of executive branch relations with Congress. He is the author of numerous books including, most recently, <a href="#">Fast Forward: Ethics and Politics in the Age of Global Warming</a>, with William Antholis.</p>
+    </div>
+    <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+    <p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.</p>
+    <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+    <p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.</p>
+  </div><!-- .content -->
+  <div class="clearfix"></div>
+</div><!-- .section -->
+
+
+
+
+
+
+
+<div class="social">
+	<div class="social__bd addthis_toolbox addthis_default_style">
+		<a class="social-button--email addthis_button_email"><i class="fa fa-envelope"></i></a>
+		<a class="social-button--twitter addthis_button_twitter"><i class="fa fa-twitter"></i></a>
+		<a class="social-button--facebook addthis_button_facebook"><i class="fa fa-facebook"></i></a>
+		<a class="social-button--linkedin addthis_button_linkedin"><i class="fa fa-linkedin"></i></a>
+		<a class="social-button--googleplus addthis_button_google_plusone_share"><i class="fa fa-google-plus"></i></a>
+		<a class="social-button--stumbleupon addthis_button_stumbleupon"><i class="fa fa-stumbleupon"></i></a>
+		<a class="social-button--reddit addthis_button_reddit"><i class="fa fa-reddit"></i></a>
+		<a class="social-button--print addthis_button_print"><i class="fa fa-print"></i></a>
+	</div>
+</div>
+
+
+
+
+<!-- JAVASCRIPT SUPPORT ------------------------------------------------------------- --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="pluginsJS.js"></script>
+<!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- --> 	
+
+
+
+
+<!-- CONTENT JAVASCRIPTS ------------------------------------------------------------- -->	
+
+<!-- BEGIN Hubspot code -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#todrop").hide();
+  $("#toclick").click(function(){ $("#todrop").slideToggle("blind");});
+});
+</script>
+<!-- END Hubspot code -->
+
+<!-- BEGIN Background Image Full Width (For IE8+) -->
+<!-- /* See https://github.com/louisremi/jquery.backgroundSize.js */ -->
+<script src="javascripts/vendor/jquery.backgroundSize.js"></script>
+<script>
+$("#intro").css({backgroundSize: "cover"});
+</script>
+<!-- END Background Image Full Width (For IE8+) -->
+
+<!-- BEGIN Auto-Generated Navigation -->
+<script>
+/* see http://www.jankoatwarpspeed.com/automatically-generate-table-of-contents-using-jquery/ */
+$(".hed").each(function(i) {
+  var curr = $(this);
+  curr.attr("id", "hed" + i);
+  $("#autonav").append("<li><a href='#hed" + i + "'>" + curr.html() + "</a></li>");
+});
+</script>
+<!-- END Auto-Generated Navigation -->
+
+
+<!-- FitText -->
+<!-- FitText Example -->
+<script type="text/javascript">
+  $("#fittextTitle").fitText(0.75 { minFontSize: '50px', maxFontSize: '150px' });
+</script>
+<!-- END FitText --> 
+
+<!-- Social Sharing with Add This -->
+<!-- For options, see www.addthis.com/dashboard -->
+<!-- Changes to the addthis.com widget will add new toolbars to appear on the page! -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5397433b57ca32e5"></script>
+<!-- END Add This -->
+
+<!--Code for Scrollspy (sticky header and waypoints)-->
+<script>
+$('body').scrollspy({ target: '.navbar-main' })
+  ///////////////////////
+  //Code to offset the anchor link go-to click height 
+  var offset = 80;
+  $('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+  });
+  ///////////////////////
+  </script>
+<!--END code for Scrollspy (sticky header and waypoints)-->
+
+  
+
+
+<!-- BEGIN All analytics code from client  /////////////////////////-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-33156046-2']);
+   _gaq.push(['_setLocalRemoteServerMode']);
+   _gaq.push(['_trackPageview']); _gaq.push(['_trackPageLoadTime']);
+
+   (function () {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+
+<!-- SiteCatalyst code version: H.24.4.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" language="javascript">
+   var s_account = "bistaging";
+</script>
+<script type="text/javascript" src="javascripts/vendor/s_code.js"></script>
+
+<script type="text/javascript" src="javascripts/vendor/omni-tracker.js"></script>
+
+
+<script type="text/javascript" language="javascript">
+   
+   function triggerLinkEvent(obj, linkTitle, eventName, eVarName, eVarValue, usePageNameForEvarValue, isCustomLink) {
+       var s = s_gi(s_account);
+       if (eventName != '') {
+           s.linkTrackVars = 'events';
+           s.linkTrackEvents = eventName;
+           s.events = eventName;
+       }
+       if (eVarName != '') {
+           if (s.linkTrackVars == 'None')
+               s.linkTrackVars = eVarName;
+           else
+               s.linkTrackVars = eVarName + "," + s.linkTrackVars;
+           var myEval;
+           if (usePageNameForEvarValue)
+               myEval = "s." + eVarName + " = '" + "" + "';";
+           else
+               myEval = "s." + eVarName + " = '" + eVarValue + "';";
+           eval(myEval);
+       }
+       if (isCustomLink) {
+           if (s.linkTrackVars == 'None')
+               s.linkTrackVars = "prop27,prop28";
+           else
+               s.linkTrackVars = "prop27,prop28," + s.linkTrackVars;
+
+           s.prop27 = linkTitle;
+           s.prop28 = "";
+       }
+       s.tl(obj, 'o', linkTitle);
+   }
+
+</script>
+<script type="text/javascript" language="javascript">
+<!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.prop13 = "{325C24A1-CA1E-42E7-B56B-8F6910F282BE}";
+s.server = "WEBAFE11";
+s.eVar12 = "Superpowers Don't Get to Retire: What Our Tired Country Still Owes the World";
+s.prop42 = "Traditional PC";
+s.prop12 = "Superpowers Don't Get to Retire: What Our Tired Country Still Owes the World";
+s.prop17 = "foreign policy";
+s.list4 = "Robert Kagan";
+s.list1 = "U.S. Foreign Policy|Global Governance||International Affairs";
+s.prop16 = "Robert Kagan";
+s.channel = "Research";
+s.prop36 = "Robert Kagan";
+s.prop19 = "international order strategy";
+s.prop39 = "Global Governance";
+s.prop55 = "Superpowers Don't Get to Retire: What Our Tired Country Still Owes the World";
+s.eVar39 = "Global Governance";
+s.eVar55 = "Superpowers Don't Get to Retire: What Our Tired Country Still Owes the World";
+s.prop15 = "U.S. Foreign Policy|Global Governance||International Affairs";
+s.eVar19 = "international order strategy";
+s.eVar36 = "Robert Kagan";
+s.prop38 = "U.S. Foreign Policy";
+s.eVar38 = "U.S. Foreign Policy";
+s.eVar20 = "2014-05-26";
+s.eVar15 = "U.S. Foreign Policy|Global Governance||International Affairs";
+s.eVar44 = "Traditional PC";
+s.eVar34 = "international order strategy";
+s.eVar14 = "article";
+s.eVar47 = "Research";
+s.prop30 = "foreign policy";
+s.prop20 = "2014-05-26";
+s.eVar17 = "foreign policy";
+s.eVar30 = "foreign policy";
+s.prop14 = "article";
+s.events = "event29";
+s.prop34 = "international order strategy";
+s.eVar16 = "Robert Kagan";
+s.eVar13 = "{325C24A1-CA1E-42E7-B56B-8F6910F282BE}";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><img src="http://brookingsinstitution.112.2o7.net/b/ss/brookingsdev/1/H.24.4--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.4. -->
+
+
+<!-- Start of DMS Page Tracking -->
+<script type="text/javascript">
+   if (VELIR && VELIR.DMS) {
+       VELIR.DMS.CurrentPage = "{325C24A1-CA1E-42E7-B56B-8F6910F282BE}";
+       VELIR.DMS.AnalyticsEnabled = true;
+   }
+</script>
+<!-- End of DMS Page Tracking -->
+<!-- Start of DMS Simple Download Analytics Code -->
+<script type="text/javascript">
+   // Tracking for every page for Downloads module
+   $(document).ready(function () {
+       // Downloads RR-article-header-section component
+       $("div.article-header.section div.downloads a").each(function () {
+           $(this).click(function () {
+               VELIR.DMS.RaiseSecondarySimpleDownloadEvent($(this).get(0));
+           });
+       });
+
+       // Downloads RR component
+       $("div.secondary div.downloads a").each(function () {
+           $(this).click(function () {
+               VELIR.DMS.RaiseSecondarySimpleDownloadEvent($(this).get(0));
+           });
+       });
+
+       // Downloads below primary content
+       $("div.primary div.downloads a").each(function () {
+           $(this).click(function () {
+               VELIR.DMS.RaisePrimarySimpleDownloadEvent($(this).get(0));
+           });
+       });
+   });
+</script>
+<!-- End of DMS Simple Download Analytics Code -->
+<!-- Start of PageReadTracker (PRT) Read Event Analytics Code -->
+<script type="text/javascript">
+$(document).ready(function() {
+VELIR.PRT.CurrentPage = '{325C24A1-CA1E-42E7-B56B-8F6910F282BE}';
+var suppressModal = VELIR.PRT.HasNewsletterCookie() || VELIR.PRT.HasSeenModal() || false || $(window).width() < 700;
+VELIR.PRT.TriggerDmsEvent = true;
+VELIR.PRT.TriggerEmailModalEvent = true && !suppressModal;
+VELIR.PRT.EnableFullReadEvent = true;
+VELIR.PRT.ReadTime = 10000;
+       
+if (VELIR.PRT.EnableFullReadEvent) {
+// Set ViewHeight and Threshold based on window and doc heights
+VELIR.PRT.ViewHeight = $(window).height();
+VELIR.PRT.ViewHeightThreshold = .7 * $(document).height();
+VELIR.PRT.MaxHeightViewed = VELIR.PRT.ViewHeight;
+
+$(window).scroll(VELIR.PRT.OnScroll);
+setTimeout(VELIR.PRT.OnReadTimeElapsed, VELIR.PRT.ReadTime);
+}
+});
+</script>
+<!-- End of PageReadTracker (PRT) Read Event Analytics Code -->
+<script type="text/javascript">
+var addthis_config = {
+data_ga_property: 'UA-33156046-2'
+};
+</script>
+<!-- END All analytics code from client  /////////////////////////-->
+  </body>
+  </html>
