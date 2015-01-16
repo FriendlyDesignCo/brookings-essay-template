@@ -91,7 +91,18 @@ New Section
 
   <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">
     
-    <p>This document is a starter template you can use to start developing a new article. It will allow you to develop markup and styles locally on your own machine before uploading to Sitecore. Please note the following:</p>
+    <p>This document is a starter template you can use to start developing a new article. It will allow you to develop markup and styles locally on your own machine before uploading to Sitecore.</p>
+
+    <h3>Suggested workflow for creating a new article template:</h3>
+
+    <ol>
+      <li>Make a new copy of this entire folder. Never overwrite this base template!</li>
+      <li>Insert your content and make adjustments to the markup.</li>
+      <li>Code your visual styles in <strong>sass/_customizations.scss</strong> and <strong>sass/_variables.scss</strong> until things look prety good to you locally.</li>
+      <li>Upload all article assets and test the article on Sitecore to ensure plugins and styles function properly.</li>
+    </ol>
+
+    <p>Please note the following:</p>
     
     <p><strong>If you wish to add plugins,</strong> find the appropriate markup and inline Javascript in <a href="plugins.html">plugins.html</a> and insert it into this page. Note that all inline Javascript <strong>must</strong> be placed at the bottom of the document below the call to pluginsJS.js or it will not function!</p>
 
@@ -99,7 +110,7 @@ New Section
 
     <p>Note that you should only make stylistic changes in <strong>sass/_customizations.scss</strong> and <strong>sass/_variables.scss</strong>, even if you're trying to override existing plugin styles. If you make changes to anything in the stylesheets directory, they will not work once uploaded.</p>
 
-    <p>For directions on how to use Bootstrap's column structure or other Bootstrap functions, please see the documentation on the <a href="http://getbootstrap.com/">Bootstrap site</a>.</p>
+    <p>For directions on how to use Bootstrap's grid system or other Bootstrap functions, please see the documentation on the <a href="http://getbootstrap.com/">Bootstrap site</a>.</p>
 
     <p>All Javascript is being pulled from Sitecore and may not function properly without being uploaded.</p>
 
