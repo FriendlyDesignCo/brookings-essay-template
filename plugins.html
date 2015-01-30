@@ -17,7 +17,7 @@
     <![endif]-->
 
     <!-- modernizr -->
-    <script src="javascripts/vendor/modernizr.custom.77072.js"></script>
+    <script src="/~/media/Research/Files/essays/friendly_essay/modernizr.js"></script>
 
     <!-- AmMap -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ammaps/3.10.0/ammap.css" type="text/css"> -->
@@ -42,8 +42,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- END jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="pluginsJS.js"></script>
-    <!-- <script src="/~/media/Research/Files/essays/friendly_essay/pluginsJS.js"></script> -->
+    <script src="/~/media/Research/Files/essays/friendly_essay/pluginsJS.js"></script>
     <!-- END JAVASCRIPT SUPPORT ------------------------------------------------------------- --> 
   </head>
     <body data-spy="scroll" data-target=".navbar-main" data-offset="150">
@@ -242,7 +241,7 @@ if desired.
     <!-- BEGIN lazy load example -->
     <h3>Lazy Load</h3>
     <p>If this image is loaded when you scroll to it, lazy loading is working.</p>
-    <img id="lazy-load" data-original="http://placehold.it/500x444" width="500" height="444" />
+    <img class="lazy-load" data-original="http://placehold.it/500x444" width="500" height="444" />
     <!-- END lazy load example -->
 
   </div> <!-- .content -->
@@ -317,6 +316,11 @@ if desired.
 -->
 
 <!-- AmCharts examples -->
+<script src="/~/media/Multimedia/Interactives/amcharts/amcharts.js"></script>
+<script src="/~/media/Multimedia/Interactives/amcharts/serial.js"></script>
+<script src="/~/media/Multimedia/Interactives/amcharts/pie.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ammaps/3.10.0/ammap.js"></script> -->
+<script src="/~/media/Multimedia/Interactives/amcharts/xy.js" ></script>
 <script>
       /* Stacked Simple */
   
@@ -784,11 +788,6 @@ if desired.
 
     <!-- BEGIN AmCharts example -->
     <!-- AmCharts -->
-    <script src="/~/media/Multimedia/Interactives/amcharts/amcharts.js"></script>
-    <script src="/~/media/Multimedia/Interactives/amcharts/serial.js"></script>
-    <script src="/~/media/Multimedia/Interactives/amcharts/pie.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ammaps/3.10.0/ammap.js"></script> -->
-    <script src="/~/media/Multimedia/Interactives/amcharts/xy.js" ></script>
     <h3>AmCharts</h3>
     <div id="amcharts-area-stacked" style="width:100%; height:400px; margin-bottom: 3em;"></div>
     <div id="amcharts-column-simple" style="width:100%; height:400px; margin-bottom: 3em;"></div>
@@ -1374,13 +1373,6 @@ if desired.
   ===============================
 -->
 
-<!-- BEGIN Tooltip Example -->
-<script>
-$('[data-toggle="tooltip"]').tooltip({container: 'body'});
-</script>
-<!-- END Tooltip Example -->
-
-
 <div class="section hidden-sm" id="tooltips">
   <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
 
@@ -1400,6 +1392,13 @@ $('[data-toggle="tooltip"]').tooltip({container: 'body'});
 
   </div> <!-- .content -->
 </div> <!-- .section -->
+
+<!-- BEGIN Tooltip Example -->
+<!-- NOTE: This JS MUST come after the tooltips are declared in HTML or else it will not work. -->
+<script>
+$('[data-toggle="tooltip"]').tooltip({container: 'body'});
+</script>
+<!-- END Tooltip Example -->
 
 
 
@@ -1609,22 +1608,6 @@ $('[data-toggle="tooltip"]').tooltip({container: 'body'});
   ===============================
 -->
 
-<!-- BEGIN JavaScript transitions -->
-<script>
-/* for browsers that don't support CSS3 transitions, remap to jQuery animate(). */
-if (!$.support.transition)
-  $.fn.transition = $.fn.animate;
-</script>
-<script>
-  $('#js-transitions-target').click(function(){ 
-    $(this)
-    .transition({ "margin-left": "600px" }, "slow" )
-    .transition({ opacity: 0.1 });
-  });
-</script>
-<!-- END JavaScript transitions -->
-
-
 <div class="section hidden-sm" id="js-transitions">
   <div class="content col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-1">  
 
@@ -1646,6 +1629,22 @@ if (!$.support.transition)
 
   </div> <!-- .content -->
 </div> <!-- .section -->
+
+<!-- BEGIN JavaScript transitions -->
+<!-- NOTE: This JS MUST come after the transitions markup in the HTML or else it will NOT WORK! -->
+<script>
+/* for browsers that don't support CSS3 transitions, remap to jQuery animate(). */
+if (!$.support.transition)
+  $.fn.transition = $.fn.animate;
+</script>
+<script>
+  $('#js-transitions-target').click(function(){ 
+    $(this)
+    .transition({ "margin-left": "600px" }, "slow" )
+    .transition({ opacity: 0.1 });
+  });
+</script>
+<!-- END JavaScript transitions -->
 
 
 
